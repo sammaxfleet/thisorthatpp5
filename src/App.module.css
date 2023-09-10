@@ -1,0 +1,9 @@
+.App {
+    font-family: "Rubik", sans-serif;
+    background-color: #FAF9F6;
+    min-height: 100vh;
+}
+
+div {
+    background-color: white;
+}
