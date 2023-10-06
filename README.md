@@ -74,12 +74,55 @@ These user stories were created and stored as GitHub issues and then mapped into
 
 Here I have listed the main user stories for a user who is not logged in, or has no account and a logged in user. These user stories were then tested and confirmed in the Testing section.
 
-Logged Out Site User
+## Logged Out Site User
+
+- Ability to log in
+- Abolity to Sign Up
+- See All Posts that have been shared
+- View a single Post
+- Can view the highest liked or commented posts
+- Can View Popular Profiles
+- Can Navigate through Pages
+- Can filter by Celebrity and Fashion Brand
+- Can search posts by Date & Profile
+- Can View comments to see what people think
+- Can Like Posts
 
 
+### Logging In Site User 
 
-Logging In Site User 
 
+- Ability to Log in smoothly
+- Log out smoothly
+- Can Make my own post
+
+### Likes
+- can like a Post 
+- can csee amount of  likes
+
+
+### Follow
+  
+- Can follow another User
+- Can unfollow a User
+
+### Comments
+    
+- Edit own Comments
+- Can Delete a comment
+- Can view other peples comments
+- 
+
+### Profiles
+
+  - I can view most popular profile
+  - View a specific profile page
+  - Edit my own profile Page
+  - Can change name and password for log in details if want to make more secure.
+
+# Direct messaging
+    - Can view messages n my profile page and see what others have sent me
+    - Can message another used and discuss opinions 
 
 
 
