@@ -1,16 +1,14 @@
-THIS OR THAT APP
+# THIS OR THAT 
 
 
-THIS OR THAT IS AN ONLINE WEBSITE THAT ALLOWS USERS TO CREATE PROFILES,
-& COMPARE LIKES TO WHAT WHICH FASHION OUTFIT THEY PREFER A CELBERITY IS WEARING.
-IT’S A BATTLE OF STYLE, WHICH ONE IS YOUR TASTE? WHICH THEN GIVES THE USERS SPACE TO COMMENT THEIR OPINIONS, and connect with community. 
+'This Or That' is an online website that compares celbrity fashion outfits. It allows users to create user profiles & compare likes. 
+The user gets to prefer which outfit a celbrity is wearing. 
+It's a battle of style, which one is your taste?... Which then gives the users space to comment their opinion and connect with the 'This Or That' Community. 
 
 
 
 This project was built as the final portfolio submission for the @codeinstitute higher national diploma full stack software development.
-
 The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
-
 
 More info on the back end readme can be found here - 
 
@@ -18,13 +16,16 @@ More info on the back end readme can be found here -
 Link to live site -
 
 
-Link to the live API - 
+
+Link to the live API - https://github.com/sammaxfleet/THISORTHATAPI
 
 
 Link to the back end repository - 
 
 
 AM I RSPONSIVE IMAGE.
+
+Wire Frames - [THIS OR THAT WIREFRAMES 2.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/12831129/THIS.OR.THAT.WIREFRAMES.2.pdf)
 
 
 TABLE OF CONTENTS - 
@@ -70,6 +71,16 @@ These user stories were created and stored as GitHub issues and then mapped into
 
 
 ## User Stories Link Front end 
+
+Here I have listed the main user stories for a user who is not logged in, or has no account and a logged in user. These user stories were then tested and confirmed in the Testing section.
+
+Logged Out Site User
+
+
+
+Logging In Site User 
+
+
 
 
 
