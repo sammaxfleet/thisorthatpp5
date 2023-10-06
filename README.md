@@ -1,102 +1,102 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+THIS OR THAT APP
 
-Welcome,
 
-This is the Code Institute student template for React apps on the Codeanywhere IDE. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.  
-DO NOT use this template if you are using the Gitpod IDE. Use the following command instead:  
-`npx create-react-app . --template git+https://github.com/Code-Institute-Org/cra-template-moments.git --use-npm`
+THIS OR THAT IS AN ONLINE WEBSITE THAT ALLOWS USERS TO CREATE PROFILES,
+& COMPARE LIKES TO WHAT WHICH FASHION OUTFIT THEY PREFER A CELBERITY IS WEARING.
+IT’S A BATTLE OF STYLE, WHICH ONE IS YOUR TASTE? WHICH THEN GIVES THE USERS SPACE TO COMMENT THEIR OPINIONS, and connect with community. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **31st August, 2023**
 
-## Codeanywhere Reminders
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+This project was built as the final portfolio submission for the @codeinstitute higher national diploma full stack software development.
 
-To log into the Heroku toolbelt CLI:
+The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+More info on the back end readme can be found here - 
 
----
 
-Happy coding!
+Link to live site -
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link to the live API - 
 
-## Available Scripts
 
-In the project directory, you can run:
+Link to the back end repository - 
 
-### `npm install`
 
-Installs the required npm packages.
+AM I RSPONSIVE IMAGE.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open port 3000 to view it in the browser.
+TABLE OF CONTENTS - 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## PROJECT  OBJECTIVE - 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ To provide a stable platform for the fashion enthusiasts, to be able to find interest for inspiration & be able to
+interact with the platform choosing which outfit they like plus being able to comment on the style. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## SITE USER GOAL- 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The site user goal
+Breaks down into a few things
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fashion Inspiration
+Network and interact with other community members
+Fashion research
+ Comment their views  and voice their opinion on fashion 
+Check out their favourite celebrities style. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## SITE OWNER GOAL - 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To provide a stable and enjoyable user experience that encourages continued user interaction and participation. The platform should be engaging and welcoming to new users. Content should be well structured and of high quality, navigation and site functionality should be intuitive and accessible. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## TARGET AUDIENCE -
+Target audience is anyone who has an interest in fashion. The fashion community has been building online now with OOTD hash tags and people loving to show their outfits for an occasion wether it’s a birthday or your favourite night out . 
+This can bring a lot of inspiration into the space. 
+Users could be male or female, there is an equal spread of fashion content on there. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## PROJECT MANAGEMENT - 
 
-### Code Splitting
+An agile methodology was used to plan and develop the This or That project.
+All the main features of the application were recorded as epics and then refined into user stories.
+These user stories were created and stored as GitHub issues and then mapped into iterations to help to plan the project and allocate the workload. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## User Stories Link Front end 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create Navigation bar- 
 
-### Deployment
+- Find a Logo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Nav Bar
 
-### `npm run build` fails to minify
+- Choose Colour scheme
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Create CRUD for User Account
+
+- Create 3 pages for the site
+
+- Retrieve images from Google for comparison 
+Choose which celebrities it will feature
+There are 20 celebrities to compare style. 
+
+
+- Add like tab 
+
+- Be able to Sign in
+
+   Be able to Sign up
+
+
+
+DATABASE HERE.
+
