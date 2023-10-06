@@ -125,9 +125,7 @@ Here I have listed the main user stories for a user who is not logged in, or has
     - Can message another used and discuss opinions 
 
 
-
-
-Create Navigation bar- 
+# SITE CREATION USER STORIES 
 
 - Find a Logo
 
@@ -143,12 +141,15 @@ Create Navigation bar-
 Choose which celebrities it will feature
 There are 20 celebrities to compare style. 
 
-
-- Add like tab 
+- Add like tab
 
 - Be able to Sign in
 
-   Be able to Sign up
+-  Be able to Sign up
+
+- Be able to log out
+
+  
 
 
 
