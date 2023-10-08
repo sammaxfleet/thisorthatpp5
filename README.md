@@ -203,7 +203,38 @@ Users who are new to the site, or haven't previously created an account can clic
 
 
 
+# Deployment - 
 
+- Deployment to Heroku
+
+- In your heroku account, select Create New App, and give it a unique name related to your project.
+- Select a region corresponding to where you live and click 'Create App'.
+- Head into the 'Deploy' tab select GitHub as the 'deployment method', find your project repository and click 'Connect'.
+- Click 'Deploy branch' to trigger Heroku to start building the application.
+- Once you see the message saying 'build succeeded' you can click 'Open App' to see your application in the browser.
+
+- Connecting the React front end and back end
+- Once you have set up the workspace and done a basic deploy to Heroku, you can connect the react workspace to your API, in order to send data to the API
+
+  
+  1. In the Heroku dashboard, go into the API application settings
+  2. In 'Settings' add a new Config Var called 'CLIENT_ORIGIN' and set that to the URL for your deployed React application. In my case, this would be https://happening-react.herokuapp.com.
+  3. Then add another Config Var called 'CLIENT_ORIGIN_DEV' and enter the URL of your Gitpod preview link, remembering to remove the trailing slash at the end. Gitpod occasionally changes this URL so keep    an eye on it, as you are working on your project.
+  4. Go back into your frontend Gitpod workspace, and install the Axios library using the command 'npm install axios'.
+  5. Create a folder called 'API' and inside it create a file called 'axiosDefaults'.
+  6.import axios at the top of the file
+  7.Define your baseURL which is the unique URL of your deployed API project.
+  8. Set the content-type header to multi-part/form-data as the API will need to deal with images as well as text in it's requests.
+  9. In order to avoid any CORS issues, set withCredentials to True.
+  10. Import this file into App.js to be used across all pages
+
+Fork this Project Repository
+It is possible to make an independent copy of a GitHub Repository by forking the GitHub account. The copy can then be viewed and it is also possible to make changes in the copy without affecting the original repository. To fork the repository, follow these steps:
+
+1. After logging in to GitHub, locate the repository. On the top right side of the page there is a 'Fork' button. Click on the button to create a copy of the original repository.
+
+2. Clone this Project Repository
+A Git clone creates a linked copy of the project that will continue to synchronize with the original repository. In order to create a clone, you can click on the 'Code' button inside the selected repository and then select the 'Clone' option from the dropdown list.<img width="671" alt="Screenshot 2023-10-08 at 15 35 58" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69df2408-741b-45e4-8df8-24ec95f39e37">
 
 
 
@@ -220,17 +251,14 @@ Users who are new to the site, or haven't previously created an account can clic
 - JSX further understanding I read this https://legacy.reactjs.org/docs/jsx-in-depth.html
 - Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
-- 
 
 
 
 
+Acknowledgements - 
 
-
-
+This fictional site was created for Portfolio Project #5 (Advanced Front End Specialisation) - Diploma in Full Stack Software Development at the Code Institute. 
+Thank you to all the tutors my mentor & everyone on slack for the constant support. 
   
 
-
-
-DATABASE HERE.
 
