@@ -149,6 +149,46 @@ There are 20 celebrities to compare style.
 
 - Be able to log out
 
+
+# Sit Structure - 
+
+ThisorThat is split up in two parts: Either when the user is logged out or when the user is logged in.
+Depending on login status different page states are available for the user.
+When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. When the user is logged in Commentss, Signout and Profile Page also become available.
+
+
+Colour Scheme - 
+I took inspiration from fashion blogs, and stores like Zara & Arte. Which are sleek, simple & focus on the photo. 
+Where this is a white background as full focus goes on the image, the user is then drawn to the content. Two contrasting colours are used to naviagte through the website. 
+
+<img width="1435" alt="Screenshot 2023-10-08 at 13 12 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5946cf27-8d7f-470b-a27c-d3c4a124223b">
+
+Typography - 
+<img width="322" alt="Screenshot 2023-10-08 at 13 16 55" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/98edf466-cdff-4e17-b594-f661721751fc">
+
+Didot font, is slick, edgy & sharp on the eyte for any text. 
+
+
+Navigation - 
+
+The Navigation Bar is very clean and straight forward. Depending on wether you're signed in or not a different option on the menu appears.
+On accessing the site for the first time, the user is logged out and the following menu items are visible:
+
+
+Authentication - 
+
+Users who are new to the site, or haven't previously created an account can click on the Signup Menu option on the Navigation Bar to create a user account. I have used the standard dj-rest/auth/registration user account signup process for this.
+
+Homepage - 
+
+
+
+
+
+
+
+
+
   
 
 
