@@ -30,6 +30,24 @@ Wire Frames - [THIS OR THAT WIREFRAMES 2.pdf](https://github.com/sammaxfleet/thi
 
 TABLE OF CONTENTS - 
 
+- [THIS OR THAT](#this-or-that)
+  * [PROJECT  OBJECTIVE -](#project--objective--)
+  * [SITE USER GOAL-](#site-user-goal-)
+  * [SITE OWNER GOAL -](#site-owner-goal--)
+  * [TARGET AUDIENCE -](#target-audience--)
+  * [PROJECT MANAGEMENT -](#project-management--)
+  * [User Stories Link Front end](#user-stories-link-front-end)
+  * [Logged Out Site User](#logged-out-site-user)
+    + [Logging In Site User](#logging-in-site-user)
+    + [Likes](#likes)
+    + [Follow](#follow)
+    + [Comments](#comments)
+    + [Profiles](#profiles)
+- [Direct messaging](#direct-messaging)
+- [SITE CREATION USER STORIES](#site-creation-user-stories)
+- [Sit Structure -](#sit-structure--)
+
+
 
 ## PROJECT  OBJECTIVE - 
 
