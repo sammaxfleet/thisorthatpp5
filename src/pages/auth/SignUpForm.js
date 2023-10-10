@@ -17,31 +17,35 @@ const SignUpForm = () => {
 
           <Form>
   <Form.Row>
-    <Form.Group as={Col} controlId="formGridEmail">
-      <Form.Label>Email</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
+    <Form.Group as={Col} controlId="username">
+      <Form.Label className="d-none">Username</Form.Label>
+      <Form.Control className={styles.Input}
+      type="text" placeholder="username" name="username" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridPassword">
-      <Form.Label>Password</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
+    <Form.Group as={Col} controlId="Password1">
+      <Form.Label className="d-none">Password</Form.Label>
+      <Form.Control className={styles.Input}
+      type="password" placeholder="Password" name="password1"/>
     </Form.Group>
   </Form.Row>
 
   <Form.Group controlId="formGridAddress1">
     <Form.Label>Address</Form.Label>
-    <Form.Control placeholder="1234 Main St" />
+    <Form.Control className={styles.Input}
+    placeholder="1234 Main St" />
   </Form.Group>
 
   <Form.Group controlId="formGridAddress2">
     <Form.Label>Address 2</Form.Label>
-    <Form.Control placeholder="Apartment, studio, or floor" />
+    <Form.Control className={styles.Input}
+    placeholder="Apartment, studio, or floor" />
   </Form.Group>
 
   <Form.Row>
     <Form.Group as={Col} controlId="formGridCity">
       <Form.Label>City</Form.Label>
-      <Form.Control />
+      <Form.Control className={styles.Input} />
     </Form.Group>
 
 
@@ -53,7 +57,7 @@ const SignUpForm = () => {
 
 
   <Button variant="primary" type="submit">
-    Submit
+    Sign Up
   </Button>
 </Form>
 
