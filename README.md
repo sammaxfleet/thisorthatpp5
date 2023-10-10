@@ -17,10 +17,10 @@ Link to live site -
 
 
 
-Link to the live API - https://github.com/sammaxfleet/THISORTHATAPI
+Link to the live API - 
 
 
-Link to the back end repository - 
+Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 
 AM I RSPONSIVE IMAGE.
@@ -251,6 +251,7 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 - JSX further understanding I read this https://legacy.reactjs.org/docs/jsx-in-depth.html
 - Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
+- https://www.postman.com/ testing 
 
 
 
@@ -258,7 +259,7 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 Acknowledgements - 
 
 This fictional site was created for Portfolio Project #5 (Advanced Front End Specialisation) - Diploma in Full Stack Software Development at the Code Institute. 
-Thank you to all the tutors my mentor & everyone on slack for the constant support. 
+Thank you to all the tutors, my mentor & everyone on slack for the constant support. 
   
 
 
