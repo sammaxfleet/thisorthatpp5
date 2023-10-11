@@ -26,8 +26,6 @@
    // Set up axios to include the CSRF token in requests
    axios.defaults.headers.post["X-CSRFToken"] = csrftoken;
  
-   console.log("token outside", csrftoken);
-   console.log("token", csrftoken);
    try {
      const response = await axios.post(
        "/dj-rest-auth/login/",
@@ -69,3 +67,10 @@
      return null;
    }
  };
+
+ export const getAllPost = ()=>{
+
+ }
+ export const getOnePost = ()=>{
+
+ }

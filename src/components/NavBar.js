@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <Navbar className={styles.NavBar} expand="md" fixed="top">
-      <Container class="button">
+      <Container className="button">
         <NavLink to="/">
           <Navbar.Brand>
             <img src={logo} alt="logo" height="45" />

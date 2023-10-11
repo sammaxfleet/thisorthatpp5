@@ -1,31 +1,37 @@
 import React from "react";
 import styles from "../../styles/HomePage.module.css";
+import fleety from "./images/fleety.jpeg"
+import sasha from "./images/sasha.jpeg"
+import bev from "./images/bev.jpeg"
+import mikel from "./images/mikel.jpeg"
+import elon from "./images/elon.jpeg"
+import Zuck from "./images/Zuck.jpeg"
 
 const PopularProfiles = () => {
   const data = [
     {
-      name: "Abc",
-      image: "https://picsum.photos/200/300",
+      name: "Fleety",
+      image: fleety,
     },
     {
-      name: "CYX",
-      image: "https://picsum.photos/200/100",
+      name: "Sasha",
+      image: sasha,
     },
     {
-      name: "Abc",
-      image: "https://picsum.photos/200/340",
+      name: "Bev",
+      image: bev,
     },
     {
-      name: "Abc",
-      image: "https://picsum.photos/200/310",
+      name: "Mikel",
+      image: mikel,
     },
     {
-      name: "Abc",
-      image: "https://picsum.photos/200/360",
+      name: "Elon",
+      image: elon,
     },
     {
-      name: "Abc",
-      image: "https://picsum.photos/200/390",
+      name: "Mark",
+      image: Zuck,
     },
   ];
 

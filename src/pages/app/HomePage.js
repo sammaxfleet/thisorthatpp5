@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "./searchbar"
 import PopularProfiles from "./PopularProfiles";
 import Posts from "./Posts";
 

@@ -3,6 +3,12 @@ import Card from "react-bootstrap/Card";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import styles from "../../styles/HomePage.module.css";
+import kanyewest  from "./images/kanyewest.jpeg"
+import rashford  from "./images/rashford.jpeg"
+import biebs from "./images/biebs.jpeg"
+import syd from "./images/syd.jpeg"
+import saka from "./images/saka.jpeg"
+import pharrel from "./images/pharrel.jpeg"
 
 const Posts = () => {
   const data = [
@@ -10,30 +16,57 @@ const Posts = () => {
       owner: "Fleety",
       created_at: "2021-10-03",
       title: "Kanye West",
-      content: "This is amazinng Event",
-      image: "assets/kanye.jpeg",
-      likes: "12",
+      content: "Fashion",
+      image: kanyewest,
+            likes: "12",
       comments: ["abc", "xyz"],
     },
     {
-      owner: "Fleety",
+      owner: "Sasha",
 
       created_at: "2021-10-03",
-      title: "Hello World",
-      content: "This is amazinng Event",
-      image: "https://picsum.photos/200/120",
+      title: "Marcus Rashford",
+      content: "Burbbery Campaign",
+      image: rashford,
       likes: "12",
       comments: ["abc", "xyz"],
     },
     {
-      owner: "Fleetygram",
+      owner: "Sam",
       created_at: "2021-10-03",
-      title: "Best Event",
-      content: "This is amazinng Event",
-      image: "https://picsum.photos/200/160",
+      title: "Justin Bieber",
+      content: "Street Wear",
+      image: biebs,
       likes: "12",
       comments: ["abc", "xyz"],
     },
+    {
+        owner: "Frank",
+        created_at: "2021-10-03",
+        title: "SYD",
+        content: "Smart wear",
+        image: syd,
+        likes: "12",
+        comments: ["abc", "xyz"],
+      },
+      {
+        owner: "Bob",
+        created_at: "2021-10-03",
+        title: "Pharrel",
+        content: "Smart wear",
+        image: pharrel,
+        likes: "12",
+        comments: ["abc", "xyz"],
+      },
+      {
+        owner: "Tom",
+        created_at: "2021-10-03",
+        title: "Saka",
+        content: "Smart wear",
+        image: saka,
+        likes: "12",
+        comments: ["abc", "xyz"],
+      },
   ];
 
   const [likes, setLikes] = useState(0);
@@ -106,7 +139,8 @@ const Posts = () => {
               variant="top"
               src={post.image}
               style={{
-                width: "600px",
+                width: "300px",
+                marginLeft:"150px",
                 height: "400px",
               }}
             />

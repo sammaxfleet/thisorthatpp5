@@ -34,6 +34,8 @@ const SignUpForm = () => {
       data.get("password2")
     );
 
+
+    // 200-299
     if (response) {
       if (response.status === 201) {
         setAlertMessage("Signup successful");

@@ -5,7 +5,7 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import sidePicture from "../../components/assets/fashionbakayo.jpg";
-import { Spin } from "antd";
+
 import { useHistory } from "react-router-dom";
 
 import {
@@ -41,7 +41,7 @@ const SignInForm = () => {
         localStorage.setItem("user", JSON.stringify(response.data));
         setTimeout(() => {
           navigate.push("/homepage");
-        }, 2000);
+        }, 2000); // 1000ms= 1s
       }
     } else {
       console.log(response, "response");
