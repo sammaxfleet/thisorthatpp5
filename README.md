@@ -164,7 +164,7 @@ MileStone - Design | User Stories - Wireframes
 
 User Stories -
 
-As the developer I can create wireframes to make the website easier to build, for time management sticking to the agile approach. MUST HAVE
+1. As the developer I can create wireframes to make the website easier to build, for time management sticking to the agile approach. MUST HAVE
 
 
 Epic 2 -
@@ -174,44 +174,54 @@ MileStone - Installation | User Stories - Install Django
 User Stories -
 
 1. Install Django smoothly, & any plug ins needed. MUST HAVE
-2. Connect to Heroku
-3. Connect Pep8 & prettier
+2. Connect to Heroku MUST HAVE
+3. Connect Pep8 & prettier SHOULD HAVE
 
 
 Epic 3 - 
 
-Milestone - Installation Back End
+Milestone - Installation Back End 
 
 User stories -
-1. Get Api working
-2. Deploy to heroku
-3. Turn debug to FALSE
-4. Secret Key 
+
+1. Get Api working - MUST HAVE
+2. Deploy to heroku - MUST HAVE
+3. Turn debug to FALSE - MUST HAVE
+4. Secret Key  - MUST HAVE
 
 
+Epic 4 - 
+
+Milestone - Design 
+
+User Stories - Likes when logged in or out is the same outcome. 
+
+1.  The user can like a Post - MUST HAVE
+2.  The User can see the amount of Likes - SHOULD HAVE
+3.  Can Unlike - SHOULD HAVE
 
 
-Epic 4 - DEsign
-
-Milestone - Likes when logged in or out is the same utcome. 
-
-1.  The user can like a Post 
-2.  The User can ee the amount of Likes
-3.  Can Unlike
-
-### Follow
+User stories - Following only when logged in. 
   
-- Can follow another User
-- Can unfollow a User
+- Can follow another User - SHOULD HAVE 
+- Can unfollow a User - SHOULD HAVE
+- Can't follow when no profile exists - SHOULD HAVE 
+- Can follow most popular users at the top of page - SHOULD HAVE 
 
-### Comments
+User Stories - Comments
     
-- Edit own Comments
-- Can Delete a comment
-- Can view other peples comments
-- 
+- Edit own Comments - SHOULD HAVE 
+- Can Delete a comment - SHOULD HAVE 
+- Can view other poeples comments ( when not logged in) - SHOULD HAVE 
+- Can't make a comment if not logged in - SHOULD HAVE
 
-### Profiles
+
+
+EPIC 5 - 
+
+Milestone - CRUD PROFILES
+
+USER STORIES - PROFILES
 
   - I can view most popular profile
   - View a specific profile page
