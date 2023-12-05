@@ -241,6 +241,19 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 
 
 # Credits - 
+
+- Balsamiq
+- Heroku
+- Font Awesome
+- React Bootstrap
+- W3Schools
+- Cloudinary
+- Lucidchart
+- Google Fonts
+- React Documentation
+- Pexels
+- Sooraj MV on Dribbble
+- Favicon generator
 - Google Images for any images on the site
 - lOGO - DRIBBLE.COM
 - Tutor support for various questions on building both repositories. @CodeInstitute particularly help with building the API.
@@ -252,6 +265,18 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 - Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
 - https://www.postman.com/ testing 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
