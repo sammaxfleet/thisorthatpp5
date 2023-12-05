@@ -84,7 +84,6 @@ Content should be well structured and of high quality, navigation and site funct
   
    
 
-
 ## TARGET AUDIENCE -
 
 The target audience is aimed at the fashion community. 
@@ -100,7 +99,19 @@ All the main features of the application were recorded as epics and then refined
 These user stories were created and stored as GitHub issues and then mapped into iterations to help to plan the project and allocate the workload. 
 
 
-## User Stories
+# AGILE METHODOLOGY
+
+I’ve used the MoSCoW prioritisation technique for the user stories.
+
+Must Have:
+Should Have:
+Could Have:
+Won’t Have:
+
+
+
+
+# User Stories
 
 Below I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
 The user stories were then tested and confirmed in the Testing section.
@@ -131,16 +142,62 @@ All of the above and..
 - Can delete/ edit own posts.
 - Can follow other users. 
 
+# EPICS/ MILESTONES & USER STORIES
 
+I used the following Milestones as Epics when creating the project. 
+You can fine here..... in a Kanban board display.
 
-
+1. Installation Back End API
+2. Installation Front End
+3. Design
+4. CRUD User Account
+5. Sign Up/ Log In Functionality
+6. Testing/ Site functionality.
+   
 ## User Stories Breakdown:
 
 
-### Likes
-- can like a Post 
-- can csee amount of  likes
 
+EPIC 1
+
+MileStone - Design | User Stories - Wireframes
+
+User Stories -
+
+As the developer I can create wireframes to make the website easier to build, for time management sticking to the agile approach. MUST HAVE
+
+
+Epic 2 -
+
+MileStone - Installation | User Stories - Install Django
+
+User Stories -
+
+1. Install Django smoothly, & any plug ins needed. MUST HAVE
+2. Connect to Heroku
+3. Connect Pep8 & prettier
+
+
+Epic 3 - 
+
+Milestone - Installation Back End
+
+User stories -
+1. Get Api working
+2. Deploy to heroku
+3. Turn debug to FALSE
+4. Secret Key 
+
+
+
+
+Epic 4 - DEsign
+
+Milestone - Likes when logged in or out is the same utcome. 
+
+1.  The user can like a Post 
+2.  The User can ee the amount of Likes
+3.  Can Unlike
 
 ### Follow
   
