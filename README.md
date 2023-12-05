@@ -10,7 +10,7 @@ This project was built as the final portfolio submission for the @codeinstitute 
 The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
 
 
-# Linkt to Project
+# Links to Project:
 
 More info on the back end readme can be found here - https://github.com/sammaxfleet/THISORTHATAPI/blob/main/README.md
 
