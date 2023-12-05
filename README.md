@@ -101,6 +101,10 @@ These user stories were created and stored as GitHub issues and then mapped into
 
 # AGILE METHODOLOGY
 
+by using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. 
+Due to the time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great for app design. 
+The project displays this by having User stories in the Done section and the ones which were decided to be left for future, put in the future implementations section of the readme.
+
 I’ve used the MoSCoW prioritisation technique for the user stories.
 
 Must Have:
@@ -256,7 +260,8 @@ Milestone -  Design
 7. Several different pages - WON'T HAVE
 
 
-   EPIC 8 - DESIGN
+
+EPIC 8 - DESIGN
 
    MILESTONE - Home page design
 
@@ -272,18 +277,33 @@ There are 20 celebrities to compare style.
 7. Be able to Sign in/out - MUST HAVE
 8. Be able to log in/out. - MUST HAVE
 
+# CRUD Functionality 
 
+CRUD Functionality
+Tick It handles data with full CRUD Functionality:
+
+Create - Users can create, an account, profile, tasks, comments, packs, contact messages and watch objects.
+Read - Users can view the tasks, comments, packs of other users and also the profiles of these users.
+Update - Users can update their profile, password, posted tasks, packs and watch status of tasks via the interactive forms and buttons on the site.
+Delete - Users can delete tasks, comments, packs and watch objects via the interactive buttons on the site.
 
 
 
 # Site Structure - 
 
-ThisorThat is split up in two parts: Either when the user is logged out or when the user is logged in.
-Depending on login status different page states are available for the user.
-When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. When the user is logged in Commentss, Signout and Profile Page also become available.
+'This or That' depending on login status different page states are available for the user.
+ When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. 
+ When the user is logged in Comments, Signout and Profile Page also become available.
+
+ The Site has 3 pages
+
+ HOME
+ SIGN IN
+ SIGN UP
 
 
 # Colour Scheme - 
+
 I took inspiration from fashion blogs, and stores like Zara & Arte. Which are sleek, simple & focus on the photo. 
 Where this is a white background as full focus goes on the image, the user is then drawn to the content. Two contrasting colours are used to naviagte through the website. 
 
@@ -309,6 +329,7 @@ Users who are new to the site, or haven't previously created an account can clic
 
 
 
+# TESTING
 
 
 # Deployment - 
