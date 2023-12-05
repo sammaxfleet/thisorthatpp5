@@ -109,8 +109,6 @@ Could Have:
 Won’t Have:
 
 
-
-
 # User Stories
 
 Below I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
@@ -203,17 +201,17 @@ User Stories - Likes when logged in or out is the same outcome.
 
 User stories - Following only when logged in. 
   
-- Can follow another User - SHOULD HAVE 
-- Can unfollow a User - SHOULD HAVE
-- Can't follow when no profile exists - SHOULD HAVE 
-- Can follow most popular users at the top of page - SHOULD HAVE 
+1. Can follow another User - SHOULD HAVE 
+2. Can unfollow a User - SHOULD HAVE
+3. Can't follow when no profile exists - SHOULD HAVE 
+4. Can follow most popular users at the top of page - SHOULD HAVE 
 
 User Stories - Comments
     
-- Edit own Comments - SHOULD HAVE 
-- Can Delete a comment - SHOULD HAVE 
-- Can view other poeples comments ( when not logged in) - SHOULD HAVE 
-- Can't make a comment if not logged in - SHOULD HAVE
+1. Edit own Comments - SHOULD HAVE 
+2. Can Delete a comment - SHOULD HAVE 
+3. Can view other poeples comments ( when not logged in) - SHOULD HAVE 
+4. Can't make a comment if not logged in - SHOULD HAVE
 
 
 
@@ -223,39 +221,59 @@ Milestone - CRUD PROFILES
 
 USER STORIES - PROFILES
 
-  - I can view most popular profile
-  - View a specific profile page
-  - Edit my own profile Page
-  - Can change name and password for log in details if want to make more secure.
+  1. I can view most popular profile - SHOULD HAVE
+  2. View a specific profile page - SHOULD HAVE 
+  3. Edit my own profile Page - MUST HAVE 
+  4. Can change name and password for log in details if want to make more secure. - MUST HAVE
 
-# Direct messaging
-    - Can view messages n my profile page and see what others have sent me
-    - Can message another used and discuss opinions 
+USER STORIES -  DIRECT MESSAGING
+   1.  - Can view messages On my profile page and see what others have sent me  -COULD HAVE 
+   2. - Can message another user and discuss opinions - COULD HAVE
+     
 
 
-# SITE CREATION USER STORIES 
+EPIC 6 - 
 
-- Find a Logo
+MileStone - SIGN UP/ LOG IN
 
-- Nav Bar
+USER STORIES - SIGN UP/ LOG IN
 
-- Choose Colour scheme
+1. Have a sign up page
+2. Have a seperate log inpage
 
-- Create CRUD for User Account
 
-- Create 3 pages for the site
+EPIC 7 -  Design
 
-- Retrieve images from Google for comparison 
+
+Milestone -  Design
+
+1. Use colours that have continuity and capture the feeling of the site SHOULD HAVE
+2. Get inspo from fashion blogs for the layout SHOULD HAVE
+3. Images on the -site MUST HAVE
+4. Different fonts COULD HAVE
+5. Describe what the site is -SHOULD HAVE
+6. Back ground colour - SHOULD HAVE
+7. Several different pages - WON'T HAVE
+
+
+   EPIC 8 - DESIGN
+
+   MILESTONE - Home page design
+
+User Stories: 
+1. Find a Logo - MUST HAVE
+2. Nav Bar - MUST HAVE 
+3. Choose Colour Scheme - MUST HAVE 
+4. Create 3 pages for the site 0 MUST HAVE 
+5. Retrieve images from Google for comparison - MUST HAVE
 Choose which celebrities it will feature
-There are 20 celebrities to compare style. 
+There are 20 celebrities to compare style.
+6. - Add like tab, comment and follow. - MUST HAVE
+7. Be able to Sign in/out - MUST HAVE
+8. Be able to log in/out. - MUST HAVE
 
-- Add like tab
 
-- Be able to Sign in
 
--  Be able to Sign up
-
-- Be able to log out
 
 
 # Site Structure - 
