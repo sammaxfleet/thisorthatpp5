@@ -13,11 +13,11 @@ The project has been split into 2 parts- the front end built with react and the 
 More info on the back end readme can be found here - 
 
 
-Link to live site -
+Link to live site - https://thisorthatpp5-9e3adcfaf8e9.herokuapp.com/
 
 
 
-Link to the live API - 
+Link to the live API - https://thisorthatapi-56bb400a2b0e.herokuapp.com/
 
 
 Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
@@ -51,33 +51,46 @@ TABLE OF CONTENTS -
 
 ## PROJECT  OBJECTIVE - 
 
- To provide a stable platform for the fashion enthusiasts, to be able to find interest for inspiration & be able to
-interact with the platform choosing which outfit they like plus being able to comment on the style. 
+To provide a stable, interactive platform for fashion enthusiasts.
+For the user to find fashion inspiration & be able to like & comment on their favourites. 
+For the site to give the user the ability to interact with other users, create a profile & also Upload. 
 
 
 ## SITE USER GOAL- 
 
-The site user goal
-Breaks down into a few things
+Breaking down the sit into a few main goals:
 
-Fashion Inspiration
-Network and interact with other community members
-Fashion research
- Comment their views  and voice their opinion on fashion 
-Check out their favourite celebrities style. 
-
+1 - Fashion Inspiration
+2-  Network and interact with other community members
+3 - Fashion research
+4-  Celebrity styling 
+5 - To be able to create a Profile and upload your inspiration.  
+6 - Mobile View & tablet view to be fully responsive. 
 
 
 ## SITE OWNER GOAL - 
 
-To provide a stable and enjoyable user experience that encourages continued user interaction and participation. The platform should be engaging and welcoming to new users. Content should be well structured and of high quality, navigation and site functionality should be intuitive and accessible. 
+To provide a stable and enjoyable user experience that encourages continued user interaction and participation. 
+The platform should be engaging and welcoming to new users, it should be easy to sign up!
+Content should be well structured and of high quality, navigation and site functionality should be intuitive and accessible. 
 
+1. - Tasks filtering by keyword search.
+2. - Responsiveness to allow pleasant usage of the app across a range of devices with varying display sizes.
+3. - CRUD functionality for comments, uploads & to alter their profile.
+4. - User Authentication
+5. - The site to be simple and use intuitive navigation across all pages.
+6. - Be able to 'like' and 'Comment'.
+  
+   
 
 
 ## TARGET AUDIENCE -
-Target audience is anyone who has an interest in fashion. The fashion community has been building online now with OOTD hash tags and people loving to show their outfits for an occasion wether it’s a birthday or your favourite night out . 
-This can bring a lot of inspiration into the space. 
+
+The target audience is aimed at the fashion community. 
+Age wise it's suitable for teenagers upto 40's. 
+The fashion community has been building online now with 'OOTD' hash tags and people loving to show their fits for an occasion wether it’s a birthday or your favourite night out.
 Users could be male or female, there is an equal spread of fashion content on there. 
+
 
 ## PROJECT MANAGEMENT - 
 
@@ -87,10 +100,11 @@ These user stories were created and stored as GitHub issues and then mapped into
 
 
 
-
 ## User Stories Link Front end 
 
-Here I have listed the main user stories for a user who is not logged in, or has no account and a logged in user. These user stories were then tested and confirmed in the Testing section.
+Here I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
+The user stories were then tested and confirmed in the Testing section.
+
 
 ## Logged Out Site User
 
@@ -101,18 +115,27 @@ Here I have listed the main user stories for a user who is not logged in, or has
 - Can view the highest liked or commented posts
 - Can View Popular Profiles
 - Can Navigate through Pages
-- Can filter by Celebrity and Fashion Brand
-- Can search posts by Date & Profile
+- Can filter by Celebrity
+- Can filter by UserName, Popularity, Date, Title, Content or Category.
 - Can View comments to see what people think
 - Can Like Posts
 
 
 ### Logging In Site User 
 
+All of the above and..
 
 - Ability to Log in smoothly
 - Log out smoothly
-- Can Make my own post
+- Can Make my own posts
+- Can delete/ edit own posts.
+- Can follow other users. 
+
+
+
+
+User Stories:
+
 
 ### Likes
 - can like a Post 
