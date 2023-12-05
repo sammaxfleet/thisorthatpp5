@@ -6,15 +6,16 @@ The user gets to prefer which outfit a celbrity is wearing.
 It's a battle of style, which one is your taste?... Which then gives the users space to comment their opinion and connect with the 'This Or That' Community. 
 
 
-
 This project was built as the final portfolio submission for the @codeinstitute higher national diploma full stack software development.
 The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
 
-More info on the back end readme can be found here - 
+
+# Linkt to Project
+
+More info on the back end readme can be found here - https://github.com/sammaxfleet/THISORTHATAPI/blob/main/README.md
 
 
 Link to live site - https://thisorthatpp5-9e3adcfaf8e9.herokuapp.com/
-
 
 
 Link to the live API - https://thisorthatapi-56bb400a2b0e.herokuapp.com/
@@ -23,7 +24,7 @@ Link to the live API - https://thisorthatapi-56bb400a2b0e.herokuapp.com/
 Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 
-AM I RSPONSIVE IMAGE.
+# AM I RSPONSIVE IMAGE.
 
 Wire Frames - [THIS OR THAT WIREFRAMES 2.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/12831129/THIS.OR.THAT.WIREFRAMES.2.pdf)
 
@@ -99,10 +100,9 @@ All the main features of the application were recorded as epics and then refined
 These user stories were created and stored as GitHub issues and then mapped into iterations to help to plan the project and allocate the workload. 
 
 
+## User Stories
 
-## User Stories Link Front end 
-
-Here I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
+Below I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
 The user stories were then tested and confirmed in the Testing section.
 
 
@@ -121,7 +121,7 @@ The user stories were then tested and confirmed in the Testing section.
 - Can Like Posts
 
 
-### Logging In Site User 
+### Logged In Site User 
 
 All of the above and..
 
@@ -134,7 +134,7 @@ All of the above and..
 
 
 
-User Stories:
+## User Stories Breakdown:
 
 
 ### Likes
