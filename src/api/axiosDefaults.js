@@ -1,7 +1,6 @@
  import axios from "axios"
- axios.defaults.baseURL = 'https://thisorthatpp5-9e3adcfaf8e9.herokuapp.com/'
- axios.defaults.headers.post["Content-Type"] = "application/json";
- axios.defaults.withCredentials = true;
+ axios.defaults.baseURL = 'https://thisorthatapi-56bb400a2b0e.herokuapp.com'
+
  
  // Get CSRF token from the csrftoken cookie
  function getCookie(name) {
@@ -21,10 +20,7 @@
  
  // Login functionality
  export const login = async (username, password) => {
-   const csrftoken = getCookie("csrftoken");
- 
-   // Set up axios to include the CSRF token in requests
-   axios.defaults.headers.post["X-CSRFToken"] = csrftoken;
+
  
    try {
      const response = await axios.post(
@@ -34,7 +30,9 @@
          password,
        },
        {
-         withCredentials: true,
+         headers:{
+          "Content-Type":"application/json"
+         }
        }
      );
  
@@ -54,8 +52,10 @@
          password1,
          password2,
        },
-       {
-         withCredentials: true,
+{
+         headers:{
+          "Content-Type":"application/json"
+         }
        }
      );
  
