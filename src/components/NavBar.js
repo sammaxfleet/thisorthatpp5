@@ -38,8 +38,15 @@ const NavBar = ({isLoggedIn,setIsLoggedIn}) => {
 
                 }}
               >
-                <i className="fas fa-user"></i>Logout
+                <i className="fas fa-sign-out"></i>Logout
               </span>
+              <NavLink
+                className={styles.NavLink}
+                activeClassName={styles.Active}
+              to={"/profiles/"+user.user.profile_id}
+              >
+                <i className="fas fa-user"></i>Profile
+              </NavLink>
               </>
           
               

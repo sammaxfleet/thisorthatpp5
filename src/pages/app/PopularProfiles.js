@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import styles from "../../styles/HomePage.module.css";
 import fleety from "./images/fleety.jpeg"
 import sasha from "./images/sasha.jpeg"
@@ -6,8 +6,20 @@ import bev from "./images/bev.jpeg"
 import mikel from "./images/mikel.jpeg"
 import elon from "./images/elon.jpeg"
 import Zuck from "./images/Zuck.jpeg"
+import axios from "axios";
 
 const PopularProfiles = () => {
+  const[profilesData,setProfilesData]=useState(null);
+  const getProfiles =async()=>{
+    const res = await axios.get('https://thisorthatapi-56bb400a2b0e.herokuapp.com/profiles/')
+    console.log(res,'res')
+    setProfilesData(res.data)
+  }
+
+  useEffect(()=>{
+    getProfiles();
+    console.log(profilesData)
+  },[])
   const data = [
     {
       name: "Fleety",
@@ -47,9 +59,9 @@ const PopularProfiles = () => {
           alignItems: "center",
         }}
       >
-        {data.map((item) => (
+        {profilesData && profilesData.results.map((item) => (
           <div
-            key={item.name}
+            key={item.owner}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -66,7 +78,7 @@ const PopularProfiles = () => {
                 objectFit: "cover",
               }}
             />
-            <p>{item.name}</p>
+            <p>{item.owner}</p>
           </div>
         ))}
       </div>
