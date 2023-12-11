@@ -4,7 +4,7 @@ import logo from "./assets/thisorthat.jpg";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({isLoggedIn,setIsLoggedIn}) => {
   const user = JSON.parse(localStorage.getItem("user"));
 
   return (
@@ -27,17 +27,25 @@ const NavBar = () => {
               <i className="fas fa-home"></i>Home
             </NavLink>
 
-            {user && (
-              <NavLink
+            {isLoggedIn && (
+              <>
+                  <span
                 className={styles.NavLink}
                 activeClassName={styles.Active}
-                to="/signin"
+                onClick={()=>{
+                  localStorage.removeItem("user")
+                  setIsLoggedIn(false)
+
+                }}
               >
                 <i className="fas fa-user"></i>Logout
-              </NavLink>
+              </span>
+              </>
+          
+              
             )}
 
-            {!user && (
+            {!isLoggedIn && (
               <>
                 <NavLink
                   className={styles.NavLink}

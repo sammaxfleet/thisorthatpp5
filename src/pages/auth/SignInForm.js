@@ -19,7 +19,7 @@ import {
 } from "react-bootstrap";
 import { login } from "../../api/axiosDefaults";
 
-const SignInForm = () => {
+const SignInForm = ({setIsLoggedIn}) => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [variant, setVarient] = useState(null);
@@ -39,12 +39,14 @@ const SignInForm = () => {
         setVarient("success");
 
         localStorage.setItem("user", JSON.stringify(response.data));
+        setIsLoggedIn(true)
         setTimeout(() => {
           navigate.push("/homepage");
         }, 2000); // 1000ms= 1s
       }
     } else {
       console.log(response, "response");
+        setIsLoggedIn(false)
       setAlertMessage("Invalid credentials");
       setShowAlert(true);
       setVarient("danger");

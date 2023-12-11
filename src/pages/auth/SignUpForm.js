@@ -17,7 +17,7 @@ import {
 } from "react-bootstrap";
 import { signup } from "../../api/axiosDefaults";
 
-const SignUpForm = () => {
+const SignUpForm = ({setIsLoggedIn}) => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [variant, setVarient] = useState(null);
@@ -47,6 +47,7 @@ const SignUpForm = () => {
       }
     } else {
       console.log(response, "response");
+        setIsLoggedIn(false)
       setAlertMessage("Internal server error");
       setVarient("danger");
       setShowAlert(true);
