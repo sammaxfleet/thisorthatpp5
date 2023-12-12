@@ -5,7 +5,7 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import sidePicture from "../../components/assets/kanye.jpeg";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   Form,
   Button,
@@ -17,12 +17,12 @@ import {
 } from "react-bootstrap";
 import { signup } from "../../api/axiosDefaults";
 
-const SignUpForm = ({setIsLoggedIn}) => {
+const SignUpForm = ({ setIsLoggedIn }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [variant, setVarient] = useState(null);
 
-  const navigate = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +47,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
       }
     } else {
       console.log(response, "response");
-        setIsLoggedIn(false)
+      setIsLoggedIn(false)
       setAlertMessage("Internal server error");
       setVarient("danger");
       setShowAlert(true);

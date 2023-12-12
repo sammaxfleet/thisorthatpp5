@@ -6,7 +6,7 @@ import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import sidePicture from "../../components/assets/fashionbakayo.jpg";
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   Form,
@@ -19,12 +19,12 @@ import {
 } from "react-bootstrap";
 import { login } from "../../api/axiosDefaults";
 
-const SignInForm = ({setIsLoggedIn}) => {
+const SignInForm = ({ setIsLoggedIn }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [variant, setVarient] = useState(null);
 
-  const navigate = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,7 +46,7 @@ const SignInForm = ({setIsLoggedIn}) => {
       }
     } else {
       console.log(response, "response");
-        setIsLoggedIn(false)
+      setIsLoggedIn(false)
       setAlertMessage("Invalid credentials");
       setShowAlert(true);
       setVarient("danger");

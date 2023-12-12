@@ -21,7 +21,7 @@ const Profiles = () => {
         getUserProfileDetails()
     }, [slug])
     return (
-        // <div className={styles.container}>
+        // <div className={"bg-red-400 text-lg"}>
         //     <div className={styles.profileSection}>
 
         //     </div>
@@ -52,7 +52,7 @@ const Profiles = () => {
                         </Col>
                         <Col xs={3} className="my-2">
                             <div>{profile?.following_count}</div>
-                            <div>following</div>
+                            <div className='bg-red-400'>following</div>
                         </Col>
                     </Row>
                 </Col>
