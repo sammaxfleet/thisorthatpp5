@@ -1,66 +1,54 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Alert from 'react-bootstrap/Alert';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+import { login } from "../../api/axiosDefaults";
 import styles from "../../styles/SignInUpForm.module.css";
-import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import sidePicture from "../../components/assets/fashionbakayo.jpg";
-
-import { useNavigate } from "react-router-dom";
-
-import {
-  Form,
-  Button,
-  Image,
-  Col,
-  Row,
-  Container,
-  Alert,
-} from "react-bootstrap";
-import { login } from "../../api/axiosDefaults";
 
 const SignInForm = ({ setIsLoggedIn }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
-  const [variant, setVarient] = useState(null);
+  const [variant, setVariant] = useState(null);
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
+    const formData = new FormData(e.target);
 
-    const response = await login(data.get("username"), data.get("password1"));
+    const response = await login(formData.get("username"), formData.get("password1"));
 
     if (response) {
       if (response.status === 200) {
         setAlertMessage("Login successful");
         setShowAlert(true);
-        setVarient("success");
+        setVariant("success");
 
         localStorage.setItem("user", JSON.stringify(response.data));
-        setIsLoggedIn(true)
+        setIsLoggedIn(true);
         setTimeout(() => {
-          navigate.push("/homepage");
-        }, 2000); // 1000ms= 1s
+          navigate("/homepage");
+        }, 2000); // 1000ms = 1s
       }
     } else {
-      console.log(response, "response");
-      setIsLoggedIn(false)
+      setIsLoggedIn(false);
       setAlertMessage("Invalid credentials");
       setShowAlert(true);
-      setVarient("danger");
+      setVariant("danger");
     }
   };
 
   return (
     <div>
       {showAlert && (
-        <Alert
-          variant={variant}
-          onClose={() => setShowAlert(false)}
-          dismissible
-        >
+        <Alert variant={variant} onClose={() => setShowAlert(false)} dismissible>
           {alertMessage}
         </Alert>
       )}
@@ -84,7 +72,7 @@ const SignInForm = ({ setIsLoggedIn }) => {
               </Form.Row>
 
               <Form.Row>
-                <Form.Group as={Col} controlId="Password1">
+                <Form.Group as={Col} controlId="password1">
                   <Form.Label className="d-none">Password</Form.Label>
                   <Form.Control
                     className={styles.Input}
@@ -106,10 +94,7 @@ const SignInForm = ({ setIsLoggedIn }) => {
             </Link>
           </Container>
         </Col>
-        <Col
-          md={6}
-          className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
-        >
+        <Col md={6} className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}>
           <Image className={`${appStyles.FillerImage}`} src={sidePicture} />
         </Col>
       </Row>
