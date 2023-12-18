@@ -112,6 +112,10 @@ Should Have:
 Could Have:
 Won’t Have:
 
+Link to user stories; https://github.com/users/sammaxfleet/projects/6
+
+<img width="1437" alt="Screenshot 2023-12-18 at 10 46 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3dd788ac-8934-4685-a9a4-7921ae5a12c5">
+
 
 # User Stories
 
@@ -157,7 +161,6 @@ You can fine here..... in a Kanban board display.
 6. Testing/ Site functionality.
    
 ## User Stories Breakdown:
-
 
 
 EPIC 1
