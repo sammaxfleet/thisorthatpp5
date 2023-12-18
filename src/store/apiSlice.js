@@ -17,7 +17,7 @@ export const thisOrThatApi = createApi({
             return headers
         }
     }),
-    tagTypes: ['Profiles','Posts'],
+    tagTypes: ['Profiles', 'Posts'],
     endpoints: (builder) => ({
         getProfiles: builder.query({
             query: (name) => `profiles`,
@@ -31,11 +31,15 @@ export const thisOrThatApi = createApi({
             query: () => `posts`,
             providesTags: ['Posts'],
         }),
+        getProfilePosts: builder.query({
+            query: (userId) => `posts/?owner__profile=${userId}`,
+            providesTags: ["Posts"]
+        })
 
- 
+
     }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetSingleProfileQuery,useGetProfilesQuery } = thisOrThatApi
+export const { useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi

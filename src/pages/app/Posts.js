@@ -3,71 +3,76 @@ import Card from "react-bootstrap/Card";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import styles from "../../styles/HomePage.module.css";
-import kanyewest  from "./images/kanyewest.jpeg"
-import rashford  from "./images/rashford.jpeg"
+import kanyewest from "./images/kanyewest.jpeg"
+import rashford from "./images/rashford.jpeg"
 import biebs from "./images/biebs.jpeg"
 import syd from "./images/syd.jpeg"
 import saka from "./images/saka.jpeg"
 import pharrel from "./images/pharrel.jpeg"
+import { useGetPostsQuery } from "../../store/apiSlice";
 
 const Posts = () => {
-  const data = [
-    {
-      owner: "Fleety",
-      created_at: "2021-10-03",
-      title: "Kanye West",
-      content: "Fashion",
-      image: kanyewest,
-            likes: "12",
-      comments: ["abc", "xyz"],
-    },
-    {
-      owner: "Sasha",
+  const { data, isLoading, isError } = useGetPostsQuery({
+    refetchOnFocus:true,
+  
+  });
+  // const data = [
+  //   {
+  //     owner: "Fleety",
+  //     created_at: "2021-10-03",
+  //     title: "Kanye West",
+  //     content: "Fashion",
+  //     image: kanyewest,
+  //           likes: "12",
+  //     comments: ["abc", "xyz"],
+  //   },
+  //   {
+  //     owner: "Sasha",
 
-      created_at: "2021-10-03",
-      title: "Marcus Rashford",
-      content: "Burbbery Campaign",
-      image: rashford,
-      likes: "12",
-      comments: ["abc", "xyz"],
-    },
-    {
-      owner: "Sam",
-      created_at: "2021-10-03",
-      title: "Justin Bieber",
-      content: "Street Wear",
-      image: biebs,
-      likes: "12",
-      comments: ["abc", "xyz"],
-    },
-    {
-        owner: "Frank",
-        created_at: "2021-10-03",
-        title: "SYD",
-        content: "Smart wear",
-        image: syd,
-        likes: "12",
-        comments: ["abc", "xyz"],
-      },
-      {
-        owner: "Bob",
-        created_at: "2021-10-03",
-        title: "Pharrel",
-        content: "Smart wear",
-        image: pharrel,
-        likes: "12",
-        comments: ["abc", "xyz"],
-      },
-      {
-        owner: "Tom",
-        created_at: "2021-10-03",
-        title: "Saka",
-        content: "Smart wear",
-        image: saka,
-        likes: "12",
-        comments: ["abc", "xyz"],
-      },
-  ];
+  //     created_at: "2021-10-03",
+  //     title: "Marcus Rashford",
+  //     content: "Burbbery Campaign",
+  //     image: rashford,
+  //     likes: "12",
+  //     comments: ["abc", "xyz"],
+  //   },
+  //   {
+  //     owner: "Sam",
+  //     created_at: "2021-10-03",
+  //     title: "Justin Bieber",
+  //     content: "Street Wear",
+  //     image: biebs,
+  //     likes: "12",
+  //     comments: ["abc", "xyz"],
+  //   },
+  //   {
+  //       owner: "Frank",
+  //       created_at: "2021-10-03",
+  //       title: "SYD",
+  //       content: "Smart wear",
+  //       image: syd,
+  //       likes: "12",
+  //       comments: ["abc", "xyz"],
+  //     },
+  //     {
+  //       owner: "Bob",
+  //       created_at: "2021-10-03",
+  //       title: "Pharrel",
+  //       content: "Smart wear",
+  //       image: pharrel,
+  //       likes: "12",
+  //       comments: ["abc", "xyz"],
+  //     },
+  //     {
+  //       owner: "Tom",
+  //       created_at: "2021-10-03",
+  //       title: "Saka",
+  //       content: "Smart wear",
+  //       image: saka,
+  //       likes: "12",
+  //       comments: ["abc", "xyz"],
+  //     },
+  // ];
 
   const [likes, setLikes] = useState(0);
   const [comments, setComments] = useState([]);
@@ -90,7 +95,7 @@ const Posts = () => {
         marginLeft: "80px",
       }}
     >
-      {data.map((post) => {
+      { data && data.results.map((post) => {
         return (
           <Card style={{ width: "600px", marginBottom: "20px" }}>
             {/* User Circle */}
@@ -103,7 +108,7 @@ const Posts = () => {
                 }}
               >
                 <img
-                  src="https://picsum.photos/200/300"
+                  src={post.profile_image}
                   className="rounded-circle"
                   alt="user"
                   width={50}
@@ -140,7 +145,7 @@ const Posts = () => {
               src={post.image}
               style={{
                 width: "300px",
-                marginLeft:"150px",
+                marginLeft: "150px",
                 height: "400px",
               }}
             />
@@ -165,7 +170,7 @@ const Posts = () => {
                     <span role="img" aria-label="like" className={styles.emoji}>
                       👍
                     </span>{" "}
-                    {likes} likes
+                    {post.likes_count} likes
                   </p>
                   <p
                     style={{
@@ -180,7 +185,7 @@ const Posts = () => {
                     >
                       💬
                     </span>{" "}
-                    {comments.length} comments
+                    {post.comments_count} comments
                   </p>
                 </div>
                 <div>
@@ -199,7 +204,7 @@ const Posts = () => {
                 </div>
               </div>
               <div>
-                {comments.map((comment) => {
+                {/* {comments.map((comment) => {
                   return (
                     <div
                       style={{
@@ -231,7 +236,7 @@ const Posts = () => {
                       </p>
                     </div>
                   );
-                })}
+                })} */}
               </div>
             </Card.Body>
           </Card>
