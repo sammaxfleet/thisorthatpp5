@@ -389,6 +389,9 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 
 # Credits - 
 
+
+#frame works and libraries
+- Redux Devtools 
 - Balsamiq
 - Heroku
 - Font Awesome
