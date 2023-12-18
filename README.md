@@ -1,16 +1,20 @@
-# THIS OR THAT 
+# THIS OR THAT | Portfolio Project 5 | advanced front end | Code Institute. 
+
+## Site Description 
 
 
-'This Or That' is an online website that compares celbrity fashion outfits. It allows users to create user profiles & compare likes. 
-The user gets to prefer which outfit a celbrity is wearing. 
-It's a battle of style, which one is your taste?... Which then gives the users space to comment their opinion and connect with the 'This Or That' Community. 
+'This Or That' is an online website that compares celebrity fashion outfits. 
+It gives the users fashion inspiration for if they were to go to an event themselves, a party and just keeps them upto date with the latest trends. 
+It allows users to create user profiles, and interact with other fashion enthusiasts. 
+It's a catelogue of style, which one is your taste?...
+The user is able to follow other users, search on filterd searches & it gives the users space to comment their opinion on each post.
+I took inspiration from this as I have a huge interest in fashion and with current trends on social media "ootd" [ outfit of the day ]
+I wanted to incorperate something where I think there's a gap in the market in the current climate. 
 
-
-This project was built as the final portfolio submission for the @codeinstitute higher national diploma full stack software development.
 The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
 
 
-# Links to Project:
+# Full Links to Project:
 
 More info on the back end readme can be found here - https://github.com/sammaxfleet/THISORTHATAPI/blob/main/README.md
 
@@ -53,20 +57,22 @@ TABLE OF CONTENTS -
 ## PROJECT  OBJECTIVE - 
 
 To provide a stable, interactive platform for fashion enthusiasts.
-For the user to find fashion inspiration & be able to like & comment on their favourites. 
-For the site to give the user the ability to interact with other users, create a profile & also Upload. 
-
+For the user to find fashion inspiration & be able to like, Comment & Follow on their favourites Users & their posts. 
+For the site to give the user the ability to interact with other users, create a profile & also Upload posts.
+The objective is to see different outfits and latest trends, celebrities have access to the lastest fashion drops. 
+This allows the user to keep up with trends & decide where they take the inspiration for their own expression, events, birthday's, social media etc. 
 
 ## SITE USER GOAL- 
 
-Breaking down the sit into a few main goals:
+Breaking down the site into a few main goals:
 
 1 - Fashion Inspiration
 2-  Network and interact with other community members
-3 - Fashion research
-4-  Celebrity styling 
-5 - To be able to create a Profile and upload your inspiration.  
+3 - Fashion Research
+4-  Celebrity Styling 
+5 - To be able to create a Profile and upload your inspiration | Sharing. 
 6 - Mobile View & tablet view to be fully responsive. 
+7 - Search through the site with Filters
 
 
 ## SITE OWNER GOAL - 
