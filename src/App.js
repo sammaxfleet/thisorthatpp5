@@ -8,24 +8,37 @@ import SignInForm from "./pages/auth/SignInForm";
 import HomePage from "./pages/app/HomePage";
 import { useEffect, useState } from "react";
 import Profiles from "./pages/profiles";
+import ProfileEdit from "./pages/ProfileEdit";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {
+  checkAuthenticated,
+  checkUserAuthenticated,
+} from "./store/usersSlice";
+import { useDispatch, useSelector } from "react-redux";
+import NewPost from "./pages/NewPost";
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(null);
+  const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
+  const dispatch = useDispatch()
   useEffect(() => {
-    if (localStorage.getItem("user")) {
-      setIsLoggedIn(true)
-    }
+    dispatch(checkUserAuthenticated())
   }, [])
+
   return (
     <div className={styles.App}>
-      <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      <NavBar />
       <Container className={styles.Main}>
-        <Routes>
-          <Route exact path="/" element={<HomePage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-          <Route exact path="/signin" element={<SignInForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-          <Route exact path="/signup" element={<SignUpForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-          <Route exact path="/homepage" element={<HomePage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-          <Route exact path="/profiles/:slug" element={<Profiles isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+        <ToastContainer />
 
+        <Routes>
+
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/signin" element={<SignInForm />} />
+          <Route exact path="/signup" element={<SignUpForm />} />
+          <Route exact path="/homepage" element={<HomePage />} />
+          <Route exact path="/profiles/:slug" element={<Profiles />} />
+          <Route exact path="/profiles/:slug/edit" element={<ProfileEdit />} />
+          <Route exact path="/post/new" element={<NewPost />} />
           <Route element={() => <p>Page not found!</p>} />
         </Routes>
       </Container>
