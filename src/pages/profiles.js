@@ -1,82 +1,102 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { axiosInstance } from '../axiosApi';
-import styles from "../styles/Profile.module.css";
-import appStyles from "../styles/App.module.css";
-import btnStyles from "../styles/Button.module.css";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import { Button, Image } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
+import {useNavigate as useNavigation} from "react-router-dom"
+// import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import { Button, Image } from "react-bootstrap";
+// import Container from "react-bootstrap/Container";
+import { Container, Row, Col, Card, ListGroup, Image } from "react-bootstrap";
+import { useGetSingleProfileQuery,useGetProfilesQuery } from "../store/apiSlice";
+import Dropdown from "react-bootstrap/Dropdown";
+import Spinner from 'react-bootstrap/Spinner'
 const Profiles = () => {
-    let { slug } = useParams();
-    const [profile, setProfile] = useState();
-    const getUserProfileDetails = async () => {
-        const res = await axiosInstance.get("profiles/" + slug)
-        console.log(res)
-        setProfile(res.data)
-    }
-    useEffect(() => {
-        getUserProfileDetails()
-    }, [slug])
-    return (
-        // <div className={"bg-red-400 text-lg"}>
-        //     <div className={styles.profileSection}>
+  let { slug, } = useParams();
+  const navigate = useNavigation();
+  const { data, isLoading, isFetching } = useGetSingleProfileQuery(slug,{
+    refetchOnMountOrArgChange:true,
+    refetchOnFocus:true,
+    refetchOnReconnect:true,
+    refetchOnMount:true,
+    
+  });
+  const {data:ProfilesData,isLoading:ProfilesIsLoading,isFetching:ProfilesIsFetching} = useGetProfilesQuery()
+  const mostFollowed = [
+    { name: "Gui", icon: "path-to-icon" },
+    { name: "Raul", icon: "path-to-icon" },
+    // ... other profiles
+  ];
+  console.log(data, "data from api ");
+  return (
+    <Container fluid>
+      {isLoading &&(
+        <Spinner animation="grow" />
+      )}
+      {data && (    <Row>
+        <Col md={8} className="user-profile">
+          <Card>
+            <Card.Header as="h5">
+              <div className="d-flex justify-content-between align-items-center">
+                {data.owner}
+                {data.is_owner && (
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                      Edit Profile
+                    </Dropdown.Toggle>
 
-        //     </div>
-        //     <div className={styles.mostFollowedUsers}>
-        //         most followed account
-        //     </div>
-        // </div>
-        <>
-            {/* {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />} */}
-            <Row noGutters className="px-3 text-center">
-                <Col lg={3} className="text-lg-left">
-                    <Image
-                        className={styles.ProfileImage}
-                        roundedCircle
-                        src={profile?.image}
-                    />
+                    <Dropdown.Menu>
+                      <Dropdown.Item onClick={()=>navigate(`/profiles/${slug}/edit`)}>Edit</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                )}
+              </div>
+            </Card.Header>
+            <Card.Body>
+              <Row>
+                <Col xs={4} md={4} lg={3} className="text-center">
+                  <Image
+                    src={data?.image}
+                    roundedCircle
+                    className=""
+                    style={{ width: "100px", height: "auto" }}
+                  />
+                  <Card className="mt-2">
+                    <Card.Title>{data?.posts_count} posts</Card.Title>
+                    <Card.Title>{data?.followers_count} followers</Card.Title>
+                    <Card.Title>{data?.following_count} following</Card.Title>
+                  </Card>
                 </Col>
-                <Col lg={6}>
-                    <h3 className="m-2">{profile?.owner}</h3>
-                    <Row className="justify-content-center no-gutters">
-                        <Col xs={3} className="my-2">
-                            <div>{profile?.posts_count}</div>
-                            <div>posts</div>
-                        </Col>
-                        <Col xs={3} className="my-2">
-                            <div>{profile?.followers_count}</div>
-                            <div>followers</div>
-                        </Col>
-                        <Col xs={3} className="my-2">
-                            <div>{profile?.following_count}</div>
-                            <div className='bg-red-400'>following</div>
-                        </Col>
-                    </Row>
+                <Col xs={8} md={8} lg={9}>
+                  <Card.Title>{data?.owner}</Card.Title>
+                  <Card.Text>{data?.content}</Card.Text>
+                  {/* Add posts here */}
+                  <Card.Text>
+                    No results found, fleetly hasn't posted yet.
+                  </Card.Text>
                 </Col>
-                <Col lg={3} className="text-lg-right">
-                    {profile && profile &&
-                        !profile && profile.is_owner &&
-                        (profile?.following_id ? (
-                            <Button
-                                className={`${btnStyles.Button} ${btnStyles.BlackOutline}`}
-                            >
-                                unfollow
-                            </Button>
-                        ) : (
-                            <Button
-                                className={`${btnStyles.Button} ${btnStyles.Black}`}
-                            >
-                                follow
-                            </Button>
-                        ))}
-                </Col>
-                {profile?.content && <Col className="p-3">profile.content</Col>}
-            </Row>
-        </>
-    )
-}
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
 
-export default Profiles
+        <Col md={4} className="most-followed">
+          <Card>
+            <Card.Header as="h5">Most followed profiles</Card.Header>
+            <ListGroup variant="flush">
+              {ProfilesData && ProfilesData.results.map((profile) => (
+                <ListGroup.Item key={profile.id} className="d-flex align-items-center " style={{
+                  gap: "10px",
+                }}>
+                  <Image src={profile.image} roundedCircle style={{ width: "50px", height: "auto" }} /> {profile.owner}
+                </ListGroup.Item>
+              ))}
+            </ListGroup>
+          </Card>
+        </Col>
+      </Row>)}
+  
+    </Container>
+  );
+};
+
+export default Profiles;

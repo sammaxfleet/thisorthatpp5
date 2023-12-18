@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
+
 import { Link, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,38 +12,53 @@ import { login } from "../../api/axiosDefaults";
 import styles from "../../styles/SignInUpForm.module.css";
 import appStyles from "../../App.module.css";
 import sidePicture from "../../components/assets/fashionbakayo.jpg";
-
-const SignInForm = ({ setIsLoggedIn }) => {
+import {useDispatch,useSelector}from "react-redux";
+import {  userLogin } from "../../store/usersSlice";
+const SignInForm = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [variant, setVariant] = useState(null);
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
+  useEffect(() => {
+    if (isLoggedIn) {
+      navigate("/");
+    }
 
+    return () => {};
+  }, [isLoggedIn]);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    const response = await login(formData.get("username"), formData.get("password1"));
+    // const response = await login(formData.get("username"), formData.get("password1"));
+    const form = {
+      username: formData.get("username"),
+      password: formData.get("password1"),
+    };
+    dispatch(userLogin(JSON.stringify(form)));
 
-    if (response) {
-      if (response.status === 200) {
-        setAlertMessage("Login successful");
-        setShowAlert(true);
-        setVariant("success");
+    // if (response) {
+    //   if (response.status === 200) {
+    //     setAlertMessage("Login successful");
+    //     setShowAlert(true);
+    //     setVariant("success");
+    //     const  form = JSON.stringify(form);
 
-        localStorage.setItem("user", JSON.stringify(response.data));
-        setIsLoggedIn(true);
-        setTimeout(() => {
-          navigate("/homepage");
-        }, 2000); // 1000ms = 1s
-      }
-    } else {
-      setIsLoggedIn(false);
-      setAlertMessage("Invalid credentials");
-      setShowAlert(true);
-      setVariant("danger");
-    }
+    //     localStorage.setItem("user", JSON.stringify(response.data));
+    //     // setIsLoggedIn(true);
+    //     // setTimeout(() => {
+    //     //   navigate("/homepage");
+    //     // }, 2000); // 1000ms = 1s
+    //   }
+    // } else {
+    //   setIsLoggedIn(false);
+    //   setAlertMessage("Invalid credentials");
+    //   setShowAlert(true);
+    //   setVariant("danger");
+    // }
   };
 
   return (

@@ -3,9 +3,12 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./assets/thisorthat.jpg";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
-
-const NavBar = ({isLoggedIn,setIsLoggedIn}) => {
-  const user = JSON.parse(localStorage.getItem("user"));
+import {useDispatch,useSelector}from "react-redux";
+import {logOut} from "../store/usersSlice"
+const NavBar = () => {
+  const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
+  const user = useSelector((state) => state.users.user);
+  const dispatch = useDispatch();
 
   return (
     <Navbar className={styles.NavBar} expand="md" fixed="top">
@@ -34,7 +37,8 @@ const NavBar = ({isLoggedIn,setIsLoggedIn}) => {
                 activeClassName={styles.Active}
                 onClick={()=>{
                   localStorage.removeItem("user")
-                  setIsLoggedIn(false)
+                  // setIsLoggedIn(false)
+                  dispatch(logOut())
 
                 }}
               >
@@ -43,9 +47,16 @@ const NavBar = ({isLoggedIn,setIsLoggedIn}) => {
               <NavLink
                 className={styles.NavLink}
                 activeClassName={styles.Active}
-              to={"/profiles/"+user.user.profile_id}
+              to={"/profiles/"+user.profile_id}
               >
                 <i className="fas fa-user"></i>Profile
+              </NavLink>
+              <NavLink
+                className={styles.NavLink}
+                activeClassName={styles.Active}
+              to={"/post/new"}
+              >
+                <i className="fas fa-upload"></i>Add Post 
               </NavLink>
               </>
           

@@ -17,7 +17,7 @@ import {
 } from "react-bootstrap";
 import { signup } from "../../api/axiosDefaults";
 
-const SignUpForm = ({ setIsLoggedIn }) => {
+const SignUpForm = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [variant, setVarient] = useState(null);
@@ -42,12 +42,11 @@ const SignUpForm = ({ setIsLoggedIn }) => {
         setShowAlert(true);
         setVarient("success");
         setTimeout(() => {
-          navigate.push("/signin");
+          navigate("/signin");
         }, 2000);
       }
     } else {
       console.log(response, "response");
-      setIsLoggedIn(false)
       setAlertMessage("Internal server error");
       setVarient("danger");
       setShowAlert(true);

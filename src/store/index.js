@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { thisOrThatApi } from './apiSlice'
+import usersReducer from './usersSlice'
 export const store = configureStore({
     reducer: {
+        users: usersReducer,
         // Add the generated reducer as a specific top-level slice
         [thisOrThatApi.reducerPath]: thisOrThatApi.reducer,
     },
