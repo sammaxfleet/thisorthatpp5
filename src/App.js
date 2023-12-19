@@ -18,6 +18,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import NewPost from "./pages/NewPost";
 import PostEdit from "./pages/PostEdit";
+import ChangePassword from "./pages/ChangePassword";
 function App() {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const dispatch = useDispatch()
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/profiles/:slug/edit" element={<ProfileEdit />} />
           <Route exact path="/post/new" element={<NewPost />} />
           <Route exact path="/post/:slug/edit" element={<PostEdit />} />
+          <Route exact path="/changepassword" element={<ChangePassword />} />
           <Route element={() => <p>Page not found!</p>} />
         </Routes>
       </Container>

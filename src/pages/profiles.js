@@ -48,11 +48,12 @@ const Profiles = () => {
                 {data.is_owner && (
                   <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                      Edit Profile
+                      Edit
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                      <Dropdown.Item onClick={() => navigate(`/profiles/${slug}/edit`)}>Edit</Dropdown.Item>
+                      <Dropdown.Item onClick={() => navigate(`/profiles/${slug}/edit`)}>Edit Bio & Profile Image</Dropdown.Item>
+                      <Dropdown.Item onClick={() => navigate(`/changepassword`)}>Change password</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 )}
