@@ -77,10 +77,10 @@ const Profiles = () => {
                   <Card.Title>{data?.owner}</Card.Title>
                   <Card.Text>{data?.content}</Card.Text>
                   {/* Add posts here */}
-                  <div className="d-flex flex-wrap-wrap">
+                  <div className="d-flex flex-wrap" style={{ gap: "5px" }}>
 
                     {ProfilePosts && ProfilePosts.results.map((posts) => (
-                      <Card style={{ width: '18rem' }}>
+                      <Card style={{ width: '15rem' }}>
                         <Card.Img variant="top" src={posts.image} width={"100px"} style={{
                           objectFit: "contain"
                         }} height={"100px"} />
@@ -92,7 +92,7 @@ const Profiles = () => {
                           <Card.Text>
                             {posts.fashion_inspiration}
                           </Card.Text>
-                          <Button variant="primary">Edit</Button>
+                          <Button variant="primary" onClick={() => navigate(`/post/${posts.id}/edit`)}>Edit</Button>
                         </Card.Body>
                       </Card>
                     ))}

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./assets/thisorthat.jpg";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
-import {useDispatch,useSelector}from "react-redux";
-import {logOut} from "../store/usersSlice"
+import { useDispatch, useSelector } from "react-redux";
+import { logOut } from "../store/usersSlice";
+import { thisOrThatApi } from "../store/apiSlice";
 const NavBar = () => {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const user = useSelector((state) => state.users.user);
@@ -32,35 +33,35 @@ const NavBar = () => {
 
             {isLoggedIn && (
               <>
-                  <span
-                className={styles.NavLink}
-                activeClassName={styles.Active}
-                onClick={()=>{
-                  localStorage.removeItem("user")
-                  // setIsLoggedIn(false)
-                  dispatch(logOut())
+                <span
+                  className={styles.NavLink}
+                  activeClassName={styles.Active}
+                  onClick={() => {
+                    localStorage.removeItem("user")
+                    // setIsLoggedIn(false)
+                    dispatch(logOut())
 
-                }}
-              >
-                <i className="fas fa-sign-out"></i>Logout
-              </span>
-              <NavLink
-                className={styles.NavLink}
-                activeClassName={styles.Active}
-              to={"/profiles/"+user.profile_id}
-              >
-                <i className="fas fa-user"></i>Profile
-              </NavLink>
-              <NavLink
-                className={styles.NavLink}
-                activeClassName={styles.Active}
-              to={"/post/new"}
-              >
-                <i className="fas fa-upload"></i>Add Post 
-              </NavLink>
+                  }}
+                >
+                  <i className="fas fa-sign-out"></i>Logout
+                </span>
+                <NavLink
+                  className={styles.NavLink}
+                  activeClassName={styles.Active}
+                  to={"/profiles/" + user.profile_id}
+                >
+                  <i className="fas fa-user"></i>Profile
+                </NavLink>
+                <NavLink
+                  className={styles.NavLink}
+                  activeClassName={styles.Active}
+                  to={"/post/new"}
+                >
+                  <i className="fas fa-upload"></i>Add Post
+                </NavLink>
               </>
-          
-              
+
+
             )}
 
             {!isLoggedIn && (

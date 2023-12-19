@@ -3,10 +3,13 @@ import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { axiosInstanceFormData } from '../axiosApi';
 import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { thisOrThatApi } from '../store/apiSlice';
 const NewPost = () => {
   const [imagePreviewUrl, setImagePreviewUrl] = React.useState(null);
   const [file, setFile] = React.useState(null);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const handleImageChange = (e) => {
     e.preventDefault();
 
@@ -33,7 +36,9 @@ const NewPost = () => {
     console.log(data, "data from axios")
     if (data.status === 201) {
       toast.success("Post created successfully")
+      dispatch(thisOrThatApi.util.invalidateTags(["Posts"]))
       navigate(`/`)
+
     }
   }
   return (

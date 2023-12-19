@@ -17,7 +17,7 @@ export const thisOrThatApi = createApi({
             return headers
         }
     }),
-    tagTypes: ['Profiles', 'Posts'],
+    tagTypes: ['Profiles', 'Posts', 'Post'],
     endpoints: (builder) => ({
         getProfiles: builder.query({
             query: (name) => `profiles`,
@@ -34,6 +34,20 @@ export const thisOrThatApi = createApi({
         getProfilePosts: builder.query({
             query: (userId) => `posts/?owner__profile=${userId}`,
             providesTags: ["Posts"]
+        }),
+        getSinglePost: builder.query({
+            query: (slug) => `/posts/${slug}`,
+            providesTags: ["Post"]
+        }),
+        deletePost: builder.mutation({
+            // query: (slug) => {url:`/posts/${slug}`,method},
+            query(slug) {
+                return {
+                    url: `/posts/${slug}`,
+                    method: 'DELETE',
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles"]
         })
 
 
@@ -42,4 +56,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi

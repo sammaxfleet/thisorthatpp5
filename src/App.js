@@ -15,30 +15,32 @@ import {
   checkAuthenticated,
   checkUserAuthenticated,
 } from "./store/usersSlice";
-import {useDispatch,useSelector}from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import NewPost from "./pages/NewPost";
+import PostEdit from "./pages/PostEdit";
 function App() {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const dispatch = useDispatch()
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(checkUserAuthenticated())
-  },[])
+  }, [])
 
   return (
     <div className={styles.App}>
-      <NavBar/>
+      <NavBar />
       <Container className={styles.Main}>
-      <ToastContainer />
+        <ToastContainer />
 
         <Routes>
 
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/signin" element={<SignInForm  />} />
-          <Route exact path="/signup" element={<SignUpForm  />} />
-          <Route exact path="/homepage" element={<HomePage  />} />
-          <Route exact path="/profiles/:slug" element={<Profiles   />} />
-          <Route exact path="/profiles/:slug/edit" element={<ProfileEdit   />} />
-          <Route exact path="/post/new" element={<NewPost   />} />
+          <Route exact path="/signin" element={<SignInForm />} />
+          <Route exact path="/signup" element={<SignUpForm />} />
+          <Route exact path="/homepage" element={<HomePage />} />
+          <Route exact path="/profiles/:slug" element={<Profiles />} />
+          <Route exact path="/profiles/:slug/edit" element={<ProfileEdit />} />
+          <Route exact path="/post/new" element={<NewPost />} />
+          <Route exact path="/post/:slug/edit" element={<PostEdit />} />
           <Route element={() => <p>Page not found!</p>} />
         </Routes>
       </Container>
