@@ -30,7 +30,10 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 # AM I RSPONSIVE IMAGE.
 
-Wire Frames - [THIS OR THAT WIREFRAMES 2.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/12831129/THIS.OR.THAT.WIREFRAMES.2.pdf)
+
+
+
+Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/13717176/THISORTHAT.WIREFRAMES.pdf)
 
 
 TABLE OF CONTENTS - 
