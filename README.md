@@ -1,16 +1,20 @@
-# THIS OR THAT 
+# THIS OR THAT | Portfolio Project 5 | advanced front end | Code Institute. 
+
+## Site Description 
 
 
-'This Or That' is an online website that compares celbrity fashion outfits. It allows users to create user profiles & compare likes. 
-The user gets to prefer which outfit a celbrity is wearing. 
-It's a battle of style, which one is your taste?... Which then gives the users space to comment their opinion and connect with the 'This Or That' Community. 
+'This Or That' is an online website that compares celebrity fashion outfits. 
+It gives the users fashion inspiration for if they were to go to an event themselves, a party and just keeps them upto date with the latest trends. 
+It allows users to create user profiles, and interact with other fashion enthusiasts. 
+It's a catelogue of style, which one is your taste?...
+The user is able to follow other users, search on filterd searches & it gives the users space to comment their opinion on each post.
+I took inspiration from this as I have a huge interest in fashion and with current trends on social media "ootd" [ outfit of the day ]
+I wanted to incorperate something where I think there's a gap in the market in the current climate. 
 
-
-This project was built as the final portfolio submission for the @codeinstitute higher national diploma full stack software development.
 The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
 
 
-# Links to Project:
+# Full Links to Project:
 
 More info on the back end readme can be found here - https://github.com/sammaxfleet/THISORTHATAPI/blob/main/README.md
 
@@ -53,20 +57,22 @@ TABLE OF CONTENTS -
 ## PROJECT  OBJECTIVE - 
 
 To provide a stable, interactive platform for fashion enthusiasts.
-For the user to find fashion inspiration & be able to like & comment on their favourites. 
-For the site to give the user the ability to interact with other users, create a profile & also Upload. 
-
+For the user to find fashion inspiration & be able to like, Comment & Follow on their favourites Users & their posts. 
+For the site to give the user the ability to interact with other users, create a profile & also Upload posts.
+The objective is to see different outfits and latest trends, celebrities have access to the lastest fashion drops. 
+This allows the user to keep up with trends & decide where they take the inspiration for their own expression, events, birthday's, social media etc. 
 
 ## SITE USER GOAL- 
 
-Breaking down the sit into a few main goals:
+Breaking down the site into a few main goals:
 
 1 - Fashion Inspiration
 2-  Network and interact with other community members
-3 - Fashion research
-4-  Celebrity styling 
-5 - To be able to create a Profile and upload your inspiration.  
+3 - Fashion Research
+4-  Celebrity Styling 
+5 - To be able to create a Profile and upload your inspiration | Sharing. 
 6 - Mobile View & tablet view to be fully responsive. 
+7 - Search through the site with Filters
 
 
 ## SITE OWNER GOAL - 
@@ -87,23 +93,28 @@ Content should be well structured and of high quality, navigation and site funct
 ## TARGET AUDIENCE -
 
 The target audience is aimed at the fashion community. 
-Age wise it's suitable for teenagers upto 40's. 
+Age wise it's suitable for teenagers upto 40's/ 50's. 
 The fashion community has been building online now with 'OOTD' hash tags and people loving to show their fits for an occasion wether it’s a birthday or your favourite night out.
 Users could be male or female, there is an equal spread of fashion content on there. 
-
+It is also aimed at people wanting to develop and find their own expression with their clothing. 
 
 ## PROJECT MANAGEMENT - 
 
-An agile methodology was used to plan and develop the This or That project.
-All the main features of the application were recorded as epics and then refined into user stories.
-These user stories were created and stored as GitHub issues and then mapped into iterations to help to plan the project and allocate the workload. 
+An agile methodology approach was used to plan and develop the 'This or That' project.
+All the main features of the application were recorded as 'Epics' and then refined into smaller 'User Stories'.
+The 'User Stories' were created and stored as GitHub issues and then mapped into iterations to help to plan the project and allocate the workload. 
 
+You can find the link to these below. 
+
+Link to user stories; https://github.com/users/sammaxfleet/projects/6
+
+<img width="1437" alt="Screenshot 2023-12-18 at 10 46 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3dd788ac-8934-4685-a9a4-7921ae5a12c5">
 
 # AGILE METHODOLOGY
 
-by using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. 
-Due to the time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great for app design. 
-The project displays this by having User stories in the Done section and the ones which were decided to be left for future, put in the future implementations section of the readme.
+By using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. 
+Due to the time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great for app design where you can edit and adjust when needed. 
+
 
 I’ve used the MoSCoW prioritisation technique for the user stories.
 
@@ -112,10 +123,7 @@ Should Have:
 Could Have:
 Won’t Have:
 
-Link to user stories; https://github.com/users/sammaxfleet/projects/6
-
-<img width="1437" alt="Screenshot 2023-12-18 at 10 46 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3dd788ac-8934-4685-a9a4-7921ae5a12c5">
-
+Aswell as Milestones which are listed below. 
 
 # User Stories
 
@@ -218,13 +226,12 @@ User Stories - Comments
 1. Edit own Comments - SHOULD HAVE 
 2. Can Delete a comment - SHOULD HAVE 
 3. Can view other poeples comments ( when not logged in) - SHOULD HAVE 
-4. Can't make a comment if not logged in - SHOULD HAVE
-
+4. Can't make a comment if not logged in - MUST HAVE
 
 
 EPIC 5 - 
 
-Milestone - CRUD PROFILES
+Milestone - CRUD PROFILE
 
 USER STORIES - PROFILES
 
@@ -232,10 +239,11 @@ USER STORIES - PROFILES
   2. View a specific profile page - SHOULD HAVE 
   3. Edit my own profile Page - MUST HAVE 
   4. Can change name and password for log in details if want to make more secure. - MUST HAVE
+  5. 
 
 USER STORIES -  DIRECT MESSAGING
-   1.  - Can view messages On my profile page and see what others have sent me  -COULD HAVE 
-   2. - Can message another user and discuss opinions - COULD HAVE
+   1.  - Can view messages On my profile page and see what others have sent me  - WON'T HAVE
+   2. - Can message another user and discuss opinions - COULD HAVE 
      
 
 
@@ -245,8 +253,8 @@ MileStone - SIGN UP/ LOG IN
 
 USER STORIES - SIGN UP/ LOG IN
 
-1. Have a sign up page
-2. Have a seperate log inpage
+1. Have a secure sign up page - MUST HAVE 
+2. Have a secure seperate log inpage - MUST HAVE
 
 
 EPIC 7 -  Design
@@ -254,13 +262,14 @@ EPIC 7 -  Design
 
 Milestone -  Design
 
-1. Use colours that have continuity and capture the feeling of the site SHOULD HAVE
-2. Get inspo from fashion blogs for the layout SHOULD HAVE
-3. Images on the -site MUST HAVE
-4. Different fonts COULD HAVE
-5. Describe what the site is -SHOULD HAVE
-6. Back ground colour - SHOULD HAVE
-7. Several different pages - WON'T HAVE
+1. Use colours that have continuity and capture the feeling of the site -  SHOULD HAVE
+2. Get inspo from fashion blogs for the layout - SHOULD HAVE
+3. Images on the site - MUST HAVE
+4. Different fonts - SHOULD HAVE
+5. Describe what the site is - SHOULD HAVE
+6. TITLE -SHOULD HAVe
+7. Back ground colour - SHOULD HAVE
+8. Several different pages - WON'T HAVE
 
 
 
@@ -272,10 +281,8 @@ User Stories:
 1. Find a Logo - MUST HAVE
 2. Nav Bar - MUST HAVE 
 3. Choose Colour Scheme - MUST HAVE 
-4. Create 3 pages for the site 0 MUST HAVE 
+4. Create 3 pages for the site - MUST HAVE 
 5. Retrieve images from Google for comparison - MUST HAVE
-Choose which celebrities it will feature
-There are 20 celebrities to compare style.
 6. - Add like tab, comment and follow. - MUST HAVE
 7. Be able to Sign in/out - MUST HAVE
 8. Be able to log in/out. - MUST HAVE
@@ -285,10 +292,10 @@ There are 20 celebrities to compare style.
 CRUD Functionality
 Tick It handles data with full CRUD Functionality:
 
-Create - Users can create, an account, profile, tasks, comments, packs, contact messages and watch objects.
-Read - Users can view the tasks, comments, packs of other users and also the profiles of these users.
-Update - Users can update their profile, password, posted tasks, packs and watch status of tasks via the interactive forms and buttons on the site.
-Delete - Users can delete tasks, comments, packs and watch objects via the interactive buttons on the site.
+Create - Users can create, an account, profile, tasks, comments, likes, posts. 
+Read - Users can view the tasks, comments, posts of other users and also the profiles of these users.
+Update - Users can update their profile, password & username. & update taks, comments, posts, following accounts. 
+Delete - Users can delete tasks, comments, likes, follows. 
 
 
 
@@ -298,11 +305,17 @@ Delete - Users can delete tasks, comments, packs and watch objects via the inter
  When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. 
  When the user is logged in Comments, Signout and Profile Page also become available.
 
- The Site has 3 pages
+ The Site has 3 MAIN WHEN LOGGED OUT  pages
 
  HOME
  SIGN IN
  SIGN UP
+
+
+ WHEN LOGGED IN : 
+ 
+  1.PROFILE
+  2.ADD POST both become available. 
 
 
 # Colour Scheme - 
@@ -318,18 +331,20 @@ Where this is a white background as full focus goes on the image, the user is th
 Didot font, is slick, edgy & sharp on the eyte for any text. 
 
 
-#Navigation - 
+# Navigation - <img width="441" alt="Screenshot 2023-12-18 at 17 54 54" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/bab63b6a-c2d0-4185-9c5c-03bc851d5afc">
+
 
 The Navigation Bar is very clean and straight forward. Depending on wether you're signed in or not a different option on the menu appears.
 On accessing the site for the first time, the user is logged out and the following menu items are visible:
 
+- HOME
+- SIGN IN
+- SIGN UP 
 
-# Authentication - 
-
-Users who are new to the site, or haven't previously created an account can click on the Signup Menu option on the Navigation Bar to create a user account. I have used the standard dj-rest/auth/registration user account signup process for this.
 
 # Homepage - 
 
+The Home page
 
 
 # TESTING
@@ -374,6 +389,9 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 
 # Credits - 
 
+
+#frame works and libraries
+- Redux Devtools 
 - Balsamiq
 - Heroku
 - Font Awesome
