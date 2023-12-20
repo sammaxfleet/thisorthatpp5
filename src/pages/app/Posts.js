@@ -1,90 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import styles from "../../styles/HomePage.module.css";
-import kanyewest from "./images/kanyewest.jpeg"
-import rashford from "./images/rashford.jpeg"
-import biebs from "./images/biebs.jpeg"
-import syd from "./images/syd.jpeg"
-import saka from "./images/saka.jpeg"
-import pharrel from "./images/pharrel.jpeg"
-import { useGetPostsQuery } from "../../store/apiSlice";
-
+import { useDeleteLikePostMutation, useGetPostsQuery, useLikePostMutation } from "../../store/apiSlice";
+import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
 const Posts = () => {
   const { data, isLoading, isError } = useGetPostsQuery({
-    refetchOnFocus:true,
-  
-  });
-  // const data = [
-  //   {
-  //     owner: "Fleety",
-  //     created_at: "2021-10-03",
-  //     title: "Kanye West",
-  //     content: "Fashion",
-  //     image: kanyewest,
-  //           likes: "12",
-  //     comments: ["abc", "xyz"],
-  //   },
-  //   {
-  //     owner: "Sasha",
+    refetchOnFocus: true,
 
-  //     created_at: "2021-10-03",
-  //     title: "Marcus Rashford",
-  //     content: "Burbbery Campaign",
-  //     image: rashford,
-  //     likes: "12",
-  //     comments: ["abc", "xyz"],
-  //   },
-  //   {
-  //     owner: "Sam",
-  //     created_at: "2021-10-03",
-  //     title: "Justin Bieber",
-  //     content: "Street Wear",
-  //     image: biebs,
-  //     likes: "12",
-  //     comments: ["abc", "xyz"],
-  //   },
-  //   {
-  //       owner: "Frank",
-  //       created_at: "2021-10-03",
-  //       title: "SYD",
-  //       content: "Smart wear",
-  //       image: syd,
-  //       likes: "12",
-  //       comments: ["abc", "xyz"],
-  //     },
-  //     {
-  //       owner: "Bob",
-  //       created_at: "2021-10-03",
-  //       title: "Pharrel",
-  //       content: "Smart wear",
-  //       image: pharrel,
-  //       likes: "12",
-  //       comments: ["abc", "xyz"],
-  //     },
-  //     {
-  //       owner: "Tom",
-  //       created_at: "2021-10-03",
-  //       title: "Saka",
-  //       content: "Smart wear",
-  //       image: saka,
-  //       likes: "12",
-  //       comments: ["abc", "xyz"],
-  //     },
-  // ];
+  });
+  const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
+  const [likePost, { isSuccess }] = useLikePostMutation()
+
+  const [deleteLikePost, { isSuccess: deleteLikePostSuccess }] = useDeleteLikePostMutation()
+
+  useEffect(() => {
+    if (isSuccess) {
+      toast.success("Post Liked Successfully")
+    }
+  }, [isSuccess])
+  useEffect(() => {
+    if (deleteLikePostSuccess) {
+      toast.success("Post UnLiked Successfully")
+    }
+  }, [deleteLikePostSuccess])
+
 
   const [likes, setLikes] = useState(0);
   const [comments, setComments] = useState([]);
 
-  const handleLike = () => {
-    setLikes(likes + 1);
-  };
+  const handleLike = (id) => {
+    if (isLoggedIn) {
+      likePost(JSON.stringify({ post: id }))
 
-  const handleComment = () => {
-    const newComment = prompt("Enter your comment:");
+    } else {
+      toast.info("You Need To LogIn to like a post ")
+    }
+  };
+  const handleUnLike = (id) => {
+    deleteLikePost(id)
+  }
+
+  const handleComment = (post) => {
+    const newComment = prompt("Enter your comment for " + post.title);
     if (newComment) {
-      setComments([...comments, newComment]);
     }
   };
 
@@ -95,7 +56,7 @@ const Posts = () => {
         marginLeft: "80px",
       }}
     >
-      { data && data.results.map((post) => {
+      {data && data.results.map((post) => {
         return (
           <Card style={{ width: "600px", marginBottom: "20px" }}>
             {/* User Circle */}
@@ -189,16 +150,30 @@ const Posts = () => {
                   </p>
                 </div>
                 <div>
-                  <Button
-                    variant="primary"
-                    onClick={handleLike}
-                    style={{
-                      marginRight: "20px",
-                    }}
-                  >
-                    Like
-                  </Button>
-                  <Button variant="primary" onClick={handleComment}>
+                  {!post.like_id && (
+                    <Button
+                      variant="primary"
+                      onClick={() => handleLike(post.id)}
+                      style={{
+                        marginRight: "20px",
+                      }}
+                    >
+                      Like
+                    </Button>
+                  )}
+                  {post.like_id && (
+                    <Button
+                      variant="primary"
+                      onClick={() => handleUnLike(post.like_id)}
+                      style={{
+                        marginRight: "20px",
+                      }}
+                    >
+                      UnLike
+                    </Button>
+                  )}
+
+                  <Button variant="primary" onClick={() => handleComment(post)}>
                     Comment
                   </Button>
                 </div>

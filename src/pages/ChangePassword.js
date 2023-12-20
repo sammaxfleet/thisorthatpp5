@@ -30,11 +30,16 @@ const ChangePassword = () => {
         }
         // Here you can implement the logic to handle the password change
         // For exampleend a request to your backend to update the password
-        const data = await axiosInstance.post("dj-rest-auth/password/change/", JSON.stringify(dataForm))
-        if (data.status === 200) {
-            toast.success("Password Changed Successfully")
-            navigate("/")
+        try {
+            const data = await axiosInstance.post("dj-rest-auth/password/change/", JSON.stringify(dataForm))
+            if (data.status === 200) {
+                toast.success("Password Changed Successfully")
+                navigate("/")
+            }
+        } catch (error) {
+            toast.error("Something went wrong maybe password is too common")
         }
+
 
         // After changing the password, you can reset the fields and display a success message
         setPassword1('');

@@ -48,6 +48,39 @@ export const thisOrThatApi = createApi({
                 }
             },
             invalidatesTags: ["Posts", "Profiles"]
+        }),
+        likePost: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/likes/`,
+                    method: 'POST',
+                    body: data
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles"]
+        }),
+        deleteLikePost: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/likes/${data}`,
+                    method: 'DELETE',
+
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles"]
+        }),
+        createPostComment: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/comments/`,
+                    method: 'POST',
+                    body:data
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles"]
         })
 
 
@@ -56,4 +89,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
