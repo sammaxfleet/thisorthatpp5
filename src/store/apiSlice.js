@@ -17,7 +17,7 @@ export const thisOrThatApi = createApi({
             return headers
         }
     }),
-    tagTypes: ['Profiles', 'Posts', 'Post'],
+    tagTypes: ['Profiles', 'Posts', 'Post', "Comments"],
     endpoints: (builder) => ({
         getProfiles: builder.query({
             query: (name) => `profiles`,
@@ -77,11 +77,23 @@ export const thisOrThatApi = createApi({
                 return {
                     url: `/comments/`,
                     method: 'POST',
-                    body:data
+                    body: data
                 }
             },
-            invalidatesTags: ["Posts", "Profiles"]
-        })
+            invalidatesTags: ["Posts", "Profiles", "Comments"]
+        }),
+        getPostComments: builder.query({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/comments/?post=${data}`,
+                    method: 'GET',
+
+                }
+            },
+            providesTags: ["Comments"]
+        }),
+
 
 
     }),
@@ -89,4 +101,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
