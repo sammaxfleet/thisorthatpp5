@@ -356,6 +356,147 @@ The Home page
 
 # TESTING
 
+PEP8 Validation
+
+I've tested all the files through the CI PEP8 Linter and although I found a few errors, I have rectified these and now all files are passing with "All clear, no errors found".
+
+
+MAIN APP:
+
+MANAGE.PY 
+
+<img width="1113" alt="Managepy" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4326f337-a88f-499f-af4e-606af8887202">
+
+
+THIS OR THAT APP - WSGI.PY
+<img width="1145" alt="THISORTHATAPP WSGIPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/d96ef106-3f6f-4139-96f7-fecd221dc8d3">
+
+THIS OR THAT APP - VIEWS.PY
+
+<img width="1254" alt="THISORTHATAPP VIEWSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9bb2534a-2771-46fe-b10d-7f5f24d49abf">
+
+THIS OR THAT APP - URLS.PY
+
+<img width="1235" alt="THISORTHATAPP URLSPY " src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/674c119f-eaf7-49b0-a55d-83ad5aac60aa">
+
+THIS OR THAT APP - SERIALIZERS.PY
+
+<img width="1146" alt="THISORTHATAPP SERIALIZERPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/45a3a209-4c75-498b-8f7c-ec6c678593c8">
+
+THIS OR THAT APP - PERMISSIONS.PY
+
+<img width="1166" alt="THISORTHATAPP PERMISSIONSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/239706bb-c5de-4fa3-8184-534cafcae3d3">
+
+THIS OR THAT APP - ASGI.PY
+<img width="1106" alt="THISORTHATAPP ASGIPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/74ef722d-1fb1-46f4-a277-e577e25e0c41">
+
+
+PROFILES APP:
+
+PROFILES APP - VIEWS.PY
+
+<img width="1178" alt="PROFILES VIEWSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5f2df1eb-aaf4-4c59-963e-17b9d083ef03">
+
+PROFILES APP - URLS.PY
+
+<img width="1135" alt="PROFILES URLSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5a95fc2b-ff2e-4a85-abe6-d89651bfd1aa">
+
+PROFILES APP - MODELS.PY
+
+<img width="1148" alt="PROFILES MODELSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/615a9a8b-f902-4401-b785-275f83ef2b8b">
+
+PROFILES APP - APP.PY
+
+<img width="1110" alt="PROFILES APPSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/87b226bd-ec33-4592-ae32-22b847c5986c">
+
+PROFILES APP - SERIALIZERS.PY
+
+<img width="1200" alt="PROFILE SERIALIZERSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/b9ad76fa-aa4d-4753-99c8-b8c9ea97b90a">
+
+
+POSTS APP:
+
+POSTS APP - VIEWS .PY 
+
+<img width="1150" alt="POSTS VIEWSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ec9f2bd2-c89a-4853-9da5-baa9a91d5ef0">
+
+POSTS APP - URLS.PY
+
+<img width="1045" alt="POSTS URLSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/97687254-3766-41ad-baac-c48fb36d34cc">
+
+POSTS APP - TESTS.PY
+
+<img width="1233" alt="POSTS TESTSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/81a41a6c-e3a7-4d34-a874-52aa90ffdd9a">
+
+POSTS APP - SERIALIZERS.PY
+
+<img width="1335" alt="POSTS SERIALIZERSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9eb1f9f2-9779-430e-95f4-752be4640bbe">
+
+POSTS MODELS - MODELS.PY
+
+<img width="1173" alt="POSTS MODELSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9d5061fb-6e1d-4126-9634-6b27d71f6ca3">
+
+
+LIKES APP:
+
+
+LIKES APP - VIEWS.PY
+
+<img width="1220" alt="LIKES VIEWSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4e8e4e02-23e1-4b2d-ad02-97de411d9b3e">
+
+LIKES APP - URLS.PY
+
+<img width="1199" alt="LIKES URLSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/602b6a97-b6cc-4c8f-b65d-b9eba35cf98d">
+
+LIKES APP - SERIALIZERS.PY
+
+<img width="1172" alt="LIKES SERIALIZERSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4aad4f77-b5d1-4260-a3d2-28dc523f60a7">
+
+LIKES APP - MODELS.PY
+
+<img width="1174" alt="LIKES MODELSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/eaacc9f5-aac6-410e-a155-8ed6962c83ff">
+
+
+FOLLOWERS APP:
+
+FOLLOWERS APP - MODELS.PY
+
+<img width="1259" alt="FOLLWOERS MODELS PY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/34b74af8-f9f4-47c5-80af-bb7cb0482c8d">
+
+FOLLOWERS APP - VIEWS.PY
+
+<img width="1248" alt="FOLLOWERS VIEWSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/bf5107ca-74c1-45bb-b579-66bb40149299">
+
+FOLLOWERS APP - URLS.PY
+
+<img width="1209" alt="FOLLOWERS URLSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0804d631-c396-48e2-9c70-ce9edc2847c1">
+
+FOLLOWERS APP - SERIALIZERS.PY
+
+<img width="1159" alt="FOLLOWERS SERIALIZERSPY" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/797d8c64-5091-48fb-84d4-46f734c7d913">
+
+
+COMMENTS APP: 
+
+COMMENTS APP - VIEWS.PY
+
+<img width="1125" alt="comments viewspy" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/80e9b678-867d-4284-9af2-338a150aab27">
+
+
+COMMENTS APP - URLS.PY
+
+<img width="1181" alt="comments urlspy" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9bc510f9-61c6-420f-b139-841da5845ce1">
+
+COMMENTS APP- SERIALIZERS.PY
+
+<img width="1230" alt="comments serializerspy" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6f7285d0-18d5-47ba-b9b8-2b269dd1356a">
+
+COMMENTS APP - MODELS.PY
+
+<img width="1126" alt="comments modelspy" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3ab3dca7-a096-4e61-b122-4bfddb23b076">
+
+
+
 
 # Deployment - 
 
