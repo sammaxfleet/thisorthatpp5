@@ -115,6 +115,30 @@ export const thisOrThatApi = createApi({
             },
             providesTags: ["Comments"]
         }),
+        followUser: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/followers/`,
+                    method: 'POST',
+                    body: data
+
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles", "Comments", "Post"]
+        }),
+        unFollowerUser: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/followers/${data.id}`,
+                    method: 'DELETE',
+
+
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles", "Comments", "Post"]
+        }),
 
 
 
@@ -123,4 +147,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useUnFollowerUserMutation, useFollowUserMutation, useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi

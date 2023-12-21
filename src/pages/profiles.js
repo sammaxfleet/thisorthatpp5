@@ -7,12 +7,25 @@ import { useNavigate as useNavigation } from "react-router-dom"
 // import { Button, Image } from "react-bootstrap";
 // import Container from "react-bootstrap/Container";
 import { Container, Row, Col, Card, ListGroup, Image, Button } from "react-bootstrap";
-import { useGetSingleProfileQuery, useGetProfilesQuery, useGetProfilePostsQuery } from "../store/apiSlice";
+import { useGetSingleProfileQuery, useGetProfilesQuery, useGetProfilePostsQuery, useFollowUserMutation, useUnFollowerUserMutation } from "../store/apiSlice";
 import Dropdown from "react-bootstrap/Dropdown";
 import Spinner from 'react-bootstrap/Spinner'
+import { toast } from "react-toastify";
 const Profiles = () => {
   let { slug, } = useParams();
   const navigate = useNavigation();
+  const [followUser, { isSuccess: followUserSuccess }] = useFollowUserMutation();
+  const [unfollowUser, { isSuccess: unFollowUserSucces }] = useUnFollowerUserMutation();
+  useEffect(() => {
+    if (followUserSuccess) {
+      toast.success("User Followed")
+    }
+  }, [followUserSuccess])
+  useEffect(() => {
+    if (unFollowUserSucces) {
+      toast.success("User UnFollowed")
+    }
+  }, [unFollowUserSucces])
   const { data, isLoading, isFetching } = useGetSingleProfileQuery(slug, {
     refetchOnMountOrArgChange: true,
     refetchOnFocus: true,
@@ -28,98 +41,114 @@ const Profiles = () => {
 
   });
   const { data: ProfilesData, isLoading: ProfilesIsLoading, isFetching: ProfilesIsFetching } = useGetProfilesQuery()
-  const mostFollowed = [
-    { name: "Gui", icon: "path-to-icon" },
-    { name: "Raul", icon: "path-to-icon" },
-    // ... other profiles
-  ];
+
   console.log(data, "data from api ");
   return (
-    <Container fluid>
-      {isLoading && (
-        <Spinner animation="grow" />
-      )}
-      {data && (<Row>
-        <Col md={8} className="user-profile">
-          <Card>
-            <Card.Header as="h5">
-              <div className="d-flex justify-content-between align-items-center">
-                {data.owner}
+    <Container fluid className="py-4">
+      {isLoading && <Spinner animation="grow" />}
+      {data && (
+        <Row className="justify-content-center">
+          <Col md={8}>
+            <Card className="p-3">
+              <Card.Header as="h5" className="d-flex justify-content-between align-items-center">
+                <span>{data.owner}</span>
                 {data.is_owner && (
                   <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                       Edit
                     </Dropdown.Toggle>
-
                     <Dropdown.Menu>
-                      <Dropdown.Item onClick={() => navigate(`/profiles/${slug}/edit`)}>Edit Bio & Profile Image</Dropdown.Item>
-                      <Dropdown.Item onClick={() => navigate(`/changepassword`)}>Change password</Dropdown.Item>
+                      <Dropdown.Item onClick={() => navigate(`/profiles/${slug}/edit`)}>
+                        Edit Bio & Profile Image
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => navigate(`/changepassword`)}>
+                        Change password
+                      </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 )}
-              </div>
-            </Card.Header>
-            <Card.Body>
-              <Row>
-                <Col xs={4} md={4} lg={3} className="text-center">
-                  <Image
-                    src={data?.image}
-                    roundedCircle
-                    className=""
-                    style={{ width: "100px", height: "auto" }}
-                  />
-                  <Card className="mt-2">
-                    <Card.Title>{data?.posts_count} posts</Card.Title>
-                    <Card.Title>{data?.followers_count} followers</Card.Title>
-                    <Card.Title>{data?.following_count} following</Card.Title>
-                  </Card>
-                </Col>
-                <Col xs={8} md={8} lg={9}>
-                  <Card.Title>{data?.owner}</Card.Title>
-                  <Card.Text>{data?.content}</Card.Text>
-                  {/* Add posts here */}
-                  <div className="d-flex flex-wrap" style={{ gap: "5px" }}>
-
-                    {ProfilePosts && ProfilePosts.results.map((posts) => (
-                      <Card style={{ width: '15rem' }}>
-                        <Card.Img variant="top" src={posts.image} width={"100px"} style={{
-                          objectFit: "contain"
-                        }} height={"100px"} />
+                {!data.is_owner && (
+                  <>
+                    {data.following_id ? (
+                      <Button variant="danger" onClick={() => unfollowUser({ id: data.following_id })}>
+                        Unfollow
+                      </Button>
+                    ) : (
+                      <Button variant="primary" onClick={() => followUser({ followed: data.id })}>
+                        Follow
+                      </Button>
+                    )}
+                  </>
+                )}
+              </Card.Header>
+              <Card.Body className="d-flex align-items-center">
+                <Image src={data?.image} roundedCircle className="mr-3" style={{ width: "100px", height: "100px" }} />
+                <div>
+                  <h3>{data?.owner}</h3>
+                  <p>{data?.content}</p>
+                  <div className="d-flex">
+                    <div className="mr-3">
+                      <strong>{data?.posts_count}</strong>
+                      <span className="ml-1">posts</span>
+                    </div>
+                    <div className="mr-3">
+                      <strong>{data?.followers_count}</strong>
+                      <span className="ml-1">followers</span>
+                    </div>
+                    <div>
+                      <strong>{data?.following_count}</strong>
+                      <span className="ml-1">following</span>
+                    </div>
+                  </div>
+                </div>
+              </Card.Body>
+              <hr />
+              <Card.Body>
+                <Row>
+                  {ProfilePosts && ProfilePosts.results.map((post) => (
+                    <Col key={post.id} xs={6} sm={4} md={3} className="mb-3">
+                      <Card style={{ width: '100%' }}>
+                        <Card.Img
+                          onClick={() => navigate(`/post/${post.id}`)}
+                          variant="top"
+                          src={post.image}
+                          style={{ height: '150px', objectFit: 'cover' }}
+                        />
                         <Card.Body>
-                          <Card.Title>{posts.title}</Card.Title>
-                          <Card.Text>
-                            {posts.content}
-                          </Card.Text>
-                          <Card.Text>
-                            {posts.fashion_inspiration}
-                          </Card.Text>
-                          <Button variant="primary" onClick={() => navigate(`/post/${posts.id}/edit`)}>Edit</Button>
+                          <div onClick={() => navigate(`/post/${post.id}`)}>
+                            <Card.Title>{post.title}</Card.Title>
+                            <Card.Text>{post.content}</Card.Text>
+                          </div>
+
+
+                          {post.is_owner && (
+                            <Button variant="outline-secondary" size="sm" className="ml-2" onClick={() => navigate(`/post/${post.id}/edit`)}>
+                              Edit
+                            </Button>
+                          )}
                         </Card.Body>
                       </Card>
-                    ))}
-                  </div>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4} className="most-followed">
-          <Card>
-            <Card.Header as="h5">Most followed profiles</Card.Header>
-            <ListGroup variant="flush">
-              {ProfilesData && ProfilesData.results.map((profile) => (
-                <ListGroup.Item key={profile.id} className="d-flex align-items-center " style={{
-                  gap: "10px",
-                }}>
-                  <Image src={profile.image} roundedCircle style={{ width: "50px", height: "auto" }} /> {profile.owner}
-                </ListGroup.Item>
-              ))}
-            </ListGroup>
-          </Card>
-        </Col>
-      </Row>)}
-
+                    </Col>
+                  ))}
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className="p-3">
+              <Card.Header as="h5">Most followed profiles</Card.Header>
+              <ListGroup variant="flush">
+                {ProfilesData && ProfilesData.results.map((profile) => (
+                  <ListGroup.Item key={profile.id} className="d-flex align-items-center mb-2 cursor-pointer overlay zoom" onClick={() => navigate("/profiles/" + profile.id)}>
+                    <Image src={profile.image} roundedCircle style={{ width: "50px", height: "50px" }} className="mr-2" />
+                    <span>{profile.owner}</span>
+                  </ListGroup.Item>
+                ))}
+              </ListGroup>
+            </Card>
+          </Col>
+        </Row>
+      )}
     </Container>
   );
 };

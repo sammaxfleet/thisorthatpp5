@@ -13,7 +13,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
     return (
         <Card style={{ width: "600px", marginBottom: "20px" }}>
             {/* User Circle */}
-            <div className="flex-h">
+            <div className="flex-h" onClick={() => navigate("/profiles/" + post.profile_id)}>
                 <div
 
                     style={{
@@ -111,7 +111,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                     <div>
                         {!post.like_id && (
                             <Button
-                                variant="primary"
+                                variant="secondary"
                                 onClick={() => handleLike(post.id)}
                                 style={{
                                     marginRight: "20px",
@@ -122,7 +122,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                         )}
                         {post.like_id && (
                             <Button
-                                variant="primary"
+                                variant="secondary"
                                 onClick={() => handleUnLike(post.like_id)}
                                 style={{
                                     marginRight: "20px",
@@ -132,7 +132,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                             </Button>
                         )}
 
-                        <Button variant="primary" onClick={() => handleComment(post)}>
+                        <Button variant="secondary" onClick={() => handleComment(post)}>
                             Comment
                         </Button>
 

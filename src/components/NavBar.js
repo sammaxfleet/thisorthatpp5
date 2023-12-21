@@ -15,8 +15,9 @@ const NavBar = () => {
     <Navbar className={styles.NavBar} expand="md" fixed="top">
       <Container className="button">
         <NavLink to="/">
-          <Navbar.Brand>
+          <Navbar.Brand className="d-flex justify-content-center align-items-center ">
             <img src={logo} alt="logo" height="45" />
+            <h1 className="m-2">This Or That</h1>
           </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/HomePage.module.css";
 import fleety from "./images/fleety.jpeg"
 import sasha from "./images/sasha.jpeg"
@@ -7,45 +7,22 @@ import mikel from "./images/mikel.jpeg"
 import elon from "./images/elon.jpeg"
 import Zuck from "./images/Zuck.jpeg"
 import axios from "axios";
+import { useNavigate as useNavigation } from "react-router-dom";
 
 const PopularProfiles = () => {
-  const[profilesData,setProfilesData]=useState(null);
-  const getProfiles =async()=>{
+  const navigate = useNavigation();
+  const [profilesData, setProfilesData] = useState(null);
+  const getProfiles = async () => {
     const res = await axios.get('https://thisorthatapi-56bb400a2b0e.herokuapp.com/profiles/')
-    console.log(res,'res')
+    console.log(res, 'res')
     setProfilesData(res.data)
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     getProfiles();
     console.log(profilesData)
-  },[])
-  const data = [
-    {
-      name: "Fleety",
-      image: fleety,
-    },
-    {
-      name: "Sasha",
-      image: sasha,
-    },
-    {
-      name: "Bev",
-      image: bev,
-    },
-    {
-      name: "Mikel",
-      image: mikel,
-    },
-    {
-      name: "Elon",
-      image: elon,
-    },
-    {
-      name: "Mark",
-      image: Zuck,
-    },
-  ];
+  }, [])
+
 
   //   Style based on bootstrap
   return (
@@ -61,11 +38,13 @@ const PopularProfiles = () => {
       >
         {profilesData && profilesData.results.map((item) => (
           <div
+            onClick={() => navigate("/profiles/" + item.id)}
             key={item.owner}
             style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              cursor: "pointer"
             }}
           >
             <img

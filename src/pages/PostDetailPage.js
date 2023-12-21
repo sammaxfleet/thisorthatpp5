@@ -15,7 +15,10 @@ const PostDetailPage = () => {
         refetchOnFocus: true, refetchOnMountOrArgChange: true, refetchOnReconnect: true
     })
     const { data: CommentsData } = useGetPostCommentsQuery(data?.id, {
-        skip: !SinglePostQuerySuccess
+        skip: !SinglePostQuerySuccess,
+        refetchOnFocus: true,
+        refetchOnMountOrArgChange: true,
+        refetchOnReconnect: true,
     })
     const navigate = useNavigation();
     const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
