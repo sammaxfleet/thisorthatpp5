@@ -30,7 +30,10 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 # AM I RSPONSIVE IMAGE.
 
-Wire Frames - [THIS OR THAT WIREFRAMES 2.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/12831129/THIS.OR.THAT.WIREFRAMES.2.pdf)
+
+
+
+Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/13717176/THISORTHAT.WIREFRAMES.pdf)
 
 
 TABLE OF CONTENTS - 
@@ -305,17 +308,21 @@ Delete - Users can delete tasks, comments, likes, follows.
  When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. 
  When the user is logged in Comments, Signout and Profile Page also become available.
 
- The Site has 3 MAIN WHEN LOGGED OUT  pages
+ The Site has 3 main pages when User 'LOGGED OUT' pages
 
- HOME
- SIGN IN
- SIGN UP
+ 1. HOME
+ 2. SIGN IN
+ 3. SIGN UP
 
 
- WHEN LOGGED IN : 
+ when User 'LOGGED IN' : 
  
-  1.PROFILE
-  2.ADD POST both become available. 
+  1. PROFILE
+  2. ADD POST 
+  3. Edit Post 
+  4. EDIT/ DELETE post
+  5. Edit Profile/ Delete
+  
 
 
 # Colour Scheme - 
@@ -348,6 +355,10 @@ The Home page
 
 
 # TESTING
+
+
+
+
 
 
 # Deployment - 
