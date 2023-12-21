@@ -58,7 +58,7 @@ export const thisOrThatApi = createApi({
                     body: data
                 }
             },
-            invalidatesTags: ["Posts", "Profiles"]
+            invalidatesTags: ["Posts", "Profiles", "Post"]
         }),
         deleteLikePost: builder.mutation({
             query(data) {
@@ -69,7 +69,7 @@ export const thisOrThatApi = createApi({
 
                 }
             },
-            invalidatesTags: ["Posts", "Profiles"]
+            invalidatesTags: ["Posts", "Profiles", "Post"]
         }),
         createPostComment: builder.mutation({
             query(data) {
@@ -81,6 +81,28 @@ export const thisOrThatApi = createApi({
                 }
             },
             invalidatesTags: ["Posts", "Profiles", "Comments"]
+        }),
+        editPostComment: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/comments/${data.id}/`,
+                    method: 'PUT',
+                    body: data.data
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles", "Comments", "Post"]
+        }),
+        deletePostComment: builder.mutation({
+            query(data) {
+                console.log(data, "from like post")
+                return {
+                    url: `/comments/${data}/`,
+                    method: 'DELETE',
+
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles", "Comments", "Post"]
         }),
         getPostComments: builder.query({
             query(data) {
@@ -101,4 +123,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi

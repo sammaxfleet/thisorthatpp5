@@ -65,7 +65,7 @@ const Posts = () => {
     >
       {data && data.results.map((post) => {
         return (
-          <PostCard post={post} showComments={false} handleLike={handleLike} handleComment={handleComment} handleUnLike={handleUnLike}   />
+          <PostCard post={post} showComments={false} handleLike={handleLike} handleComment={handleComment} handleUnLike={handleUnLike} />
         );
       })}
     </div>

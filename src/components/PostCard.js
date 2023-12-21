@@ -5,20 +5,11 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import styles from "../styles/HomePage.module.css";
 import { useNavigate as useNavigation } from "react-router-dom";
+import PostCardComments from "./PostCardComments";
 
 const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike, comments = [], handleDelete, handleInputChange, handleSaveEdit }) => {
     const navigate = useNavigation();
-    const [editing, setEditing] = useState(false);
-    const [editedContent, setEditedContent] = useState();
 
-    const handleEdit = () => {
-        setEditing(true);
-    };
-
-    const handleCancelEdit = () => {
-        setEditing(false);
-        // setEditedContent(comment.content); // Reset edited content to original comment content
-    };
     return (
         <Card style={{ width: "600px", marginBottom: "20px" }}>
             {/* User Circle */}
@@ -152,60 +143,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                         <>
                             {comments && comments.map((comment) => {
                                 return (
-                                    <Card className="mb-3">
-                                        <Card.Body className="d-flex align-items-center">
-                                            <span
-                                                role="img"
-                                                aria-label="comment"
-                                                className="emoji mr-3"
-                                                style={{ fontSize: '24px' }}
-                                            >
-                                                💬
-                                            </span>
-                                            {editing ? (
-                                                <Form.Control
-                                                    as="textarea"
-                                                    rows={3}
-                                                    value={editedContent}
-                                                    onChange={handleInputChange}
-                                                    defaultValue={comment.content}
-                                                />
-                                            ) : (
-                                                <Card.Text className="mb-0">{comment.content}</Card.Text>
-                                            )}
-                                        </Card.Body>
-                                        <Card.Footer className="text-muted d-flex justify-content-between align-items-center">
-                                            <div className="d-flex align-items-center">
-                                                <img
-                                                    src={comment.profile_image}
-                                                    alt="Profile"
-                                                    className="rounded-circle mr-2"
-                                                    style={{ width: '30px', height: '30px' }}
-                                                />
-                                                <span>{comment.owner}</span>
-                                            </div>
-                                            {editing ? (
-                                                <div>
-                                                    <button className="btn btn-sm btn-secondary mr-2" onClick={handleSaveEdit}>
-                                                        Save
-                                                    </button>
-                                                    <button className="btn btn-sm btn-outline-secondary" onClick={handleCancelEdit}>
-                                                        Cancel
-                                                    </button>
-                                                </div>
-                                            ) : (
-                                                <Dropdown>
-                                                    <Dropdown.Toggle variant="secondary" id={`dropdown-basic-${comment.id}`}>
-                                                        Options
-                                                    </Dropdown.Toggle>
-                                                    <Dropdown.Menu>
-                                                        <Dropdown.Item onClick={handleEdit}>Edit</Dropdown.Item>
-                                                        <Dropdown.Item>Delete</Dropdown.Item>
-                                                    </Dropdown.Menu>
-                                                </Dropdown>
-                                            )}
-                                        </Card.Footer>
-                                    </Card>
+                                    <PostCardComments comment={comment} />
                                 );
                             })}
                         </>
