@@ -402,6 +402,8 @@ The username at the top 6 most popular profiles, and if the user is logged in, t
 
 
 Mobile View: 
+The mobile view, makes everything more compact the nav bar goes into a small tab & the popular user feature disappears for larger screens.
+The same functions still work just the initial 'POPULAR USER PROFILES' doesn't come up on mobile view. 
 
 <img width="511" alt="Screenshot 2023-12-27 at 14 10 10" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9b69584e-6f8a-43f3-837f-7fc033246415">
 
@@ -410,14 +412,22 @@ Mobile View:
 
 Here I have searched the keyword 'Bakayo' this has allowed me to search a keyword from a post and showed the post. 
 
+The search bar allows the website to be filtered, you can search for celebrity name/ user/ or a word of inspiration. 
+
 <img width="989" alt="Screenshot 2023-12-27 at 14 15 13" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/15822d22-c3be-4d8d-aa9f-caa8900db7a2">
 
 # Posts
 
-How a post is displayed by a User, it focuses on the main feature which is the Image.
-A title 
-Description of the outfit
-Likes & Comments 
+How a post is displayed by a User, it focuses on the main feature which is.
+
+1. Image.
+2.A title 
+3. Description of the outfit
+4. Likes & Comments
+
+
+This layout is simple, and really focused on the image being the main feature, beneath the photo the user 'if logged in' is able to comment and interact with other users.
+Then you're able to click on their profile if you wish to see their posts and follow. 
 
 <img width="818" alt="Screenshot 2023-12-27 at 14 16 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cce69670-650b-4746-90c0-5628fd9441bf">
 
@@ -425,22 +435,24 @@ Likes & Comments
 # Following a User 
 
 Once clicked on a User's profile we get lead to this 'Follow Page' 
-Here we can see the Users posts
-See their follow count & their following count. 
+Here we can see the Users posts & see their follow count & their following count. 
+
 
 <img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
 
 # Following And unfollowing a user
 
 The button changes colour to red for unfollow and is blue for the follow button. 
+This page is made so you can follow a users posts. 
 
 
 <img width="1367" alt="Screenshot 2023-12-27 at 14 42 26" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/517ec225-0111-48d3-9879-7897d13c7180">
 
 
 
-
 # Edit Profile 
+
+Here is where we can edit our profile, update your latest profile photo, username & Password. 
 
 <img width="952" alt="Screenshot 2023-12-27 at 14 33 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2f84bc26-560f-4d09-b09a-29586a579b9a">
 
@@ -460,6 +472,22 @@ The button changes colour to red for unfollow and is blue for the follow button.
 
 # Add Post
 
+The essential page for the site. Here is how you add a post,
+
+I've filtered it so it goes:
+
+
+{ Image }
+
+{ Celebrity Name }
+
+{ Description }
+
+{ Fashion Inspiration }
+
+The create button means it gets posted to the Home page.
+If you want to edit post you can from profile or from there. 
+
 
 <img width="1080" alt="Screenshot 2023-12-27 at 14 36 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2084dfd1-0957-45aa-9e67-dec4962fb2f7">
 
@@ -470,35 +498,48 @@ Tap to upload image
 
 # post liked - with notification 
 
+To like a post means being able to give it thumbs up.
+This is a very popular feature on social media, & will gain attraction. 
+This feature is important and tells us as the website users how many posts a like has. A user can also unlike posts, but if not logged in this feature isn't available. 
+
 
 <img width="1342" alt="Screenshot 2023-12-27 at 14 36 53" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f1342561-7e82-43ee-a382-3e971fb9e136">
 
 # Post Unliked with Notification 
 
+Post Unliked the model I've made for likes , I've tried to used with continuity over the site. 
+
 <img width="1335" alt="Screenshot 2023-12-27 at 14 37 17" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69af35c7-3f2f-4922-abcc-561b735a092d">
 
 # Add Comment
 
+Adding comment allows the user to share their opinion.
+One of the goals of the site is to allow people to interact more expressing their opinions & being able to edit their views. 
+
 <img width="505" alt="Screenshot 2023-12-27 at 14 37 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6d77361e-440d-462d-91fd-59839ceb6bc0">
 
 
-# Comments by User logged in 
+##  Editng Comments by User logged in 
+
+Here is where a user can edit their say
 
 <img width="1222" alt="Screenshot 2023-12-27 at 14 38 21" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0585d8b7-3054-448e-adda-45d36556ab6c">
 
 
-# Edit Delete/ Commment 
+## Edit Delete/ Commment 
 
 <img width="228" alt="Screenshot 2023-12-27 at 14 38 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7b8ab3cf-06bc-45d1-a423-e26b34978938">
 
-# Edit Comment 
+## Edit Comment 
 
 <img width="1183" alt="Screenshot 2023-12-27 at 14 39 12" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/68055f23-ef5f-4e3e-bdb9-c61d58665296">
 
-#Delete comment 
+## Delete comment 
 
-Location 
+The comment is now deleted and can;t be seen by any user. 
+
 <img width="1362" alt="Screenshot 2023-12-27 at 14 40 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/63f3c6c7-2b7b-4ed3-8b5d-d6248b7d8e93">
+
 
 # TESTING
 
@@ -542,8 +583,6 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 
 
 
-
-
 # Credits - 
 
 
@@ -573,19 +612,6 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 - Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
 - https://www.postman.com/ testing 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
