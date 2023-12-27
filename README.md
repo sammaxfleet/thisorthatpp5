@@ -350,20 +350,90 @@ Design on site:
 
 
 
-# Navigation - <img width="441" alt="Screenshot 2023-12-18 at 17 54 54" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/bab63b6a-c2d0-4185-9c5c-03bc851d5afc">
+# Navigation 
 
 
-The Navigation Bar is very clean and straight forward. Depending on wether you're signed in or not a different option on the menu appears.
+<img width="350" alt="Screenshot 2023-12-27 at 14 06 29" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3c57acf3-afe8-4ec0-857f-8d87705524b9">
+
+
+
+The Navigation Bar is slick and simple. 
+Depending on wether you're signed in or not a different option on the menu appears.
 On accessing the site for the first time, the user is logged out and the following menu items are visible:
 
-- HOME
-- SIGN IN
-- SIGN UP 
+1. - HOME
+2. - SIGN IN
+3. - SIGN UP 
 
+Once Signed in: 
+
+<img width="406" alt="Screenshot 2023-12-27 at 14 05 26" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7d29c708-259f-4c65-94ed-a2ec6be2ca14">
+
+1. - HOME
+2. - LOGOUT
+3. - PROFILE
+4. - ADD POST
+
+
+Orange Highliught over Nav Bar
+
+This highlight comes when you hover over the page, to give the colour continiuty on the site from the logo. 
+
+<img width="99" alt="Screenshot 2023-12-27 at 14 07 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aeb13f46-5fa1-4c93-82e2-2357e3db8e90">
+
+Mobile view the Nav Bar folds in. 
+
+   
 
 # Homepage - 
 
-The Home page
+The Home page has 4 main React Components
+
+- Popular Users
+- Search Keyword
+- Fashion Posts
+- Like, Comment & Follow
+
+<img width="1097" alt="Screenshot 2023-12-27 at 14 11 41" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c1ef5a0f-6e91-423d-b9dc-91887df60a1a">
+
+The popular profiles component is a permanent feature across the entire site. It appears at the top of all pages.
+This component uses a filter to order all site users by followers count from highest to lowest
+The users with the highest follower count are determined to be the most popular profiles and the top six are displayed within the popular profiles component.
+
+If the user isn't logged in they can't follow.
+The username at the top 6 most popular profiles, and if the user is logged in, they will also see a button enabling them to follow or unfollow the profile.
+
+
+Mobile View: 
+
+<img width="511" alt="Screenshot 2023-12-27 at 14 10 10" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9b69584e-6f8a-43f3-837f-7fc033246415">
+
+
+# Search Bar
+
+Here I have searched the keyword 'Bakayo' this has allowed me to search a keyword from a post and showed the post. 
+
+<img width="989" alt="Screenshot 2023-12-27 at 14 15 13" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/15822d22-c3be-4d8d-aa9f-caa8900db7a2">
+
+# Posts
+
+How a post is displayed by a User, it focuses on the main feature which is the Image.
+A title 
+Description of the outfit
+Likes & Comments 
+
+<img width="818" alt="Screenshot 2023-12-27 at 14 16 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cce69670-650b-4746-90c0-5628fd9441bf">
+
+
+# Following a  User 
+
+Once clicked on a User's profile we get lead to this 'Follow Page' 
+Here we can see the Users posts
+See their follow count & their following count. 
+
+
+
+<img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
 
 
 # TESTING
