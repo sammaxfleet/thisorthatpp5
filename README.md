@@ -440,19 +440,57 @@ See their follow count & their following count.
 
 <img width="952" alt="Screenshot 2023-12-27 at 14 33 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2f84bc26-560f-4d09-b09a-29586a579b9a">
 
-# Edit 
+## Edit Username
 
 # <img width="643" alt="Screenshot 2023-12-27 at 14 33 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/91c8891d-1100-44f4-b291-3abea4723187">
 
-Change Password
+## Change Password
 
 
 <img width="1252" alt="Screenshot 2023-12-27 at 14 34 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/045e64f2-41f2-4f95-8684-75709f1f7f11">
 
-Change Username
+## Change Username
 
 
 <img width="548" alt="Screenshot 2023-12-27 at 14 34 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e2087dd9-46dd-4030-8efd-d1c6e626a02e">
+
+# Add Post
+
+
+<img width="1080" alt="Screenshot 2023-12-27 at 14 36 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2084dfd1-0957-45aa-9e67-dec4962fb2f7">
+
+
+# post liked - with notification 
+
+
+<img width="1342" alt="Screenshot 2023-12-27 at 14 36 53" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f1342561-7e82-43ee-a382-3e971fb9e136">
+
+# Post Unliked with Notification 
+
+<img width="1335" alt="Screenshot 2023-12-27 at 14 37 17" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69af35c7-3f2f-4922-abcc-561b735a092d">
+
+# Add Comment
+
+<img width="505" alt="Screenshot 2023-12-27 at 14 37 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6d77361e-440d-462d-91fd-59839ceb6bc0">
+
+
+# Comments by User logged in 
+
+<img width="1222" alt="Screenshot 2023-12-27 at 14 38 21" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0585d8b7-3054-448e-adda-45d36556ab6c">
+
+
+# Edit Delete/ Commment 
+
+<img width="228" alt="Screenshot 2023-12-27 at 14 38 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7b8ab3cf-06bc-45d1-a423-e26b34978938">
+
+# Edit Comment 
+
+<img width="1183" alt="Screenshot 2023-12-27 at 14 39 12" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/68055f23-ef5f-4e3e-bdb9-c61d58665296">
+
+#Delete comment 
+
+Location 
+<img width="1362" alt="Screenshot 2023-12-27 at 14 40 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/63f3c6c7-2b7b-4ed3-8b5d-d6248b7d8e93">
 
 # TESTING
 
