@@ -333,9 +333,21 @@ Where this is a white background as full focus goes on the image, the user is th
 <img width="1435" alt="Screenshot 2023-10-08 at 13 12 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5946cf27-8d7f-470b-a27c-d3c4a124223b">
 
 # Typography - 
-<img width="322" alt="Screenshot 2023-10-08 at 13 16 55" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/98edf466-cdff-4e17-b594-f661721751fc">
 
-Didot font, is slick, edgy & sharp on the eyte for any text. 
+Kalnia font is used: I wanted to add a bit of an edgy font to this, with it being a fashion/ creative site. I thought the font was cool and took inspiration from the Zara website. 
+
+<img width="272" alt="Screenshot 2023-12-27 at 14 04 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4bb1d7f9-da4a-44d5-bb98-73f22a556e58">
+
+
+Font Used: 
+<img width="279" alt="Screenshot 2023-12-27 at 14 02 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/02086305-4156-4eed-b10d-6a63bacf9937">
+
+Design on site: 
+
+<img width="1057" alt="Screenshot 2023-12-27 at 14 01 23" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/eed80da1-b42e-4803-88e8-be62844b7bb5">
+
+
+
 
 
 # Navigation - <img width="441" alt="Screenshot 2023-12-18 at 17 54 54" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/bab63b6a-c2d0-4185-9c5c-03bc851d5afc">
