@@ -347,9 +347,6 @@ Design on site:
 <img width="1057" alt="Screenshot 2023-12-27 at 14 01 23" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/eed80da1-b42e-4803-88e8-be62844b7bb5">
 
 
-
-
-
 # Navigation 
 
 
@@ -431,9 +428,16 @@ Once clicked on a User's profile we get lead to this 'Follow Page'
 Here we can see the Users posts
 See their follow count & their following count. 
 
-
-
 <img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
+
+# Following And unfollowing a user
+
+The button changes colour to red for unfollow and is blue for the follow button. 
+
+
+<img width="1367" alt="Screenshot 2023-12-27 at 14 42 26" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/517ec225-0111-48d3-9879-7897d13c7180">
+
+
 
 
 # Edit Profile 
@@ -458,6 +462,10 @@ See their follow count & their following count.
 
 
 <img width="1080" alt="Screenshot 2023-12-27 at 14 36 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2084dfd1-0957-45aa-9e67-dec4962fb2f7">
+
+Tap to upload image
+
+<img width="1264" alt="Screenshot 2023-12-27 at 14 43 05" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/8b176809-f777-41d9-b902-a5d6d20ecb09">
 
 
 # post liked - with notification 
