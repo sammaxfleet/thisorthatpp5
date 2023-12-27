@@ -484,7 +484,8 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 
 
 #frame works and libraries
-- Redux Devtools 
+
+- Redux toolkit : state management libraary
 - Balsamiq
 - Heroku
 - Font Awesome
