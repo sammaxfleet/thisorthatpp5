@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "./searchbar"
 import PopularProfiles from "./PopularProfiles";
 import Posts from "./Posts";
-
+import { useGetPostsQuery } from "../../store/apiSlice";
 const HomePage = () => {
+  const [searchQuery, setSearchQuery] = useState("")
+  const { data, isLoading, isError } = useGetPostsQuery(searchQuery, {
+    refetchOnFocus: true,
+    refetchOnMountOrArgChange: true,
+    refetchOnReconnect: true,
+
+
+  });
+
+
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value)
+    console.log(searchQuery)
+  }
   return (
     <div
       style={{
         margin: "10px",
       }}
-    >
-      <SearchBar />
+      className="container-fluid"
+    >      <SearchBar handleSearch={handleSearch} searchQuery={searchQuery} />
       <PopularProfiles />
-      <Posts />
+      <Posts data={data} />
     </div>
   );
 };

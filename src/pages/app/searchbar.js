@@ -1,34 +1,25 @@
 import React from "react";
-import {useState} from "react"
+import { useState } from "react"
 import { Form, FormControl, Button } from "react-bootstrap";
+import { useCreatePostCommentMutation, useDeleteLikePostMutation, useGetPostsQuery, useLikePostMutation } from "../../store/apiSlice";
 
-const SearchBar = () => {
+const SearchBar = ({ handleSearch, searchQuery }) => {
 
-    const [searchQuery, setSearchQuery] = useState("")
-
-    const handleSearch = (e)=>{
-        setSearchQuery(e.target.value)
-        console.log(searchQuery)
-    }
   return (
     <div>
       <Form inline>
         <FormControl
           type="text"
           style={{
-            width: "550px",
+            width: "100%",
           }}
           placeholder="🔍 Search by User Name, Popularity, Date, Title, Content or Category"
-          className="mr-sm-2"
-          value = {searchQuery}
-          onChange = {handleSearch}
+          className=""
+          value={searchQuery}
+          onChange={handleSearch}
         />
 
-        <FormControl
-          type="text"
-          placeholder="🔍 Search by Celebrity"
-          className="mr-sm-2"
-        />
+
       </Form>
     </div>
   );

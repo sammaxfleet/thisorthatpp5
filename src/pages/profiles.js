@@ -11,6 +11,7 @@ import { useGetSingleProfileQuery, useGetProfilesQuery, useGetProfilePostsQuery,
 import Dropdown from "react-bootstrap/Dropdown";
 import Spinner from 'react-bootstrap/Spinner'
 import { toast } from "react-toastify";
+import ChangeUsernameModal from "../components/ChangeUsernameModal";
 const Profiles = () => {
   let { slug, } = useParams();
   const navigate = useNavigation();
@@ -41,10 +42,29 @@ const Profiles = () => {
 
   });
   const { data: ProfilesData, isLoading: ProfilesIsLoading, isFetching: ProfilesIsFetching } = useGetProfilesQuery()
+  const [showModal, setShowModal] = useState(false);
 
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleSaveUsername = (newUsername) => {
+    // Perform the action to save the new username (e.g., send a request to update it)
+    console.log('New username:', newUsername);
+    // Replace the console.log with your code to update the username
+  };
   console.log(data, "data from api ");
   return (
     <Container fluid className="py-4">
+      <ChangeUsernameModal
+        show={showModal}
+        onHide={handleCloseModal}
+        onSave={handleSaveUsername}
+      />
       {isLoading && <Spinner animation="grow" />}
       {data && (
         <Row className="justify-content-center">
@@ -63,6 +83,9 @@ const Profiles = () => {
                       </Dropdown.Item>
                       <Dropdown.Item onClick={() => navigate(`/changepassword`)}>
                         Change password
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={() => handleShowModal()}>
+                        Change username
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>

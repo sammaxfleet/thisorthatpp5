@@ -11,7 +11,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
     const navigate = useNavigation();
 
     return (
-        <Card style={{ width: "600px", marginBottom: "20px" }}>
+        <Card style={{ width: "100%", marginBottom: "20px" }}>
             {/* User Circle */}
             <div className="flex-h" onClick={() => navigate("/profiles/" + post.profile_id)}>
                 <div
@@ -19,6 +19,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                     style={{
                         display: "flex",
                         alignItems: "center",
+                        flexWrap: "wrap",
                         gap: "20px",
                     }}
                 >
@@ -60,9 +61,9 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                 variant="top"
                 src={post.image}
                 style={{
-                    width: "300px",
-                    marginLeft: "150px",
-                    height: "400px",
+                    width: "100%",
+                    height: "600px",
+                    objectFit: "contain"
                 }}
             />
 

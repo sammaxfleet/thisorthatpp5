@@ -20,6 +20,7 @@ import NewPost from "./pages/NewPost";
 import PostEdit from "./pages/PostEdit";
 import ChangePassword from "./pages/ChangePassword";
 import PostDetailPage from "./pages/PostDetailPage";
+import ChangeUsername from "./pages/ChangeUsername";
 function App() {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const dispatch = useDispatch()
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/post/:slug" element={<PostDetailPage />} />
           <Route exact path="/post/:slug/edit" element={<PostEdit />} />
           <Route exact path="/changepassword" element={<ChangePassword />} />
+          <Route exact path="/changeusername" element={<ChangeUsername />} />
           <Route element={() => <p>Page not found!</p>} />
         </Routes>
       </Container>

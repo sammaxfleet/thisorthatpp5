@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/HomePage.module.css";
-import fleety from "./images/fleety.jpeg"
-import sasha from "./images/sasha.jpeg"
-import bev from "./images/bev.jpeg"
-import mikel from "./images/mikel.jpeg"
-import elon from "./images/elon.jpeg"
-import Zuck from "./images/Zuck.jpeg"
 import axios from "axios";
 import { useNavigate as useNavigation } from "react-router-dom";
 
@@ -34,6 +28,7 @@ const PopularProfiles = () => {
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
+          flexWrap: "wrap"
         }}
       >
         {profilesData && profilesData.results.map((item) => (

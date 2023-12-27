@@ -7,11 +7,8 @@ import { useCreatePostCommentMutation, useDeleteLikePostMutation, useGetPostsQue
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 import PostCard from "../../components/PostCard";
-const Posts = () => {
-  const { data, isLoading, isError } = useGetPostsQuery({
-    refetchOnFocus: true,
+const Posts = ({ data }) => {
 
-  });
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const [likePost, { isSuccess }] = useLikePostMutation()
 
@@ -60,7 +57,10 @@ const Posts = () => {
     <div
       style={{
         marginTop: "20px",
-        marginLeft: "80px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
       }}
     >
       {data && data.results.map((post) => {

@@ -2,15 +2,13 @@
 
 body {
     margin: 0;
-font-family: 'Kalnia', serif;
+    font-family: 'Kalnia', serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #F8F8FF;
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
+
   .flex-h {
     display: flex;
     flex-direction: row;

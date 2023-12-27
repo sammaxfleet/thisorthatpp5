@@ -1,6 +1,4 @@
 .App {
-  font-family: "DM Sans", sans-serif;
-  background-color: #f3f4ed;
   min-height: 100vh;
 }
 
@@ -9,7 +7,6 @@
 }
 
 .Content {
-  background-color: #e4d3c1;
   padding: 10px;
   border-radius: 2px;
   border: 1px solid #8f755f;

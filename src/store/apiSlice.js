@@ -28,7 +28,7 @@ export const thisOrThatApi = createApi({
             providesTags: (result, error, slug) => [{ type: 'Profiles', slug }],
         }),
         getPosts: builder.query({
-            query: () => `posts`,
+            query: (search) => `posts?search=${search}`,
             providesTags: ['Posts'],
         }),
         getProfilePosts: builder.query({
@@ -66,6 +66,17 @@ export const thisOrThatApi = createApi({
                 return {
                     url: `/likes/${data}`,
                     method: 'DELETE',
+
+                }
+            },
+            invalidatesTags: ["Posts", "Profiles", "Post"]
+        }),
+        changeUserName: builder.mutation({
+            query(data) {
+                return {
+                    url: `/dj-rest-auth/user/`,
+                    method: 'PUT',
+                    body: data,
 
                 }
             },
@@ -147,4 +158,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useUnFollowerUserMutation, useFollowUserMutation, useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useChangeUserNameMutation, useUnFollowerUserMutation, useFollowUserMutation, useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
