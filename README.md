@@ -425,7 +425,7 @@ Likes & Comments
 <img width="818" alt="Screenshot 2023-12-27 at 14 16 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cce69670-650b-4746-90c0-5628fd9441bf">
 
 
-# Following a  User 
+# Following a User 
 
 Once clicked on a User's profile we get lead to this 'Follow Page' 
 Here we can see the Users posts
@@ -435,6 +435,24 @@ See their follow count & their following count.
 
 <img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
 
+
+# Edit Profile 
+
+<img width="952" alt="Screenshot 2023-12-27 at 14 33 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2f84bc26-560f-4d09-b09a-29586a579b9a">
+
+# Edit 
+
+# <img width="643" alt="Screenshot 2023-12-27 at 14 33 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/91c8891d-1100-44f4-b291-3abea4723187">
+
+Change Password
+
+
+<img width="1252" alt="Screenshot 2023-12-27 at 14 34 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/045e64f2-41f2-4f95-8684-75709f1f7f11">
+
+Change Username
+
+
+<img width="548" alt="Screenshot 2023-12-27 at 14 34 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e2087dd9-46dd-4030-8efd-d1c6e626a02e">
 
 # TESTING
 
