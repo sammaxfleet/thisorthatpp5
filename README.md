@@ -1,4 +1,4 @@
-# THIS OR THAT | Portfolio Project 5 | advanced front end | Code Institute. 
+# THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute. 
 
 ## Site Description 
 
