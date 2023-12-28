@@ -1,4 +1,4 @@
-# THIS OR THAT | Portfolio Project 5 | advanced front end | Code Institute. 
+# THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute. 
 
 ## Site Description 
 
@@ -333,25 +333,212 @@ Where this is a white background as full focus goes on the image, the user is th
 <img width="1435" alt="Screenshot 2023-10-08 at 13 12 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5946cf27-8d7f-470b-a27c-d3c4a124223b">
 
 # Typography - 
-<img width="322" alt="Screenshot 2023-10-08 at 13 16 55" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/98edf466-cdff-4e17-b594-f661721751fc">
 
-Didot font, is slick, edgy & sharp on the eyte for any text. 
+Kalnia font is used: I wanted to add a bit of an edgy font to this, with it being a fashion/ creative site. I thought the font was cool and took inspiration from the Zara website. 
 
-
-# Navigation - <img width="441" alt="Screenshot 2023-12-18 at 17 54 54" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/bab63b6a-c2d0-4185-9c5c-03bc851d5afc">
+<img width="272" alt="Screenshot 2023-12-27 at 14 04 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4bb1d7f9-da4a-44d5-bb98-73f22a556e58">
 
 
-The Navigation Bar is very clean and straight forward. Depending on wether you're signed in or not a different option on the menu appears.
+Font Used: 
+<img width="279" alt="Screenshot 2023-12-27 at 14 02 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/02086305-4156-4eed-b10d-6a63bacf9937">
+
+Design on site: 
+
+<img width="1057" alt="Screenshot 2023-12-27 at 14 01 23" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/eed80da1-b42e-4803-88e8-be62844b7bb5">
+
+
+# Navigation 
+
+
+<img width="350" alt="Screenshot 2023-12-27 at 14 06 29" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3c57acf3-afe8-4ec0-857f-8d87705524b9">
+
+
+
+The Navigation Bar is slick and simple. 
+Depending on wether you're signed in or not a different option on the menu appears.
 On accessing the site for the first time, the user is logged out and the following menu items are visible:
 
-- HOME
-- SIGN IN
-- SIGN UP 
+1. - HOME
+2. - SIGN IN
+3. - SIGN UP 
 
+Once Signed in: 
+
+<img width="406" alt="Screenshot 2023-12-27 at 14 05 26" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7d29c708-259f-4c65-94ed-a2ec6be2ca14">
+
+1. - HOME
+2. - LOGOUT
+3. - PROFILE
+4. - ADD POST
+
+
+Orange Highliught over Nav Bar
+
+This highlight comes when you hover over the page, to give the colour continiuty on the site from the logo. 
+
+<img width="99" alt="Screenshot 2023-12-27 at 14 07 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aeb13f46-5fa1-4c93-82e2-2357e3db8e90">
+
+Mobile view the Nav Bar folds in. 
+
+   
 
 # Homepage - 
 
-The Home page
+The Home page has 4 main React Components
+
+- Popular Users
+- Search Keyword
+- Fashion Posts
+- Like, Comment & Follow
+
+<img width="1097" alt="Screenshot 2023-12-27 at 14 11 41" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c1ef5a0f-6e91-423d-b9dc-91887df60a1a">
+
+The popular profiles component is a permanent feature across the entire site. It appears at the top of all pages.
+This component uses a filter to order all site users by followers count from highest to lowest
+The users with the highest follower count are determined to be the most popular profiles and the top six are displayed within the popular profiles component.
+
+If the user isn't logged in they can't follow.
+The username at the top 6 most popular profiles, and if the user is logged in, they will also see a button enabling them to follow or unfollow the profile.
+
+
+Mobile View: 
+The mobile view, makes everything more compact the nav bar goes into a small tab & the popular user feature disappears for larger screens.
+The same functions still work just the initial 'POPULAR USER PROFILES' doesn't come up on mobile view. 
+
+<img width="511" alt="Screenshot 2023-12-27 at 14 10 10" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9b69584e-6f8a-43f3-837f-7fc033246415">
+
+
+# Search Bar
+
+Here I have searched the keyword 'Bakayo' this has allowed me to search a keyword from a post and showed the post. 
+
+The search bar allows the website to be filtered, you can search for celebrity name/ user/ or a word of inspiration. 
+
+<img width="989" alt="Screenshot 2023-12-27 at 14 15 13" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/15822d22-c3be-4d8d-aa9f-caa8900db7a2">
+
+# Posts
+
+How a post is displayed by a User, it focuses on the main feature which is.
+
+1. Image.
+2.A title 
+3. Description of the outfit
+4. Likes & Comments
+
+
+This layout is simple, and really focused on the image being the main feature, beneath the photo the user 'if logged in' is able to comment and interact with other users.
+Then you're able to click on their profile if you wish to see their posts and follow. 
+
+<img width="818" alt="Screenshot 2023-12-27 at 14 16 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cce69670-650b-4746-90c0-5628fd9441bf">
+
+
+# Following a User 
+
+Once clicked on a User's profile we get lead to this 'Follow Page' 
+Here we can see the Users posts & see their follow count & their following count. 
+
+
+<img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
+
+# Following And unfollowing a user
+
+The button changes colour to red for unfollow and is blue for the follow button. 
+This page is made so you can follow a users posts. 
+
+
+<img width="1367" alt="Screenshot 2023-12-27 at 14 42 26" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/517ec225-0111-48d3-9879-7897d13c7180">
+
+
+
+# Edit Profile 
+
+Here is where we can edit our profile, update your latest profile photo, username & Password. 
+
+<img width="952" alt="Screenshot 2023-12-27 at 14 33 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2f84bc26-560f-4d09-b09a-29586a579b9a">
+
+## Edit Username
+
+# <img width="643" alt="Screenshot 2023-12-27 at 14 33 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/91c8891d-1100-44f4-b291-3abea4723187">
+
+## Change Password
+
+
+<img width="1252" alt="Screenshot 2023-12-27 at 14 34 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/045e64f2-41f2-4f95-8684-75709f1f7f11">
+
+## Change Username
+
+
+<img width="548" alt="Screenshot 2023-12-27 at 14 34 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e2087dd9-46dd-4030-8efd-d1c6e626a02e">
+
+# Add Post
+
+The essential page for the site. Here is how you add a post,
+
+I've filtered it so it goes:
+
+
+{ Image }
+
+{ Celebrity Name }
+
+{ Description }
+
+{ Fashion Inspiration }
+
+The create button means it gets posted to the Home page.
+If you want to edit post you can from profile or from there. 
+
+
+<img width="1080" alt="Screenshot 2023-12-27 at 14 36 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2084dfd1-0957-45aa-9e67-dec4962fb2f7">
+
+Tap to upload image
+
+<img width="1264" alt="Screenshot 2023-12-27 at 14 43 05" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/8b176809-f777-41d9-b902-a5d6d20ecb09">
+
+
+# post liked - with notification 
+
+To like a post means being able to give it thumbs up.
+This is a very popular feature on social media, & will gain attraction. 
+This feature is important and tells us as the website users how many posts a like has. A user can also unlike posts, but if not logged in this feature isn't available. 
+
+
+<img width="1342" alt="Screenshot 2023-12-27 at 14 36 53" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f1342561-7e82-43ee-a382-3e971fb9e136">
+
+# Post Unliked with Notification 
+
+Post Unliked the model I've made for likes , I've tried to used with continuity over the site. 
+
+<img width="1335" alt="Screenshot 2023-12-27 at 14 37 17" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69af35c7-3f2f-4922-abcc-561b735a092d">
+
+# Add Comment
+
+Adding comment allows the user to share their opinion.
+One of the goals of the site is to allow people to interact more expressing their opinions & being able to edit their views. 
+
+<img width="505" alt="Screenshot 2023-12-27 at 14 37 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6d77361e-440d-462d-91fd-59839ceb6bc0">
+
+
+##  Editng Comments by User logged in 
+
+Here is where a user can edit their say
+
+<img width="1222" alt="Screenshot 2023-12-27 at 14 38 21" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0585d8b7-3054-448e-adda-45d36556ab6c">
+
+
+## Edit Delete/ Commment 
+
+<img width="228" alt="Screenshot 2023-12-27 at 14 38 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7b8ab3cf-06bc-45d1-a423-e26b34978938">
+
+## Edit Comment 
+
+<img width="1183" alt="Screenshot 2023-12-27 at 14 39 12" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/68055f23-ef5f-4e3e-bdb9-c61d58665296">
+
+## Delete comment 
+
+The comment is now deleted and can;t be seen by any user. 
+
+<img width="1362" alt="Screenshot 2023-12-27 at 14 40 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/63f3c6c7-2b7b-4ed3-8b5d-d6248b7d8e93">
 
 
 # TESTING
@@ -396,13 +583,12 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 
 
 
-
-
 # Credits - 
 
 
 #frame works and libraries
-- Redux Devtools 
+
+- Redux toolkit : state management libraary
 - Balsamiq
 - Heroku
 - Font Awesome
@@ -426,19 +612,6 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 - Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
 - https://www.postman.com/ testing 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
