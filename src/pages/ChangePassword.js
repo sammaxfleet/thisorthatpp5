@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toast } from 'react-toastify';
 import { axiosInstance, axiosInstanceFormData } from '../axiosApi';
 import { checkUserAuthenticated } from '../store/usersSlice';
-import { useNavigate as useNavigation } from "react-router-dom"
+import { useNavigate as useNavigation } from "react-router-dom";
 const ChangePassword = () => {
     const [password1, setPassword1] = useState('');
     const [password2, setPassword2] = useState('');
