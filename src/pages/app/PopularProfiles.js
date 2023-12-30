@@ -21,7 +21,7 @@ const PopularProfiles = () => {
   //   Style based on bootstrap
   return (
     <div className={styles.postsContainer}>
-      <h1>Popular This or That Users</h1>
+      <h3>Popular This or That Users</h3>
       {/* Circles like Instagram stories */}
       <div
         style={{

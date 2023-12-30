@@ -2,12 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate as useNavigation } from "react-router-dom"
-// import Col from "react-bootstrap/Col";
-// import Row from "react-bootstrap/Row";
-// import { Button, Image } from "react-bootstrap";
-// import Container from "react-bootstrap/Container";
 import { Container, Row, Col, Card, ListGroup, Image, Button } from "react-bootstrap";
-import { useGetSingleProfileQuery, useGetProfilesQuery, useGetProfilePostsQuery, useFollowUserMutation, useUnFollowerUserMutation } from "../store/apiSlice";
+import { useGetSingleProfileQuery, useGetProfilesQuery, useGetProfilePostsQuery, useFollowUserMutation, useUnFollowerUserMutation, useGetSavedPostsQuery, useDeleteSavedPostsMutation } from "../store/apiSlice";
 import Dropdown from "react-bootstrap/Dropdown";
 import Spinner from 'react-bootstrap/Spinner'
 import { toast } from "react-toastify";
@@ -34,6 +30,18 @@ const Profiles = () => {
     refetchOnMount: true,
 
   });
+  const { data: SavedPosts } = useGetSavedPostsQuery({
+    refetchOnMountOrArgChange: true,
+    refetchOnFocus: true,
+    refetchOnReconnect: true,
+    refetchOnMount: true,
+  })
+  const [deleteSavePost, { isSuccess: DeleteSavedPostSucces }] = useDeleteSavedPostsMutation();
+  useEffect(() => {
+    if (DeleteSavedPostSucces) {
+      toast.success("Post Removed from Saved")
+    }
+  }, [DeleteSavedPostSucces])
   const { data: ProfilePosts, isLoading: porilfePostsLoading, isFetching: ProfilesPostsIsFetching } = useGetProfilePostsQuery(slug, {
     refetchOnMountOrArgChange: true,
     refetchOnFocus: true,
@@ -127,33 +135,81 @@ const Profiles = () => {
               </Card.Body>
               <hr />
               <Card.Body>
-                <Row>
-                  {ProfilePosts && ProfilePosts.results.map((post) => (
-                    <Col key={post.id} xs={6} sm={4} md={3} className="mb-3">
-                      <Card style={{ width: '100%' }}>
-                        <Card.Img
-                          onClick={() => navigate(`/post/${post.id}`)}
-                          variant="top"
-                          src={post.image}
-                          style={{ height: '150px', objectFit: 'cover' }}
-                        />
-                        <Card.Body>
-                          <div onClick={() => navigate(`/post/${post.id}`)}>
-                            <Card.Title>{post.title}</Card.Title>
-                            <Card.Text>{post.content}</Card.Text>
-                          </div>
+                {ProfilePosts && ProfilePosts.results && ProfilePosts.results.length > 0 && (
+                  <>
+                    <h3>User Posts</h3>
+                    <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
+                      {ProfilePosts.results.map((post) => (
+                        <Col key={post.id} className="mb-3">
+                          <Card style={{ width: '100%' }}>
+                            <Card.Img
+                              onClick={() => navigate(`/post/${post.id}`)}
+                              variant="top"
+                              src={post.image}
+                              style={{ height: '150px', objectFit: 'cover', cursor: 'pointer' }}
+                            />
+                            <Card.Body>
+                              <div onClick={() => navigate(`/post/${post.id}`)} style={{ cursor: 'pointer' }}>
+                                <Card.Title>{post.title}</Card.Title>
+                                <Card.Text>{post.content}</Card.Text>
+                              </div>
+                              {post.is_owner && (
+                                <Button
+                                  variant="outline-secondary"
+                                  size="sm"
+                                  className="mt-2"
+                                  onClick={() => navigate(`/post/${post.id}/edit`)}
+                                >
+                                  Edit
+                                </Button>
+                              )}
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                      ))}
+                    </Row>
+                  </>
+                )}
 
+                {SavedPosts && SavedPosts.results && SavedPosts.results.length > 0 && (
+                  <>
+                    <h3>Saved Posts</h3>
+                    <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
+                      {SavedPosts.results.map((post) => (
+                        <Col key={post.id} className="mb-3">
+                          <Card style={{ width: '100%' }}>
+                            <Card.Img
+                              onClick={() => navigate(`/post/${post.post.id}`)}
+                              variant="top"
+                              src={post.post.image}
+                              style={{ height: '150px', objectFit: 'cover', cursor: 'pointer' }}
+                            />
+                            <Card.Body>
+                              <div onClick={() => navigate(`/post/${post.post.id}`)} style={{ cursor: 'pointer' }}>
+                                <Card.Title>{post.post.title}</Card.Title>
+                                <Card.Text>{post.post.content}</Card.Text>
+                              </div>
+                              <Button
+                                variant="outline-secondary"
+                                size="sm"
+                                className="mt-2"
+                                onClick={() => deleteSavePost(post.id)}
+                              >
+                                Remove Saved
+                              </Button>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                      ))}
+                    </Row>
+                  </>
+                )}
 
-                          {post.is_owner && (
-                            <Button variant="outline-secondary" size="sm" className="ml-2" onClick={() => navigate(`/post/${post.id}/edit`)}>
-                              Edit
-                            </Button>
-                          )}
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
+                {/* Add a message if there are no posts */}
+                {(!ProfilePosts || ProfilePosts.results.length === 0) &&
+                  (!SavedPosts || SavedPosts.results.length === 0) && (
+                    <p>No posts found.</p>
+                  )}
               </Card.Body>
             </Card>
           </Col>

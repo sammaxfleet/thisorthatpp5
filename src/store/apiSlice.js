@@ -17,7 +17,7 @@ export const thisOrThatApi = createApi({
             return headers
         }
     }),
-    tagTypes: ['Profiles', 'Posts', 'Post', "Comments"],
+    tagTypes: ['Profiles', 'Posts', 'Post', "Comments", "SavedPosts"],
     endpoints: (builder) => ({
         getProfiles: builder.query({
             query: (name) => `profiles`,
@@ -150,6 +150,35 @@ export const thisOrThatApi = createApi({
             },
             invalidatesTags: ["Posts", "Profiles", "Comments", "Post"]
         }),
+        savePost: builder.mutation({
+            query(data) {
+                return {
+                    url: `/saved/`,
+                    body: data,
+                    method: "POST"
+
+                }
+            },
+            invalidatesTags: ["SavedPosts"]
+        }),
+        getSavedPosts: builder.query({
+            query() {
+                return {
+                    url: '/saved/',
+                    method: "GET"
+                }
+            },
+            providesTags: ["SavedPosts"]
+        }),
+        deleteSavedPosts: builder.mutation({
+            query(saved_id) {
+                return {
+                    url: `/saved/remove_saved_post?saved_id=${saved_id}`,
+                    method: "GET"
+                }
+            },
+            invalidatesTags: ["SavedPosts"]
+        })
 
 
 
@@ -158,4 +187,4 @@ export const thisOrThatApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useChangeUserNameMutation, useUnFollowerUserMutation, useFollowUserMutation, useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi
+export const { useGetSavedPostsQuery, useDeleteSavedPostsMutation, useSavePostMutation, useChangeUserNameMutation, useUnFollowerUserMutation, useFollowUserMutation, useDeletePostCommentMutation, useEditPostCommentMutation, useGetPostCommentsQuery, useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation, useDeletePostMutation, useGetSinglePostQuery, useGetSingleProfileQuery, useGetProfilesQuery, useGetPostsQuery, useGetProfilePostsQuery } = thisOrThatApi

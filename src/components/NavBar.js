@@ -17,7 +17,7 @@ const NavBar = () => {
         <NavLink to="/">
           <Navbar.Brand className="d-flex justify-content-center align-items-center ">
             <img src={logo} alt="logo" height="45" />
-            <h1 className="m-2">This Or That</h1>
+            <h3 className="m-2">This Or That</h3>
           </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

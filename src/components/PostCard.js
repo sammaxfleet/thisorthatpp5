@@ -6,10 +6,28 @@ import Form from "react-bootstrap/Form";
 import styles from "../styles/HomePage.module.css";
 import { useNavigate as useNavigation } from "react-router-dom";
 import PostCardComments from "./PostCardComments";
-
+import { toast } from "react-toastify";
+import { useSavePostMutation } from "../store/apiSlice";
+import { useSelector } from "react-redux";
 const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike, comments = [], handleDelete, handleInputChange, handleSaveEdit }) => {
     const navigate = useNavigation();
+    const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
+    const [saved_post, { isSuccess }] = useSavePostMutation();
+    useEffect(() => {
+        if (isSuccess) {
+            toast.success("Post Saved")
+        }
+    }, [isSuccess])
+    const savePost = () => {
+        if (isLoggedIn) {
+            toast.info("Saving Post")
 
+            saved_post(JSON.stringify({ post: post.id }))
+
+        } else {
+            toast.error("You need to login to save a post ")
+        }
+    }
     return (
         <Card style={{ width: "100%", marginBottom: "20px" }}>
             {/* User Circle */}
@@ -136,6 +154,8 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                         <Button variant="secondary" onClick={() => handleComment(post)}>
                             Comment
                         </Button>
+                        <i class="fa-regular fa-heart" onClick={savePost}></i>
+
 
                     </div>
                 </div>
