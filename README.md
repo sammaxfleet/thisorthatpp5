@@ -540,6 +540,16 @@ The comment is now deleted and can;t be seen by any user.
 
 <img width="1362" alt="Screenshot 2023-12-27 at 14 40 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/63f3c6c7-2b7b-4ed3-8b5d-d6248b7d8e93">
 
+# Save Post
+
+<img width="418" alt="Screenshot 2023-12-31 at 17 09 36" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/d01e3412-22c6-43a0-ae0f-9376b0d7439f">
+
+On the 'profile' page you can edit your 'Saved Post'.
+
+<img width="434" alt="Screenshot 2023-12-31 at 17 10 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e51f1ac0-8818-423d-9069-20c04786ef1a">
+
+& Remove it if you wish
+<img width="385" alt="Screenshot 2023-12-31 at 17 10 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f61bbf43-79b7-4cbf-809f-3ffc4fb1abe6">
 
 # TESTING
 
