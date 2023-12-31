@@ -549,6 +549,7 @@ On the 'profile' page you can edit your 'Saved Post'.
 <img width="434" alt="Screenshot 2023-12-31 at 17 10 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e51f1ac0-8818-423d-9069-20c04786ef1a">
 
 & Remove it if you wish
+
 <img width="385" alt="Screenshot 2023-12-31 at 17 10 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f61bbf43-79b7-4cbf-809f-3ffc4fb1abe6">
 
 # TESTING
