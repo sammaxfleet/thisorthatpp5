@@ -320,7 +320,6 @@ User Stories - Posts
 
      
 
-
 # CRUD Functionality 
 
 CRUD Functionality
@@ -333,7 +332,7 @@ Delete - Users can delete tasks, comments, likes, follows.
 
 
 
-# Site Structure - 
+# Site Structure 
 
 'This or That' depending on login status different page states are available for the user.
  When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. 
@@ -356,16 +355,20 @@ Delete - Users can delete tasks, comments, likes, follows.
   
 
 
-# Colour Scheme - 
+# Colour Scheme 
 
-I took inspiration from fashion blogs, and stores like Zara & Arte. Which are sleek, simple & focus on the photo. 
-Where this is a white background as full focus goes on the image, the user is then drawn to the content. Two contrasting colours are used to naviagte through the website. 
+I took inspiration from fashion blogs, and stores like Zara & Arte. Which are sleek, simple & focus on clothing.
+The site has a white background as full focus goes on the images. The user is then drawn to the content, Two contrasting colours are used to navigate through the website. 
+
+https://www.zara.com/
+https://arte-antwerp.com/
 
 <img width="1435" alt="Screenshot 2023-10-08 at 13 12 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5946cf27-8d7f-470b-a27c-d3c4a124223b">
 
 # Typography - 
 
-Kalnia font is used: I wanted to add a bit of an edgy font to this, with it being a fashion/ creative site. I thought the font was cool and took inspiration from the Zara website. 
+Kalnia font is used. 
+I wanted to add a bit of an edgy font, with it being a fashion/ creative site. I thought the font was cool and took inspiration from the Zara website. 
 
 <img width="272" alt="Screenshot 2023-12-27 at 14 04 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4bb1d7f9-da4a-44d5-bb98-73f22a556e58">
 
