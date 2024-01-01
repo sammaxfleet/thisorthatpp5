@@ -2,28 +2,35 @@
 
 ## Site Description 
 
+Description: 
 
-'This Or That' is an online website that compares celebrity fashion outfits. 
-It gives the users fashion inspiration for if they were to go to an event themselves, a party and just keeps them upto date with the latest trends. 
-It allows users to create user profiles, and interact with other fashion enthusiasts. 
-It's a catelogue of style, which one is your taste?...
+'This Or That' is an online website that compares celebrity fashion outfits, It is designed to bring fashion inspiration for the user & to keep up with the latest fashion releases. 
+It allows users to create user profiles, and interact with other fashion enthusiast users. 
+It's a catelogue of style,' which one is your taste?'.
 The user is able to follow other users, search on filterd searches & it gives the users space to comment their opinion on each post.
 I took inspiration from this as I have a huge interest in fashion and with current trends on social media "ootd" [ outfit of the day ]
 I wanted to incorperate something where I think there's a gap in the market in the current climate. 
+The problem being how can we take what's happening on social media onto one site. 
+
+Enhanced user features:
+
+If a profile is created you are then able to follow, like, comment, post yourself and save posts.
+You then can interact with the community, without a profile you're browsing from a distance. 
+
+Seamless Frontend Experience:
+
+Thisorthat's frontend is built using the React framework, ensuring a modern and responsive user interface. The frontend seamlessly connects and interacts with the backend API through efficient HTTP requests, providing a smooth and enjoyable user experience.
 
 The project has been split into 2 parts- the front end built with react and the back end API powered by Django rest frame work.
 
 
 # Full Links to Project:
 
-More info on the back end readme can be found here - https://github.com/sammaxfleet/THISORTHATAPI/blob/main/README.md
-
-
 Link to live site - https://thisorthatpp5-9e3adcfaf8e9.herokuapp.com/
 
+The link to the backend readme can be found here - https://github.com/sammaxfleet/THISORTHATAPI/blob/main/README.md
 
 Link to the live API - https://thisorthatapi-56bb400a2b0e.herokuapp.com/
-
 
 Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
@@ -60,10 +67,11 @@ TABLE OF CONTENTS -
 ## PROJECT  OBJECTIVE - 
 
 To provide a stable, interactive platform for fashion enthusiasts.
-For the user to find fashion inspiration & be able to like, Comment & Follow on their favourites Users & their posts. 
-For the site to give the user the ability to interact with other users, create a profile & also Upload posts.
+For the user to find fashion inspiration & be able to like, Comment and Follow on their favourites Users. 
+For the site to give the user the ability to interact with other Users, create a Profile & also Upload Posts.
 The objective is to see different outfits and latest trends, celebrities have access to the lastest fashion drops. 
 This allows the user to keep up with trends & decide where they take the inspiration for their own expression, events, birthday's, social media etc. 
+So much fashion inspiration is spread over different platforms this essentially creates a site that brings all the interaction into one place. 
 
 ## SITE USER GOAL- 
 
@@ -76,6 +84,7 @@ Breaking down the site into a few main goals:
 5 - To be able to create a Profile and upload your inspiration | Sharing. 
 6 - Mobile View & tablet view to be fully responsive. 
 7 - Search through the site with Filters
+8 - Save Posts you like & follow,  like. 
 
 
 ## SITE OWNER GOAL - 
@@ -100,6 +109,7 @@ Age wise it's suitable for teenagers upto 40's/ 50's.
 The fashion community has been building online now with 'OOTD' hash tags and people loving to show their fits for an occasion wether it’s a birthday or your favourite night out.
 Users could be male or female, there is an equal spread of fashion content on there. 
 It is also aimed at people wanting to develop and find their own expression with their clothing. 
+Another target audience could be bloggers, where they can take the latest inspiration & blog/ vlog aout it. 
 
 ## PROJECT MANAGEMENT - 
 
@@ -136,33 +146,35 @@ The user stories were then tested and confirmed in the Testing section.
 
 ## Logged Out Site User
 
-- Ability to log in
-- Abolity to Sign Up
+
+- Ability to Sign Up
 - See All Posts that have been shared
-- View a single Post
-- Can view the highest liked or commented posts
+- Search keywords
+- View a Single Post 
 - Can View Popular Profiles
-- Can Navigate through Pages
+- Can Navigate through Pages smoothly 
 - Can filter by Celebrity
-- Can filter by UserName, Popularity, Date, Title, Content or Category.
 - Can View comments to see what people think
-- Can Like Posts
+
 
 
 ### Logged In Site User 
 
-All of the above and..
+All of the above and additionally..
 
-- Ability to Log in smoothly
-- Log out smoothly
+- Ability to log in
+- Log out 
+- Can Like/ unlike Posts
+- Can Save/unsave Posts
+- Can follow/ unfollow other Users
+- Can Edit Profile & posts 
 - Can Make my own posts
 - Can delete/ edit own posts.
-- Can follow other users. 
+
 
 # EPICS/ MILESTONES & USER STORIES
 
 I used the following Milestones as Epics when creating the project. 
-You can fine here..... in a Kanban board display.
 
 1. Installation Back End API
 2. Installation Front End
@@ -170,11 +182,35 @@ You can fine here..... in a Kanban board display.
 4. CRUD User Account
 5. Sign Up/ Log In Functionality
 6. Testing/ Site functionality.
+
    
 ## User Stories Breakdown:
 
+* EPIC 1
 
-EPIC 1
+Milestone - Installation Back End 
+
+User stories -
+
+1. Get Api working linking with front end - MUST HAVE
+2. Deploy to heroku - MUST HAVE
+3. Turn debug to FALSE - MUST HAVE
+4. Secret Key  - MUST HAVE
+
+
+* EPIC 2
+
+MileStone - Installation | User Stories - Install Django & Bootstrap
+
+User Stories -
+
+1. Install Django smoothly, & any plug ins needed.- MUST HAVE
+2. Connect to Heroku - MUST HAVE
+3. Connect ESLindt & Prettier - SHOULD HAVE
+4. Connect Bootstrap - MUST HAVE
+
+
+* EPIC 3 
 
 MileStone - Design | User Stories - Wireframes
 
@@ -182,86 +218,7 @@ User Stories -
 
 1. As the developer I can create wireframes to make the website easier to build, for time management sticking to the agile approach. MUST HAVE
 
-
-Epic 2 -
-
-MileStone - Installation | User Stories - Install Django
-
-User Stories -
-
-1. Install Django smoothly, & any plug ins needed. MUST HAVE
-2. Connect to Heroku MUST HAVE
-3. Connect Pep8 & prettier SHOULD HAVE
-
-
-Epic 3 - 
-
-Milestone - Installation Back End 
-
-User stories -
-
-1. Get Api working - MUST HAVE
-2. Deploy to heroku - MUST HAVE
-3. Turn debug to FALSE - MUST HAVE
-4. Secret Key  - MUST HAVE
-
-
-Epic 4 - 
-
-Milestone - Design 
-
-User Stories - Likes when logged in or out is the same outcome. 
-
-1.  The user can like a Post - MUST HAVE
-2.  The User can see the amount of Likes - SHOULD HAVE
-3.  Can Unlike - SHOULD HAVE
-
-
-User stories - Following only when logged in. 
-  
-1. Can follow another User - SHOULD HAVE 
-2. Can unfollow a User - SHOULD HAVE
-3. Can't follow when no profile exists - SHOULD HAVE 
-4. Can follow most popular users at the top of page - SHOULD HAVE 
-
-User Stories - Comments
-    
-1. Edit own Comments - SHOULD HAVE 
-2. Can Delete a comment - SHOULD HAVE 
-3. Can view other poeples comments ( when not logged in) - SHOULD HAVE 
-4. Can't make a comment if not logged in - MUST HAVE
-
-
-EPIC 5 - 
-
-Milestone - CRUD PROFILE
-
-USER STORIES - PROFILES
-
-  1. I can view most popular profile - SHOULD HAVE
-  2. View a specific profile page - SHOULD HAVE 
-  3. Edit my own profile Page - MUST HAVE 
-  4. Can change name and password for log in details if want to make more secure. - MUST HAVE
-  5. 
-
-USER STORIES -  DIRECT MESSAGING
-   1.  - Can view messages On my profile page and see what others have sent me  - WON'T HAVE
-   2. - Can message another user and discuss opinions - COULD HAVE 
-     
-
-
-EPIC 6 - 
-
-MileStone - SIGN UP/ LOG IN
-
-USER STORIES - SIGN UP/ LOG IN
-
-1. Have a secure sign up page - MUST HAVE 
-2. Have a secure seperate log inpage - MUST HAVE
-
-
-EPIC 7 -  Design
-
+* EPIC 4
 
 Milestone -  Design
 
@@ -270,25 +227,99 @@ Milestone -  Design
 3. Images on the site - MUST HAVE
 4. Different fonts - SHOULD HAVE
 5. Describe what the site is - SHOULD HAVE
-6. TITLE -SHOULD HAVe
+6. TITLE - SHOULD HAVe
 7. Back ground colour - SHOULD HAVE
 8. Several different pages - WON'T HAVE
+9. Favicon - SHOULD HAVE
 
 
+* EPIC 5 
 
-EPIC 8 - DESIGN
-
-   MILESTONE - Home page design
+MILESTONE - Home page DESIGN
 
 User Stories: 
 1. Find a Logo - MUST HAVE
 2. Nav Bar - MUST HAVE 
 3. Choose Colour Scheme - MUST HAVE 
-4. Create 3 pages for the site - MUST HAVE 
+4. Create 4 pages on the nav bar - MUST HAVE 
 5. Retrieve images from Google for comparison - MUST HAVE
-6. - Add like tab, comment and follow. - MUST HAVE
+6. - Add like tab, comment, follow ,save. - MUST HAVE
 7. Be able to Sign in/out - MUST HAVE
 8. Be able to log in/out. - MUST HAVE
+
+
+ * EPIC 6 
+
+MileStone - SIGN UP/ LOG IN
+
+USER STORIES - SIGN UP/ LOG IN
+
+1. Have a secure sign up page - MUST HAVE 
+2. Have a secure seperate log inpage - MUST HAVE
+3. Password confirmation - MUST HAVE
+4. Password and username restrictions - MUST HAVE
+5. Notification when signed in & Navbar changes - MUST HAVE
+6. notifcations when logged out & NavBar changes - MUST HAVE
+
+
+* EPIC 7
+
+Milestone - CRUD PROFILE
+
+USER STORIES - PROFILES
+
+
+  1. Edit my own profile Page - MUST HAVE
+  2. I can edit my username - MUST HAVE
+  3. Change Photo - MUST HAVE
+  4. Can change name and password for log in details if want to make more secure. - MUST HAVE
+     
+
+USER STORIES -  DIRECT MESSAGING
+   1.  - Can view messages On my profile page and see what others have sent me  - WON'T HAVE
+   2. - Can message another user and discuss opinions - COULD HAVE
+     
+      
+
+* EPIC 8
+
+Milestone - Design when logged in 
+
+User Stories - Likes 
+
+1.  The user can like a Post - MUST HAVE
+2.  The User can see the amount of Likes - SHOULD HAVE
+3.  Can Unlike - SHOULD HAVE
+
+
+User stories - Following  
+  
+1. Can follow another User - SHOULD HAVE 
+2. Can unfollow a User - SHOULD HAVE
+3. Can't follow when no profile exists - SHOULD HAVE 
+4. Can follow most popular users at the top of page - SHOULD HAVE 
+
+User Stories - Comments 
+    
+1. Edit own Comments - SHOULD HAVE 
+2. Can Delete a comment - SHOULD HAVE 
+3. Can view other poeples comments ( when not logged in) - MUST HAVE 
+4. Can't make a comment if not logged in - MUST HAVE
+
+
+User Stories - Saved 
+
+1. Can Save a post - SHOULD HAVE
+2. Can unsave a post - SHOULD HAVE
+
+User Stories - Posts
+
+1. User be able to make post adding IMAGE, DESCRIPTION & FASHION INSPIRATION FILTER - MUST HAVE
+2. Be able to edit post - MUST HAVE 
+3. be able to delete Post. - MUST HAVE
+
+     
+
 
 # CRUD Functionality 
 
