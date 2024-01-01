@@ -338,14 +338,14 @@ Delete - Users can delete tasks, comments, likes, follows.
  When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. 
  When the user is logged in Comments, Signout and Profile Page also become available.
 
- The Site has 3 main pages when User 'LOGGED OUT' pages
+ The Site has 3 main pages when User 'LOGGED OUT' pages: 
 
  1. HOME
  2. SIGN IN
  3. SIGN UP
 
 
- when User 'LOGGED IN' : 
+ When User 'LOGGED IN' : 
  
   1. PROFILE
   2. ADD POST 
@@ -387,7 +387,6 @@ Design on site:
 <img width="350" alt="Screenshot 2023-12-27 at 14 06 29" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3c57acf3-afe8-4ec0-857f-8d87705524b9">
 
 
-
 The Navigation Bar is slick and simple. 
 Depending on wether you're signed in or not a different option on the menu appears.
 On accessing the site for the first time, the user is logged out and the following menu items are visible:
@@ -406,7 +405,7 @@ Once Signed in:
 4. - ADD POST
 
 
-Orange Highliught over Nav Bar
+Orange Highlight over NavBar
 
 This highlight comes when you hover over the page, to give the colour continiuty on the site from the logo. 
 
@@ -414,7 +413,6 @@ This highlight comes when you hover over the page, to give the colour continiuty
 
 Mobile view the Nav Bar folds in. 
 
-   
 
 # Homepage - 
 
@@ -423,19 +421,16 @@ The Home page has 4 main React Components
 - Popular Users
 - Search Keyword
 - Fashion Posts
-- Like, Comment & Follow
+- Like, Comment, Follow & Saved. 
 
 <img width="1097" alt="Screenshot 2023-12-27 at 14 11 41" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c1ef5a0f-6e91-423d-b9dc-91887df60a1a">
 
 The popular profiles component is a permanent feature across the entire site. It appears at the top of all pages.
-This component uses a filter to order all site users by followers count from highest to lowest
-The users with the highest follower count are determined to be the most popular profiles and the top six are displayed within the popular profiles component.
-
-If the user isn't logged in they can't follow.
-The username at the top 6 most popular profiles, and if the user is logged in, they will also see a button enabling them to follow or unfollow the profile.
-
+it's good feature to have to encourage the user to interact with others once signed up. 
+If the user isn't logged in they can't follow the profiles. 
 
 Mobile View: 
+
 The mobile view, makes everything more compact the nav bar goes into a small tab & the popular user feature disappears for larger screens.
 The same functions still work just the initial 'POPULAR USER PROFILES' doesn't come up on mobile view. 
 
@@ -455,38 +450,39 @@ The search bar allows the website to be filtered, you can search for celebrity n
 How a post is displayed by a User, it focuses on the main feature which is.
 
 1. Image.
-2.A title 
+2. A title 
 3. Description of the outfit
-4. Likes & Comments
+4. Likes & Comments, Saved. 
 
 
-This layout is simple, and really focused on the image being the main feature, beneath the photo the user 'if logged in' is able to comment and interact with other users.
-Then you're able to click on their profile if you wish to see their posts and follow. 
+This layout is simple, and really focuses on the image being the main feature, beneath the photo is the interactive buttons. 
+
 
 <img width="818" alt="Screenshot 2023-12-27 at 14 16 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cce69670-650b-4746-90c0-5628fd9441bf">
 
 
 # Following a User 
 
-Once clicked on a User's profile we get lead to this 'Follow Page' 
+Once clicked on a User's profile we get lead to this 'Follow Page'. 
 Here we can see the Users posts & see their follow count & their following count. 
 
 
 <img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
 
-# Following And unfollowing a user
+# Following And unfollowing a User
 
 The button changes colour to red for unfollow and is blue for the follow button. 
-This page is made so you can follow a users posts. 
+This page is made so you can follow a users posts, see their engagement and activity. 
 
 
 <img width="1367" alt="Screenshot 2023-12-27 at 14 42 26" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/517ec225-0111-48d3-9879-7897d13c7180">
 
 
-
 # Edit Profile 
 
 Here is where we can edit our profile, update your latest profile photo, username & Password. 
+
+This is such a big feature, as updating your profile is so neccesary and the foundation to interact with others. 
 
 <img width="952" alt="Screenshot 2023-12-27 at 14 33 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2f84bc26-560f-4d09-b09a-29586a579b9a">
 
@@ -553,7 +549,7 @@ One of the goals of the site is to allow people to interact more expressing thei
 <img width="505" alt="Screenshot 2023-12-27 at 14 37 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6d77361e-440d-462d-91fd-59839ceb6bc0">
 
 
-##  Editng Comments by User logged in 
+##  Editing Comments by User logged in 
 
 Here is where a user can edit their say
 
