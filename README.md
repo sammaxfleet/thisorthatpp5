@@ -45,22 +45,48 @@ Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisort
 
 TABLE OF CONTENTS - 
 
-- [THIS OR THAT](#this-or-that)
+- [THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute.](#this-or-that---portfolio-project-5---advanced-front-end---code-institute)
+  * [Site Description](#site-description)
+- [Full Links to Project:](#full-links-to-project-)
+- [AM I RSPONSIVE IMAGE.](#am-i-rsponsive-image)
   * [PROJECT  OBJECTIVE -](#project--objective--)
   * [SITE USER GOAL-](#site-user-goal-)
   * [SITE OWNER GOAL -](#site-owner-goal--)
   * [TARGET AUDIENCE -](#target-audience--)
   * [PROJECT MANAGEMENT -](#project-management--)
-  * [User Stories Link Front end](#user-stories-link-front-end)
+- [AGILE METHODOLOGY](#agile-methodology)
+- [User Stories](#user-stories)
   * [Logged Out Site User](#logged-out-site-user)
-    + [Logging In Site User](#logging-in-site-user)
-    + [Likes](#likes)
-    + [Follow](#follow)
-    + [Comments](#comments)
-    + [Profiles](#profiles)
-- [Direct messaging](#direct-messaging)
-- [SITE CREATION USER STORIES](#site-creation-user-stories)
-- [Sit Structure -](#sit-structure--)
+    + [Logged In Site User](#logged-in-site-user)
+- [MANUAL TESTING](#manual-testing)
+- [EPICS/ MILESTONES & USER STORIES](#epics--milestones---user-stories)
+  * [User Stories Breakdown:](#user-stories-breakdown-)
+- [CRUD Functionality](#crud-functionality)
+- [Site Structure](#site-structure)
+- [Colour Scheme](#colour-scheme)
+- [Typography -](#typography--)
+- [Navigation](#navigation)
+- [Homepage -](#homepage--)
+- [Search Bar](#search-bar)
+- [Posts](#posts)
+- [Following a User](#following-a-user)
+- [Following And unfollowing a User](#following-and-unfollowing-a-user)
+- [Edit Profile](#edit-profile)
+  * [Edit Username](#edit-username)
+  * [Change Password](#change-password)
+  * [Change Username](#change-username)
+- [Add Post](#add-post)
+- [post liked - with notification](#post-liked---with-notification)
+- [Post Unliked with Notification](#post-unliked-with-notification)
+- [Add Comment](#add-comment)
+  * [Editing Comments by User logged in](#editing-comments-by-user-logged-in)
+  * [Edit Delete/ Commment](#edit-delete--commment)
+  * [Edit Comment](#edit-comment)
+  * [Delete comment](#delete-comment)
+- [Save Post](#save-post)
+- [Validation](#validation)
+- [Deployment -](#deployment--)
+- [Credits -](#credits--)
 
 
 
@@ -170,6 +196,8 @@ All of the above and additionally..
 - Can Edit Profile & posts 
 - Can Make my own posts
 - Can delete/ edit own posts.
+
+# MANUAL TESTING
 
 
 # EPICS/ MILESTONES & USER STORIES
@@ -488,7 +516,7 @@ This is such a big feature, as updating your profile is so neccesary and the fou
 
 ## Edit Username
 
-# <img width="643" alt="Screenshot 2023-12-27 at 14 33 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/91c8891d-1100-44f4-b291-3abea4723187">
+<img width="643" alt="Screenshot 2023-12-27 at 14 33 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/91c8891d-1100-44f4-b291-3abea4723187">
 
 ## Change Password
 
@@ -528,33 +556,32 @@ Tap to upload image
 
 # post liked - with notification 
 
-To like a post means being able to give it thumbs up.
+To like a post means being able to give it a thumbs up, and support. 
 This is a very popular feature on social media, & will gain attraction. 
-This feature is important and tells us as the website users how many posts a like has. A user can also unlike posts, but if not logged in this feature isn't available. 
-
+This feature is important and tells us as the website users how many posts a like has.
+A user can also unlike posts, but if not logged in this feature isn't available. 
 
 <img width="1342" alt="Screenshot 2023-12-27 at 14 36 53" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f1342561-7e82-43ee-a382-3e971fb9e136">
 
 # Post Unliked with Notification 
 
-Post Unliked the model I've made for likes , I've tried to used with continuity over the site. 
+Post Unliked is able to be used with functionality. 
 
 <img width="1335" alt="Screenshot 2023-12-27 at 14 37 17" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69af35c7-3f2f-4922-abcc-561b735a092d">
 
 # Add Comment
 
-Adding comment allows the user to share their opinion.
+Adding Comment allows the user to share their opinion.
 One of the goals of the site is to allow people to interact more expressing their opinions & being able to edit their views. 
+After the first pop up in the centre of the screen, you then can see the comment sbelow the photos. 
 
 <img width="505" alt="Screenshot 2023-12-27 at 14 37 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6d77361e-440d-462d-91fd-59839ceb6bc0">
 
-
 ##  Editing Comments by User logged in 
 
-Here is where a user can edit their say
+Here is where a User can edit their Comment. 
 
 <img width="1222" alt="Screenshot 2023-12-27 at 14 38 21" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0585d8b7-3054-448e-adda-45d36556ab6c">
-
 
 ## Edit Delete/ Commment 
 
@@ -566,7 +593,7 @@ Here is where a user can edit their say
 
 ## Delete comment 
 
-The comment is now deleted and can;t be seen by any user. 
+The comment is now deleted and can't be seen by any User. 
 
 <img width="1362" alt="Screenshot 2023-12-27 at 14 40 20" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/63f3c6c7-2b7b-4ed3-8b5d-d6248b7d8e93">
 
@@ -575,6 +602,7 @@ The comment is now deleted and can;t be seen by any user.
 <img width="418" alt="Screenshot 2023-12-31 at 17 09 36" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/d01e3412-22c6-43a0-ae0f-9376b0d7439f">
 
 On the 'profile' page you can edit your 'Saved Post'.
+It also shows on other User profiles the post they've saved. 
 
 <img width="434" alt="Screenshot 2023-12-31 at 17 10 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e51f1ac0-8818-423d-9069-20c04786ef1a">
 
@@ -582,7 +610,7 @@ On the 'profile' page you can edit your 'Saved Post'.
 
 <img width="385" alt="Screenshot 2023-12-31 at 17 10 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f61bbf43-79b7-4cbf-809f-3ffc4fb1abe6">
 
-# TESTING
+# Validation 
 
 
 
