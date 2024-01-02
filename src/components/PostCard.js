@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Dropdown from "react-bootstrap/Dropdown";
-import Form from "react-bootstrap/Form";
+
 import styles from "../styles/HomePage.module.css";
 import { useNavigate as useNavigation } from "react-router-dom";
 import PostCardComments from "./PostCardComments";
@@ -29,7 +28,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
         }
     }
     return (
-        <Card style={{ width: "100%", marginBottom: "20px" }}>
+        <Card style={{ width: "70%", marginBottom: "20px" }}>
             {/* User Circle */}
             <div className="flex-h" onClick={() => navigate("/profiles/" + post.profile_id)}>
                 <div

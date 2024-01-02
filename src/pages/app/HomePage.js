@@ -5,7 +5,7 @@ import Posts from "./Posts";
 import { useGetPostsQuery } from "../../store/apiSlice";
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState("")
-  const { data, isLoading, isError } = useGetPostsQuery(searchQuery, {
+  const { data } = useGetPostsQuery(searchQuery, {
     refetchOnFocus: true,
     refetchOnMountOrArgChange: true,
     refetchOnReconnect: true,

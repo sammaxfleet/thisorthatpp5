@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { toast } from 'react-toastify';
-import { axiosInstance, axiosInstanceFormData } from '../axiosApi';
-import { checkUserAuthenticated } from '../store/usersSlice';
+import { axiosInstance } from '../axiosApi';
 import { useNavigate as useNavigation } from "react-router-dom";
 const ChangePassword = () => {
     const [password1, setPassword1] = useState('');
     const [password2, setPassword2] = useState('');
     const [message, setMessage] = useState('');
     const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
-    const user = useSelector((state) => state.users.user);
-    const dispatch = useDispatch();
     const navigate = useNavigation();
     useEffect(() => {
         if (!isLoggedIn) {
             toast.error("You Need To Be Logged In")
             navigate("/")
         }
-    }, [isLoggedIn])
+    }, [isLoggedIn, navigate])
     const handlePasswordChange = async () => {
         if (password1 !== password2) {
             setMessage("Passwords don't match");

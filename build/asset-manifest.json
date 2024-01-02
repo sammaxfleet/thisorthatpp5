@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6c394fe.css",
-    "main.js": "/static/js/main.0bb967bf.js",
+    "main.css": "/static/css/main.3f53f618.css",
+    "main.js": "/static/js/main.89df8c84.js",
     "static/media/kanye.jpeg": "/static/media/kanye.e50ed96a2d12d2182a23.jpeg",
     "static/media/fashionbakayo.jpg": "/static/media/fashionbakayo.642632644426f49a1e37.jpg",
     "static/media/thisorthat.jpg": "/static/media/thisorthat.57841a79f987d4717526.jpg",
     "index.html": "/index.html",
-    "main.a6c394fe.css.map": "/static/css/main.a6c394fe.css.map",
-    "main.0bb967bf.js.map": "/static/js/main.0bb967bf.js.map"
+    "main.3f53f618.css.map": "/static/css/main.3f53f618.css.map",
+    "main.89df8c84.js.map": "/static/js/main.89df8c84.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6c394fe.css",
-    "static/js/main.0bb967bf.js"
+    "static/css/main.3f53f618.css",
+    "static/js/main.89df8c84.js"
   ]
 }

@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
-import styles from "../styles/HomePage.module.css";
 import { useDeletePostCommentMutation, useEditPostCommentMutation } from '../store/apiSlice';
 import { toast } from 'react-toastify';
-const PostCardComments = ({ comment, handleDelete, }) => {
+const PostCardComments = ({ comment, }) => {
     const [editing, setEditing] = useState(false);
     const [editedContent, setEditedContent] = useState();
     const [editComment, { isSuccess: CommentEditSuccess }] = useEditPostCommentMutation();
     const [deleteComment, { isSuccess: DeletePostCommentSuccess }] = useDeletePostCommentMutation();
     useEffect(() => {
         setEditedContent(comment.content)
-    }, [])
+    }, [comment.content])
     useEffect(() => {
         if (DeletePostCommentSuccess) {
             toast.success("Comment Deleted ")
