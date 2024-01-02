@@ -6,26 +6,25 @@ import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import HomePage from "./pages/app/HomePage";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Profiles from "./pages/profiles";
 import ProfileEdit from "./pages/ProfileEdit";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
-  checkAuthenticated,
   checkUserAuthenticated,
 } from "./store/usersSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import NewPost from "./pages/NewPost";
 import PostEdit from "./pages/PostEdit";
 import ChangePassword from "./pages/ChangePassword";
 import PostDetailPage from "./pages/PostDetailPage";
 import ChangeUsername from "./pages/ChangeUsername";
 function App() {
-  const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(checkUserAuthenticated())
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

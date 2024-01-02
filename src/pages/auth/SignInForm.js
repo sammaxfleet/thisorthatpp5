@@ -1,4 +1,4 @@
-import React, { FormEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
@@ -8,12 +8,11 @@ import Alert from 'react-bootstrap/Alert';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
-import { login } from "../../api/axiosDefaults";
 import styles from "../../styles/SignInUpForm.module.css";
 import appStyles from "../../App.module.css";
 import sidePicture from "../../components/assets/fashionbakayo.jpg";
-import {useDispatch,useSelector}from "react-redux";
-import {  userLogin } from "../../store/usersSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { userLogin } from "../../store/usersSlice";
 const SignInForm = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
@@ -27,7 +26,7 @@ const SignInForm = () => {
       navigate("/");
     }
 
-    return () => {};
+    return () => { };
   }, [isLoggedIn]);
   const handleSubmit = async (e) => {
     e.preventDefault();

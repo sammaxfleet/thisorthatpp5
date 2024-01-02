@@ -1,7 +1,7 @@
-import { createSlice, Dispatch, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { axiosInstance, getLoggedInUserDetail } from "../axiosApi";
+import { axiosInstance } from "../axiosApi";
 
 
 export const userInitialState = {

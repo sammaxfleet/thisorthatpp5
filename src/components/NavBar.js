@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./assets/thisorthat.jpg";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../store/usersSlice";
-import { thisOrThatApi } from "../store/apiSlice";
 const NavBar = () => {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const user = useSelector((state) => state.users.user);
