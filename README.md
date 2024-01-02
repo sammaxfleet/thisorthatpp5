@@ -612,10 +612,30 @@ It also shows on other User profiles the post they've saved.
 
 <img width="385" alt="Screenshot 2023-12-31 at 17 10 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f61bbf43-79b7-4cbf-809f-3ffc4fb1abe6">
 
+
 # Validation 
 
+## Light House Performance 
+
+Home Page:
+<img width="360" alt="Screenshot 2024-01-02 at 18 53 56" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/37fce6b0-670e-4edd-8ada-a3c8eb3209cf">
+
+Profile:
+
+<img width="357" alt="Screenshot 2024-01-02 at 18 55 31" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e4e33c01-7c88-4196-970c-6b84b11f9fbd">
+
+Sign In Page: 
+
+<img width="366" alt="Screenshot 2024-01-02 at 18 57 35" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cb69962a-32b4-4e73-8f0c-4f4ae5377374">
 
 
+Sign Up Page: 
+
+<img width="364" alt="Screenshot 2024-01-02 at 18 58 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e4291dd7-d4a6-4157-917a-73f3dad414b0">
+
+Comments page: 
+
+<img width="361" alt="Screenshot 2024-01-02 at 19 00 08" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/a6b1ff48-74f6-4488-a587-c8f560761aa6">
 
 
 
