@@ -37,6 +37,8 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 # AM I RSPONSIVE IMAGE.
 
+<img width="1047" alt="Screenshot 2024-01-02 at 15 16 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4939a604-e1b1-498d-9377-e48cc37cbf9c">
+
 
 
 
