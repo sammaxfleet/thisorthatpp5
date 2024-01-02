@@ -1,7 +1,6 @@
 import React from "react";
-import { useState } from "react"
-import { Form, FormControl, Button } from "react-bootstrap";
-import { useCreatePostCommentMutation, useDeleteLikePostMutation, useGetPostsQuery, useLikePostMutation } from "../../store/apiSlice";
+import { Form, FormControl } from "react-bootstrap";
+
 
 const SearchBar = ({ handleSearch, searchQuery }) => {
 

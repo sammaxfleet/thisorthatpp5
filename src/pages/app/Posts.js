@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import Card from "react-bootstrap/Card";
+
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import styles from "../../styles/HomePage.module.css";
-import { useCreatePostCommentMutation, useDeleteLikePostMutation, useGetPostsQuery, useLikePostMutation } from "../../store/apiSlice";
+
+import { useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation } from "../../store/apiSlice";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 import PostCard from "../../components/PostCard";
@@ -27,7 +26,7 @@ const Posts = ({ data }) => {
 
 
   const [likes, setLikes] = useState(0);
-  const [comments, setComments] = useState([]);
+  const [comments] = useState([]);
 
   const handleLike = (id) => {
     if (isLoggedIn) {

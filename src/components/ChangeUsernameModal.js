@@ -18,7 +18,7 @@ const ChangeUsernameModal = ({ show, onHide, onSave }) => {
         }
 
 
-    }, [isSuccess])
+    }, [isSuccess, onHide])
 
 
     const handleSave = () => {

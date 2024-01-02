@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
-import { useGetSingleProfileQuery, useGetProfilesQuery, thisOrThatApi } from "../store/apiSlice";
+import { useGetSingleProfileQuery, thisOrThatApi } from "../store/apiSlice";
 import { useParams } from "react-router-dom";
 import { useNavigate as useNavigation } from "react-router-dom"
 import { toast } from "react-toastify";
 import Spinner from 'react-bootstrap/Spinner';
 import { useDispatch } from 'react-redux';
-import { axiosInstance, axiosInstanceFormData } from '../axiosApi';
+import { axiosInstanceFormData } from '../axiosApi';
 function ProfileEdit() {
     const [image, setImage] = useState(null);
     const [bio, setBio] = useState('');
     const dispatch = useDispatch();
     let { slug } = useParams();
-    const { data, isLoading, isFetching } = useGetSingleProfileQuery(slug);
+    const { data, isLoading } = useGetSingleProfileQuery(slug);
     const handleImageChange = (e) => {
         // Assuming you want to store the uploaded file
         setImage(e.target.files[0]);
@@ -57,7 +57,7 @@ function ProfileEdit() {
             navigate('/')
             toast.error("You are not allowed to edit this profile")
         }
-    }, [data, isLoading])
+    }, [data, isLoading, navigate])
 
     return (
         <Container>

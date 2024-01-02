@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from "react-router-dom";
-import { useNavigate as useNavigation } from "react-router-dom"
+
 import { toast } from "react-toastify";
 import Spinner from 'react-bootstrap/Spinner';
-import { axiosInstance, axiosInstanceFormData } from '../axiosApi';
-import { thisOrThatApi, useDeletePostMutation, useGetPostCommentsQuery, useGetSinglePostQuery } from '../store/apiSlice';
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
-import { useDispatch, useSelector } from "react-redux";
+
+import { useGetPostCommentsQuery, useGetSinglePostQuery } from '../store/apiSlice';
+import { useSelector } from "react-redux";
 import PostCard from '../components/PostCard';
-import { useCreatePostCommentMutation, useDeleteLikePostMutation, useGetPostsQuery, useLikePostMutation } from "../store/apiSlice";
+import { useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation } from "../store/apiSlice";
 const PostDetailPage = () => {
     let { slug } = useParams();
-    const { data, isLoading, refetch, isSuccess: SinglePostQuerySuccess } = useGetSinglePostQuery(slug, {
+    const { data, isLoading, isSuccess: SinglePostQuerySuccess } = useGetSinglePostQuery(slug, {
         refetchOnFocus: true, refetchOnMountOrArgChange: true, refetchOnReconnect: true
     })
     const { data: CommentsData } = useGetPostCommentsQuery(data?.id, {
@@ -20,12 +19,11 @@ const PostDetailPage = () => {
         refetchOnMountOrArgChange: true,
         refetchOnReconnect: true,
     })
-    const navigate = useNavigation();
     const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
     const [likePost, { isSuccess }] = useLikePostMutation()
 
     const [deleteLikePost, { isSuccess: deleteLikePostSuccess }] = useDeleteLikePostMutation()
-    const [postComment, { isSuccess: postCommentSucces }] = useCreatePostCommentMutation();
+    const [postComment] = useCreatePostCommentMutation();
     useEffect(() => {
         if (isSuccess) {
             toast.success("Post Liked Successfully")
@@ -38,8 +36,7 @@ const PostDetailPage = () => {
     }, [deleteLikePostSuccess])
 
 
-    const [likes, setLikes] = useState(0);
-    const [comments, setComments] = useState([]);
+
 
     const handleLike = (id) => {
         if (isLoggedIn) {

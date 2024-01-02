@@ -15,8 +15,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "../../store/usersSlice";
 const SignInForm = () => {
   const [showAlert, setShowAlert] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
-  const [variant, setVariant] = useState(null);
+  const [alertMessage] = useState("");
+  const [variant] = useState(null);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const SignInForm = () => {
     }
 
     return () => { };
-  }, [isLoggedIn]);
+  }, [isLoggedIn, navigate]);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
