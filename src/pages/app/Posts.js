@@ -12,7 +12,7 @@ const Posts = ({ data }) => {
   const [likePost, { isSuccess }] = useLikePostMutation()
 
   const [deleteLikePost, { isSuccess: deleteLikePostSuccess }] = useDeleteLikePostMutation()
-  const [postComment, { isSuccess: postCommentSucces }] = useCreatePostCommentMutation();
+  const [postComment] = useCreatePostCommentMutation();
   useEffect(() => {
     if (isSuccess) {
       toast.success("Post Liked Successfully")
@@ -25,8 +25,8 @@ const Posts = ({ data }) => {
   }, [deleteLikePostSuccess])
 
 
-  const [likes, setLikes] = useState(0);
-  const [comments] = useState([]);
+  const [ likes, setLikes] = useState(0);
+  const [comments, setComments] = useState([]);
 
   const handleLike = (id) => {
     if (isLoggedIn) {
