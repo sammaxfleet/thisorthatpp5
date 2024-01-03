@@ -14,8 +14,7 @@ const PopularProfiles = () => {
 
   useEffect(() => {
     getProfiles();
-    console.log(profilesData)
-  }, [profilesData])
+  }, [])
 
 
   //   Style based on bootstrap

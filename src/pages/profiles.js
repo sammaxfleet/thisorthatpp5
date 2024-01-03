@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate as useNavigation } from "react-router-dom"
@@ -23,7 +22,7 @@ const Profiles = () => {
       toast.success("User UnFollowed")
     }
   }, [unFollowUserSucces])
-  const { data, isLoading, isFetching } = useGetSingleProfileQuery(slug, {
+  const { data, isLoading } = useGetSingleProfileQuery(slug, {
     refetchOnMountOrArgChange: true,
     refetchOnFocus: true,
     refetchOnReconnect: true,
@@ -42,14 +41,14 @@ const Profiles = () => {
       toast.success("Post Removed from Saved")
     }
   }, [DeleteSavedPostSucces])
-  const { data: ProfilePosts, isLoading: porilfePostsLoading, isFetching: ProfilesPostsIsFetching } = useGetProfilePostsQuery(slug, {
+  const { data: ProfilePosts } = useGetProfilePostsQuery(slug, {
     refetchOnMountOrArgChange: true,
     refetchOnFocus: true,
     refetchOnReconnect: true,
     refetchOnMount: true,
 
   });
-  const { data: ProfilesData, isLoading: ProfilesIsLoading, isFetching: ProfilesIsFetching } = useGetProfilesQuery()
+  const { data: ProfilesData } = useGetProfilesQuery()
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => {
@@ -113,11 +112,11 @@ const Profiles = () => {
                 )}
               </Card.Header>
               <Card.Body className="d-flex align-items-center">
-                <Image src={data?.image} roundedCircle className="mr-3" style={{ width: "100px", height: "100px" }} />
+                <Image src={data?.image} roundedCircle className="mr-3" style={{ width: "100px", height: "100px", objectFit: "cover" }} />
                 <div>
                   <h3>{data?.owner}</h3>
                   <p>{data?.content}</p>
-                  <div className="d-flex">
+                  <div className="d-flex" style={{ flexWrap: "wrap" }}>
                     <div className="mr-3">
                       <strong>{data?.posts_count}</strong>
                       <span className="ml-1">posts</span>

@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import { useNavigate as useNavigation } from "react-router-dom"
 import { toast } from "react-toastify";
 import Spinner from 'react-bootstrap/Spinner';
-import { axiosInstance, axiosInstanceFormData } from '../axiosApi';
+import { axiosInstanceFormData } from '../axiosApi';
 import { thisOrThatApi, useDeletePostMutation, useGetSinglePostQuery } from '../store/apiSlice';
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
+import { Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { useDispatch, useSelector } from "react-redux";
 const PostEdit = () => {
     let { slug } = useParams();
@@ -15,7 +15,7 @@ const PostEdit = () => {
     const [file, setFile] = React.useState(null);
     const dispatch = useDispatch();
 
-    const { data, isLoading, refetch } = useGetSinglePostQuery(slug, {
+    const { data, isLoading } = useGetSinglePostQuery(slug, {
         refetchOnFocus: true, refetchOnMountOrArgChange: true, refetchOnReconnect: true
     })
     const navigate = useNavigation();
@@ -26,6 +26,7 @@ const PostEdit = () => {
                 toast.error("You dont have permission to edit this post ")
             }
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data])
     useEffect(() => {
         if (isSuccess) {
@@ -33,6 +34,7 @@ const PostEdit = () => {
             // dispatch(thisOrThatApi.util.invalidateTags(["Post", "Profiles"]))
             navigate("/profiles/" + user.pk)
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isSuccess])
     const handleImageChange = (e) => {
         e.preventDefault();

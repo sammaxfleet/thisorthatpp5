@@ -28,16 +28,16 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
         }
     }
     return (
-        <Card style={{ width: "70%", marginBottom: "20px" }}>
+        <Card className="custom-card" style={{ marginBottom: "20px" }}>
             {/* User Circle */}
             <div className="flex-h" onClick={() => navigate("/profiles/" + post.profile_id)}>
                 <div
-
                     style={{
                         display: "flex",
                         alignItems: "center",
                         flexWrap: "wrap",
-                        gap: "20px",
+                        gap: "10px",
+                        marginBottom: "10px",
                     }}
                 >
                     <img
@@ -46,31 +46,14 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                         alt="user"
                         width={50}
                         height={50}
+                        style={{ marginRight: "10px" }}
                     />
-                    <p
-                        style={{
-                            marginTop: "20px",
-                        }}
-                    >
-                        {post.owner}
-                    </p>
-                    |
-                    <p
-                        style={{
-                            marginTop: "20px",
-                            color: "blue",
-                        }}
-                    >
-                        {post.owner}
-                    </p>
+                    <div>
+                        <p style={{ marginBottom: "5px", fontWeight: "bold" }}>{post.owner}</p>
+                        <p style={{ marginBottom: "5px", color: "blue" }}>{post.owner}</p>
+                    </div>
                 </div>
-                <p
-                    style={{
-                        marginTop: "10px",
-                    }}
-                >
-                    {post.created_at}
-                </p>
+                <p style={{ marginTop: "10px" }}>{post.created_at}</p>
             </div>
 
             <Card.Img
@@ -79,61 +62,41 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                 src={post.image}
                 style={{
                     width: "100%",
-                    height: "600px",
-                    objectFit: "contain"
+                    height: "auto",
+                    objectFit: "cover",
                 }}
             />
 
             <Card.Body>
                 <div onClick={() => navigate("/post/" + post.id)}>
                     <h1 className={styles.cardText}>{post.title}</h1>
-                    <Card.Text className={styles.cardText}>{post.content}</Card.Text>
+                    <Card.Text className={styles.cardText}> Desc: {post.content}</Card.Text>
+                    <Card.Text className={styles.cardText}>Fashion Inspo: {post.fashion_inspiration}</Card.Text>
                 </div>
 
-                <div className="flex-h">
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "20px",
-                        }}
-                    >
-                        <p
-                            style={{
-                                marginTop: "20px",
-                            }}
-                        >
+                <div className="flex-h" style={{ justifyContent: "space-between", marginTop: "15px", flexWrap: "wrap" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                        <div className="like-comment-section">
                             {/* like emoji */}
                             <span role="img" aria-label="like" className={styles.emoji}>
                                 👍
                             </span>{" "}
-                            {post.likes_count} likes
-                        </p>
-                        <p
-                            style={{
-                                marginTop: "20px",
-                            }}
-                            onClick={() => navigate("/post/" + post.id)}
-                        >
+                            <span className="like-count">{post.likes_count}</span> likes
+                        </div>
+                        <div className="like-comment-section" onClick={() => navigate("/post/" + post.id)}>
                             {/* comment emoji */}
-                            <span
-                                role="img"
-                                aria-label="comment"
-                                className={styles.emoji}
-                            >
+                            <span role="img" aria-label="comment" className={styles.emoji}>
                                 💬
                             </span>{" "}
-                            {post.comments_count} comments
-                        </p>
+                            <span className="comment-count">{post.comments_count}</span> comment
+                        </div>
                     </div>
-                    <div>
+                    <div className="action-buttons">
                         {!post.like_id && (
                             <Button
                                 variant="secondary"
                                 onClick={() => handleLike(post.id)}
-                                style={{
-                                    marginRight: "20px",
-                                }}
+                                className="action-button"
                             >
                                 Like
                             </Button>
@@ -142,36 +105,27 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                             <Button
                                 variant="secondary"
                                 onClick={() => handleUnLike(post.like_id)}
-                                style={{
-                                    marginRight: "20px",
-                                }}
+                                className="action-button"
                             >
                                 UnLike
                             </Button>
                         )}
 
-                        <Button variant="secondary" onClick={() => handleComment(post)}>
+                        <Button variant="secondary" onClick={() => handleComment(post)} className="action-button">
                             Comment
                         </Button>
-                        <i class="fa-regular fa-heart" onClick={savePost}></i>
-
-
+                        <i className="fa-regular fa-heart" onClick={savePost}></i>
                     </div>
                 </div>
                 <div>
-                    {showComments && (
-                        <>
-                            {comments && comments.map((comment) => {
-                                return (
-                                    <PostCardComments comment={comment} />
-                                );
-                            })}
-                        </>
-                    )}
-
+                    {showComments && comments && comments.map((comment) => (
+                        <PostCardComments key={comment.id} comment={comment} />
+                    ))}
                 </div>
             </Card.Body>
         </Card>
+
+
     )
 }
 

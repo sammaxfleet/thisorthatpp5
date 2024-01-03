@@ -47,3 +47,44 @@ body {
 .zoom:hover {
   transform: scale(1.05);
 }
+/* Example CSS styles for like and comment sections */
+
+/* Adjust the font and spacing for like and comment sections */
+.like-comment-section {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the count number in like and comment sections */
+.like-count,
+.comment-count {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* Style the action buttons section */
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the action buttons */
+.action-button {
+    margin-right: 10px;
+}
+
+/* Styles for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .custom-card {
+    max-width: 100%;
+  }
+}
+
+/* Styles for desktop devices (min-width: 768px) */
+@media (min-width: 768px) {
+  .custom-card {
+    max-width: 70%;
+    min-width: 70%;
+  }
+}

@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-
-import { useState } from "react";
-
 import { useCreatePostCommentMutation, useDeleteLikePostMutation, useLikePostMutation } from "../../store/apiSlice";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
@@ -23,10 +20,6 @@ const Posts = ({ data }) => {
       toast.success("Post UnLiked Successfully")
     }
   }, [deleteLikePostSuccess])
-
-
-  const [ likes, setLikes] = useState(0);
-  const [comments, setComments] = useState([]);
 
   const handleLike = (id) => {
     if (isLoggedIn) {
@@ -64,7 +57,7 @@ const Posts = ({ data }) => {
     >
       {data && data.results.map((post) => {
         return (
-          <PostCard post={post} showComments={false} handleLike={handleLike} handleComment={handleComment} handleUnLike={handleUnLike} />
+          <PostCard key={post.id} post={post} showComments={false} handleLike={handleLike} handleComment={handleComment} handleUnLike={handleUnLike} />
         );
       })}
     </div>

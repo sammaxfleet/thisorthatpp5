@@ -5,6 +5,7 @@ import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../store/usersSlice";
+import { toast } from "react-toastify";
 const NavBar = () => {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const user = useSelector((state) => state.users.user);
@@ -40,6 +41,7 @@ const NavBar = () => {
                     localStorage.removeItem("user")
                     // setIsLoggedIn(false)
                     dispatch(logOut())
+                    toast.success("Logged Out")
 
                   }}
                 >
