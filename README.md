@@ -750,7 +750,6 @@ Click the green button that says "Gitpod" to open the project in Gitpod.
   10. Import this file into App.js to be used across all pages
 
 
-# Credits - 
 
 
 # Frame works and libraries used 
@@ -779,7 +778,7 @@ Click the green button that says "Gitpod" to open the project in Gitpod.
 
 
 
-Acknowledgements - 
+# Credits & Acknowledgements - 
 
 This fictional site was created for Portfolio Project #5 (Advanced Front End Specialisation) - Diploma in Full Stack Software Development at the Code Institute. 
 Thank you to all the tutors at code institute & everyone on slack for the constant support. 
