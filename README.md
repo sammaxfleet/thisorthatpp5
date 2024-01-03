@@ -613,11 +613,29 @@ It also shows on other User profiles the post they've saved.
 <img width="385" alt="Screenshot 2023-12-31 at 17 10 44" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f61bbf43-79b7-4cbf-809f-3ffc4fb1abe6">
 
 
-# Validation 
+# Validation Testing
+
+There
 
 ## Light House Performance 
 
+
+EsLindt Validator has been used to detect any problems in the workspace through all pages. 
+
+Any functions not being used I deleted on the JS files, there are no problems currently in the workspace.
+
+Example of a validated page with ESLINDT & Prettier extension
+
+<img width="769" alt="Screenshot 2024-01-03 at 14 48 39" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/892eea9a-a7f9-4f2a-9c59-63b767c558ba">
+
+There are NO current problems in the workspace:
+
+<img width="436" alt="Screenshot 2024-01-03 at 14 45 24" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/86ca7cdc-269c-4ece-8cb8-b86a66f1317f">
+
+
+
 Home Page:
+
 <img width="360" alt="Screenshot 2024-01-02 at 18 53 56" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/37fce6b0-670e-4edd-8ada-a3c8eb3209cf">
 
 Profile:
@@ -636,6 +654,34 @@ Sign Up Page:
 Comments page: 
 
 <img width="361" alt="Screenshot 2024-01-02 at 19 00 08" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/a6b1ff48-74f6-4488-a587-c8f560761aa6">
+
+
+JSX:
+
+Throughout the development process, the JSX code underwent meticulous validation and underwent a continuous refinement process. 
+This rigorous approach aimed to guarantee the impeccable quality of the code as the project progressed. 
+By subjecting the JSX code to thorough validation, potential errors and issues were diligently identified and addressed. 
+Additionally, through the continuous refinement process, the code was regularly reviewed, optimized, and improved to enhance its performance, readability, and adherence to coding standards. 
+This commitment to ensuring the excellence of the JSX code resulted in a high-quality user interface and minimized the occurrence of bugs or inconsistencies, ultimately enhancing the overall user experience.
+
+
+ALL CSS files pass through the Jigsaw validator with no issues found:
+
+<img width="1397" alt="Screenshot 2024-01-03 at 15 37 24" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/64ba3376-0455-4aae-a194-80c5ecfd2c51">
+
+
+
+## Fixing Bugs
+
+As you can see here I had some bugs to fix, the main thing to fix was to delete functions I'd changed and was no longer using.
+Particularly on the 3 pages of
+
+- Posctard.js
+- Postcard comments.js
+- NavBar.js
+  
+<img width="604" alt="Screenshot 2024-01-02 at 21 01 03" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6949f690-40a3-4499-be26-f774830426ba">
+
 
 
 
