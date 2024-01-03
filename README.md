@@ -1,8 +1,7 @@
 # THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute. 
 
-## Site Description 
+## Site Description :
 
-Description: 
 
 'This Or That' is an online website that compares celebrity fashion outfits, It is designed to bring fashion inspiration for the user & to keep up with the latest fashion releases. 
 It allows users to create user profiles, and interact with other fashion enthusiast users. 
