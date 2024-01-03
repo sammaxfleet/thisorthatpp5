@@ -24,9 +24,9 @@
   },
   "scripts": {
     "heroku-prebuild": "npm install -g serve",
- "start": "serve -s build",
+ "start": "react-scripts start",
      "build": "react-scripts build",
-     "dev": "react-scripts start",
+     "serve":"serve -s build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
