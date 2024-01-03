@@ -384,8 +384,22 @@ Delete - Users can delete tasks, comments, likes, follows.
   5. Edit Profile/ Delete
   
 
+## Key Features:
 
-# Colour Scheme 
+The "Key Features" section highlights the main features or functionalities that make the Autotrader marketplace unique and appealing to users.
+
+1. Search by celebrity name to filter down your search.
+  
+2.  User Profiles: Explain how users can create profiles and manage their information, including personal details, saved searches, and editing posts. 
+
+3. Viewing All Posts, a timelane of all posts is there so you can view everything.
+
+4. Saved Favorites: Emphasize the feature that enables users to save their favorite outfit and easily access them later for quick reference.
+
+5. Interaction: Follow users, comment, like or even follow their page to stay updated.
+
+   
+##  Colour Scheme 
 
 I took inspiration from fashion blogs, and stores like Zara & Arte. Which are sleek, simple & focus on clothing.
 The site has a white background as full focus goes on the images. The user is then drawn to the content, Two contrasting colours are used to navigate through the website. 
@@ -395,7 +409,7 @@ https://arte-antwerp.com/
 
 <img width="1435" alt="Screenshot 2023-10-08 at 13 12 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5946cf27-8d7f-470b-a27c-d3c4a124223b">
 
-# Typography - 
+## Typography - 
 
 Kalnia font is used. 
 I wanted to add a bit of an edgy font, with it being a fashion/ creative site. I thought the font was cool and took inspiration from the Zara website. 
@@ -411,7 +425,7 @@ Design on site:
 <img width="1057" alt="Screenshot 2023-12-27 at 14 01 23" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/eed80da1-b42e-4803-88e8-be62844b7bb5">
 
 
-# Navigation 
+## Navigation 
 
 
 <img width="350" alt="Screenshot 2023-12-27 at 14 06 29" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3c57acf3-afe8-4ec0-857f-8d87705524b9">
@@ -444,7 +458,7 @@ This highlight comes when you hover over the page, to give the colour continiuty
 Mobile view the Nav Bar folds in. 
 
 
-# Homepage - 
+## Homepage - 
 
 The Home page has 4 main React Components
 
@@ -459,15 +473,17 @@ The popular profiles component is a permanent feature across the entire site. It
 it's good feature to have to encourage the user to interact with others once signed up. 
 If the user isn't logged in they can't follow the profiles. 
 
-Mobile View: 
+## Mobile View: 
 
 The mobile view, makes everything more compact the nav bar goes into a small tab & the popular user feature disappears for larger screens.
 The same functions still work just the initial 'POPULAR USER PROFILES' doesn't come up on mobile view. 
 
-<img width="511" alt="Screenshot 2023-12-27 at 14 10 10" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9b69584e-6f8a-43f3-837f-7fc033246415">
+<img width="218" alt="Screenshot 2024-01-03 at 16 17 11" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/62293830-9412-41be-ba28-1fdc65cf6050">
 
 
-# Search Bar
+
+
+## Search Bar
 
 Here I have searched the keyword 'Bakayo' this has allowed me to search a keyword from a post and showed the post. 
 
@@ -475,7 +491,7 @@ The search bar allows the website to be filtered, you can search for celebrity n
 
 <img width="989" alt="Screenshot 2023-12-27 at 14 15 13" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/15822d22-c3be-4d8d-aa9f-caa8900db7a2">
 
-# Posts
+## Posts
 
 How a post is displayed by a User, it focuses on the main feature which is.
 
@@ -491,7 +507,7 @@ This layout is simple, and really focuses on the image being the main feature, b
 <img width="818" alt="Screenshot 2023-12-27 at 14 16 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/cce69670-650b-4746-90c0-5628fd9441bf">
 
 
-# Following a User 
+## Following a User 
 
 Once clicked on a User's profile we get lead to this 'Follow Page'. 
 Here we can see the Users posts & see their follow count & their following count. 
@@ -499,7 +515,7 @@ Here we can see the Users posts & see their follow count & their following count
 
 <img width="863" alt="Screenshot 2023-12-27 at 14 19 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/199938a1-4cce-4df2-b136-1165e25ff769">
 
-# Following And unfollowing a User
+## Following And unfollowing a User
 
 The button changes colour to red for unfollow and is blue for the follow button. 
 This page is made so you can follow a users posts, see their engagement and activity. 
@@ -530,7 +546,7 @@ This is such a big feature, as updating your profile is so neccesary and the fou
 
 <img width="548" alt="Screenshot 2023-12-27 at 14 34 48" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e2087dd9-46dd-4030-8efd-d1c6e626a02e">
 
-# Add Post
+## Add Post
 
 The essential page for the site. Here is how you add a post,
 
