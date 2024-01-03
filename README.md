@@ -634,6 +634,7 @@ Example of a validated page with ESLINDT & Prettier extension
 
 
 Home Page:
+
 <img width="360" alt="Screenshot 2024-01-02 at 18 53 56" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/37fce6b0-670e-4edd-8ada-a3c8eb3209cf">
 
 Profile:
