@@ -703,7 +703,31 @@ Particularly on the 3 pages of
 
 # Deployment - 
 
-- Deployment to Heroku
+## Fork this Project Repository
+
+It is possible to make an independent copy of a GitHub Repository by forking the GitHub account. The copy can then be viewed and it is also possible to make changes in the copy without affecting the original repository. To fork the repository, follow these steps:
+
+1. After logging in to GitHub, locate the repository. On the top right side of the page there is a 'Fork' button. Click on the button to create a copy of the original repository.
+
+2. Clone this Project Repository
+A Git clone creates a linked copy of the project that will continue to synchronize with the original repository. In order to create a clone, you can click on the 'Code' button inside the selected repository and then select the 'Clone' option from the dropdown list.<img width="671" alt="Screenshot 2023-10-08 at 15 35 58" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69df2408-741b-45e4-8df8-24ec95f39e37">
+
+
+## Running the project locally
+
+Go to the project repository.
+Click on the "Code" button.
+Choose one of the three options (HTTPS, SSH, or GitHub CLI), and click copy.
+Open your IDE program and launch the terminal.
+Type git clone and paste the copied URL from step 3.
+Press Enter, and the local clone of the project will be created.
+
+Alternatively, you can use Gitpod:
+
+Go to the project repository.
+Click the green button that says "Gitpod" to open the project in Gitpod.
+
+## Deployment to Heroku
 
 - In your heroku account, select Create New App, and give it a unique name related to your project.
 - Select a region corresponding to where you live and click 'Create App'.
@@ -717,7 +741,7 @@ Particularly on the 3 pages of
   
   1. In the Heroku dashboard, go into the API application settings
   2. In 'Settings' add a new Config Var called 'CLIENT_ORIGIN' and set that to the URL for your deployed React application. In my case, this would be https://happening-react.herokuapp.com.
-  3. Then add another Config Var called 'CLIENT_ORIGIN_DEV' and enter the URL of your Gitpod preview link, remembering to remove the trailing slash at the end. Gitpod occasionally changes this URL so keep    an eye on it, as you are working on your project.
+  3. Then add another Config Var called 'CLIENT_ORIGIN_DEV' and enter the URL of your Gitpod preview link, remembering to remove the trailing slash at the end. Gitpod occasionally changes this URL so keep an eye on it. 
   4. Go back into your frontend Gitpod workspace, and install the Axios library using the command 'npm install axios'.
   5. Create a folder called 'API' and inside it create a file called 'axiosDefaults'.
   6.import axios at the top of the file
@@ -726,20 +750,11 @@ Particularly on the 3 pages of
   9. In order to avoid any CORS issues, set withCredentials to True.
   10. Import this file into App.js to be used across all pages
 
-Fork this Project Repository
-It is possible to make an independent copy of a GitHub Repository by forking the GitHub account. The copy can then be viewed and it is also possible to make changes in the copy without affecting the original repository. To fork the repository, follow these steps:
-
-1. After logging in to GitHub, locate the repository. On the top right side of the page there is a 'Fork' button. Click on the button to create a copy of the original repository.
-
-2. Clone this Project Repository
-A Git clone creates a linked copy of the project that will continue to synchronize with the original repository. In order to create a clone, you can click on the 'Code' button inside the selected repository and then select the 'Clone' option from the dropdown list.<img width="671" alt="Screenshot 2023-10-08 at 15 35 58" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/69df2408-741b-45e4-8df8-24ec95f39e37">
-
-
 
 # Credits - 
 
 
-#frame works and libraries
+# Frame works and libraries used 
 
 - Redux toolkit : state management libraary
 - Balsamiq
@@ -756,22 +771,22 @@ A Git clone creates a linked copy of the project that will continue to synchroni
 - Favicon generator
 - Google Images for any images on the site
 - lOGO - DRIBBLE.COM
-- Tutor support for various questions on building both repositories. @CodeInstitute particularly help with building the API.
 - Info about data fields https://www.geeksforgeeks.org/django-model-data-types-and-fields-list/
 - More info on react components I read this https://itnext.io/controlled-vs-uncontrolled-components-in-react-5cd13b2075f9
 - For variables I read this https://reactgo.com/react-get-current-date/ for variables
-- Ways to bind event handlers I read this https://docs.google.com/document/d/1r7C6VtLiVtE54obMbhLU4z4fyzGPrCzxiLrcaqG4jT4/edit?pli=1#heading=h.b59w8b2mnfd5
 - JSX further understanding I read this https://legacy.reactjs.org/docs/jsx-in-depth.html
 - Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
-- https://www.postman.com/ testing 
 
 
 
 Acknowledgements - 
 
 This fictional site was created for Portfolio Project #5 (Advanced Front End Specialisation) - Diploma in Full Stack Software Development at the Code Institute. 
-Thank you to all the tutors, my mentor & everyone on slack for the constant support. 
+Thank you to all the tutors at code institute & everyone on slack for the constant support. 
+
+Especially thanks to my Mentor Antonio Rodriguez for the continual guidance & support at Code Institute.
+
   
 
 
