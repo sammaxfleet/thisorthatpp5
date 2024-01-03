@@ -12,7 +12,7 @@ const SearchBar = ({ handleSearch, searchQuery }) => {
           style={{
             width: "100%",
           }}
-          placeholder="🔍 Search by User Name & Celbrity Name"
+          placeholder="🔍 Search by User Name & Celebrity Name"
           className=""
           value={searchQuery}
           onChange={handleSearch}
