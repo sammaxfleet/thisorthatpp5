@@ -6,10 +6,9 @@
 'This Or That' is an online website that compares celebrity fashion outfits, It is designed to bring fashion inspiration for the user & to keep up with the latest fashion releases. 
 It allows users to create user profiles, and interact with other fashion enthusiast users. 
 It's a catelogue of style,' which one is your taste?'.
-The user is able to follow other users, search on filterd searches & it gives the users space to comment their opinion on each post.
-I took inspiration from this as I have a huge interest in fashion and with current trends on social media "ootd" [ outfit of the day ]
-I wanted to incorperate something where I think there's a gap in the market in the current climate. 
-The problem being how can we take what's happening on social media onto one site. 
+The user is able to follow other users, search on a filterd search & it gives the users space to comment their opinion on each post.
+I took inspiration for this as I have a huge interest in fashion and with current trends on social media "ootd" [ outfit of the day ] circulating I wanted to express where I think there's a gap in the market in the current climate. 
+The problem statement ?..' How can we take what's happening on social media on media instagram and tiktok and build it all on one place?'.  
 
 Enhanced user features:
 
@@ -108,8 +107,8 @@ Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisort
 ## PROJECT  OBJECTIVE - 
 
 To provide a stable, interactive platform for fashion enthusiasts.
-For the user to find fashion inspiration & be able to like, Comment and Follow on their favourites Users. 
-For the site to give the user the ability to interact with other Users, create a Profile & also Upload Posts.
+For the user to find fashion inspiration & be able to like, Comment, Follow & save posts on their favourites Users/posts. 
+For the site to give the user the ability to interact with other Users, create a Profile & also Upload Posts of their own.
 The objective is to see different outfits and latest trends, celebrities have access to the lastest fashion drops. 
 This allows the user to keep up with trends & decide where they take the inspiration for their own expression, events, birthday's, social media etc. 
 So much fashion inspiration is spread over different platforms this essentially creates a site that brings all the interaction into one place. 
@@ -125,7 +124,7 @@ Breaking down the site into a few main goals:
 5 - To be able to create a Profile and upload your inspiration | Sharing. 
 6 - Mobile View & tablet view to be fully responsive. 
 7 - Search through the site with Filters
-8 - Save Posts you like & follow,  like. 
+8 - Save Posts you like & follow. 
 
 
 ## SITE OWNER GOAL - 
@@ -139,7 +138,7 @@ Content should be well structured and of high quality, navigation and site funct
 3. - CRUD functionality for comments, uploads & to alter their profile.
 4. - User Authentication
 5. - The site to be simple and use intuitive navigation across all pages.
-6. - Be able to 'like' and 'Comment'.
+6. - Be able to 'like' and 'Comment', 'Follow' & 'Save'.
   
    
 
@@ -151,8 +150,6 @@ The fashion community has been building online now with 'OOTD' hash tags and peo
 Users could be male or female, there is an equal spread of fashion content on there. 
 It is also aimed at people wanting to develop and find their own expression with their clothing. 
 Another target audience could be bloggers, where they can take the latest inspiration & blog/ vlog aout it. 
-
-
 
 
 
@@ -182,15 +179,11 @@ Should Have:
 Could Have:
 Won’t Have:
 
-Aswell as Milestones which are listed below. 
-
-## User Stories
-
-Below I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
-The user stories were then tested and confirmed in the Testing section.
+Milestones which are listed below are big user stories which are then but into smaller ones. 
 
 
-## Logged Out Site User
+
+## Logged Out Site User features
 
 
 - Ability to Sign Up
@@ -204,7 +197,7 @@ The user stories were then tested and confirmed in the Testing section.
 
 
 
-### Logged In Site User 
+### Logged In Site User features
 
 All of the above and additionally..
 
@@ -217,13 +210,18 @@ All of the above and additionally..
 - Can Make my own posts
 - Can delete/ edit own posts.
 
-
-
-
 # MANUAL TESTING
 
 
-# EPICS/ MILESTONES & USER STORIES
+
+
+## User Stories
+
+Below I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
+The user stories were then tested and confirmed in the Testing section.
+
+
+## EPICS/ MILESTONES & USER STORIES
 
 I used the following Milestones as Epics when creating the project. 
 
@@ -286,7 +284,7 @@ Milestone -  Design
 
 * EPIC 5 
 
-MILESTONE - Home page DESIGN
+Milestone - Home page DESIGN
 
 User Stories: 
 1. Find a Logo - MUST HAVE
@@ -370,8 +368,6 @@ User Stories - Posts
 3. be able to delete Post. - MUST HAVE
 
      
-
-
 
 # Site Structure 
 
