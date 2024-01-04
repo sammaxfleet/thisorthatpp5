@@ -39,14 +39,16 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 <img width="1047" alt="Screenshot 2024-01-02 at 15 16 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4939a604-e1b1-498d-9377-e48cc37cbf9c">
 
 
-Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/13717176/THISORTHAT.WIREFRAMES.pdf)
-
 
 TABLE OF CONTENTS - 
 
 
 
+## Wireframes
 
+The foundation of the front end is to build a visual representation before working on the site. 
+
+Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/13717176/THISORTHAT.WIREFRAMES.pdf)
 
 ## PROJECT  OBJECTIVE - 
 
@@ -95,7 +97,12 @@ Users could be male or female, there is an equal spread of fashion content on th
 It is also aimed at people wanting to develop and find their own expression with their clothing. 
 Another target audience could be bloggers, where they can take the latest inspiration & blog/ vlog aout it. 
 
-## PROJECT MANAGEMENT - 
+
+
+
+
+
+# PROJECT MANAGEMENT - 
 
 An agile methodology approach was used to plan and develop the 'This or That' project.
 All the main features of the application were recorded as 'Epics' and then refined into smaller 'User Stories'.
@@ -107,7 +114,7 @@ Link to user stories; https://github.com/users/sammaxfleet/projects/6
 
 <img width="1437" alt="Screenshot 2023-12-18 at 10 46 04" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/3dd788ac-8934-4685-a9a4-7921ae5a12c5">
 
-# AGILE METHODOLOGY
+## AGILE METHODOLOGY
 
 By using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. 
 Due to the time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great for app design where you can edit and adjust when needed. 
@@ -122,7 +129,7 @@ Won’t Have:
 
 Aswell as Milestones which are listed below. 
 
-# User Stories
+## User Stories
 
 Below I have listed the main user stories for a user who is not logged in, or has no account and then for a logged in user. 
 The user stories were then tested and confirmed in the Testing section.
@@ -154,6 +161,9 @@ All of the above and additionally..
 - Can Edit Profile & posts 
 - Can Make my own posts
 - Can delete/ edit own posts.
+
+
+
 
 # MANUAL TESTING
 
@@ -306,16 +316,6 @@ User Stories - Posts
 
      
 
-# CRUD Functionality 
-
-CRUD Functionality
-Tick It handles data with full CRUD Functionality:
-
-Create - Users can create, an account, profile, tasks, comments, likes, posts. 
-Read - Users can view the tasks, comments, posts of other users and also the profiles of these users.
-Update - Users can update their profile, password & username. & update taks, comments, posts, following accounts. 
-Delete - Users can delete tasks, comments, likes, follows. 
-
 
 
 # Site Structure 
@@ -354,6 +354,17 @@ The "Key Features" section highlights the main features or functionalities that 
 4. Saved Favorites: Emphasize the feature that enables users to save their favorite outfit and easily access them later for quick reference.
 
 5. Interaction: Follow users, comment, like or even follow their page to stay updated.
+   
+
+## CRUD Functionality 
+
+CRUD Functionality
+Tick It handles data with full CRUD Functionality:
+
+Create - Users can create, an account, profile, tasks, comments, likes, posts. 
+Read - Users can view the tasks, comments, posts of other users and also the profiles of these users.
+Update - Users can update their profile, password & username. & update taks, comments, posts, following accounts. 
+Delete - Users can delete tasks, comments, likes, follows. 
 
    
 ##  Colour Scheme 
@@ -366,6 +377,7 @@ https://arte-antwerp.com/
 
 <img width="1435" alt="Screenshot 2023-10-08 at 13 12 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/5946cf27-8d7f-470b-a27c-d3c4a124223b">
 
+
 ## Typography - 
 
 Kalnia font is used. 
@@ -374,7 +386,7 @@ I wanted to add a bit of an edgy font, with it being a fashion/ creative site. I
 <img width="272" alt="Screenshot 2023-12-27 at 14 04 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4bb1d7f9-da4a-44d5-bb98-73f22a556e58">
 
 
-Font Used: 
+ Font Used: 
 <img width="279" alt="Screenshot 2023-12-27 at 14 02 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/02086305-4156-4eed-b10d-6a63bacf9937">
 
 Design on site: 
@@ -439,7 +451,6 @@ The same functions still work just the initial 'POPULAR USER PROFILES' doesn't c
 
 
 
-
 ## Search Bar
 
 Here I have searched the keyword 'Bakayo' this has allowed me to search a keyword from a post and showed the post. 
@@ -455,7 +466,8 @@ How a post is displayed by a User, it focuses on the main feature which is.
 1. Image.
 2. A title 
 3. Description of the outfit
-4. Likes & Comments, Saved. 
+4. Fashion Inspiration
+5. Likes & Comments, Saved. 
 
 
 This layout is simple, and really focuses on the image being the main feature, beneath the photo is the interactive buttons. 
@@ -588,7 +600,6 @@ It also shows on other User profiles the post they've saved.
 
 # Validation Testing
 
-There
 
 ## Light House Performance 
 
@@ -654,8 +665,6 @@ Particularly on the 3 pages of
 - NavBar.js
   
 <img width="604" alt="Screenshot 2024-01-02 at 21 01 03" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6949f690-40a3-4499-be26-f774830426ba">
-
-
 
 
 # Deployment - 
