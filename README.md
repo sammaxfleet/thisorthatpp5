@@ -16,7 +16,7 @@ Enhanced user features:
 If a profile is created you are then able to follow, like, comment, post yourself and save posts.
 You then can interact with the community, without a profile you're browsing from a distance. 
 
-Seamless Frontend Experience:
+Frontend Experience:
 
 Thisorthat's frontend is built using the React framework, ensuring a modern and responsive user interface. The frontend seamlessly connects and interacts with the backend API through efficient HTTP requests, providing a smooth and enjoyable user experience.
 
@@ -39,55 +39,12 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 <img width="1047" alt="Screenshot 2024-01-02 at 15 16 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4939a604-e1b1-498d-9377-e48cc37cbf9c">
 
 
-
-
 Wire Frames - [THISORTHAT WIREFRAMES.pdf](https://github.com/sammaxfleet/thisorthatpp5/files/13717176/THISORTHAT.WIREFRAMES.pdf)
 
 
 TABLE OF CONTENTS - 
 
-- [THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute.](#this-or-that---portfolio-project-5---advanced-front-end---code-institute)
-  * [Site Description](#site-description)
-- [Full Links to Project:](#full-links-to-project-)
-- [AM I RSPONSIVE IMAGE.](#am-i-rsponsive-image)
-  * [PROJECT  OBJECTIVE -](#project--objective--)
-  * [SITE USER GOAL-](#site-user-goal-)
-  * [SITE OWNER GOAL -](#site-owner-goal--)
-  * [TARGET AUDIENCE -](#target-audience--)
-  * [PROJECT MANAGEMENT -](#project-management--)
-- [AGILE METHODOLOGY](#agile-methodology)
-- [User Stories](#user-stories)
-  * [Logged Out Site User](#logged-out-site-user)
-    + [Logged In Site User](#logged-in-site-user)
-- [MANUAL TESTING](#manual-testing)
-- [EPICS/ MILESTONES & USER STORIES](#epics--milestones---user-stories)
-  * [User Stories Breakdown:](#user-stories-breakdown-)
-- [CRUD Functionality](#crud-functionality)
-- [Site Structure](#site-structure)
-- [Colour Scheme](#colour-scheme)
-- [Typography -](#typography--)
-- [Navigation](#navigation)
-- [Homepage -](#homepage--)
-- [Search Bar](#search-bar)
-- [Posts](#posts)
-- [Following a User](#following-a-user)
-- [Following And unfollowing a User](#following-and-unfollowing-a-user)
-- [Edit Profile](#edit-profile)
-  * [Edit Username](#edit-username)
-  * [Change Password](#change-password)
-  * [Change Username](#change-username)
-- [Add Post](#add-post)
-- [post liked - with notification](#post-liked---with-notification)
-- [Post Unliked with Notification](#post-unliked-with-notification)
-- [Add Comment](#add-comment)
-  * [Editing Comments by User logged in](#editing-comments-by-user-logged-in)
-  * [Edit Delete/ Commment](#edit-delete--commment)
-  * [Edit Comment](#edit-comment)
-  * [Delete comment](#delete-comment)
-- [Save Post](#save-post)
-- [Validation](#validation)
-- [Deployment -](#deployment--)
-- [Credits -](#credits--)
+
 
 
 
@@ -381,6 +338,7 @@ Delete - Users can delete tasks, comments, likes, follows.
   3. Edit Post 
   4. EDIT/ DELETE post
   5. Edit Profile/ Delete
+  6. SIGN OUT -[BUTTON] Not a page.
   
 
 ## Key Features:
@@ -748,7 +706,6 @@ Click the green button that says "Gitpod" to open the project in Gitpod.
   8. Set the content-type header to multi-part/form-data as the API will need to deal with images as well as text in it's requests.
   9. In order to avoid any CORS issues, set withCredentials to True.
   10. Import this file into App.js to be used across all pages
-
 
 
 
