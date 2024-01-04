@@ -40,7 +40,62 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 
 
-TABLE OF CONTENTS - 
+# TABLE OF CONTENTS - 
+
+- [THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute.](#this-or-that---portfolio-project-5---advanced-front-end---code-institute)
+  * [Site Description :](#site-description--)
+- [Full Links to Project:](#full-links-to-project-)
+- [AM I RSPONSIVE IMAGE.](#am-i-rsponsive-image)
+  * [Wireframes](#wireframes)
+  * [PROJECT  OBJECTIVE -](#project--objective--)
+  * [SITE USER GOAL-](#site-user-goal-)
+  * [SITE OWNER GOAL -](#site-owner-goal--)
+  * [TARGET AUDIENCE -](#target-audience--)
+- [PROJECT MANAGEMENT -](#project-management--)
+  * [AGILE METHODOLOGY](#agile-methodology)
+  * [User Stories](#user-stories)
+  * [Logged Out Site User](#logged-out-site-user)
+    + [Logged In Site User](#logged-in-site-user)
+- [MANUAL TESTING](#manual-testing)
+- [EPICS/ MILESTONES & USER STORIES](#epics--milestones---user-stories)
+  * [User Stories Breakdown:](#user-stories-breakdown-)
+- [Site Structure](#site-structure)
+  * [Key Features:](#key-features-)
+  * [CRUD Functionality](#crud-functionality)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography -](#typography--)
+  * [Navigation](#navigation)
+  * [Homepage -](#homepage--)
+  * [Mobile View:](#mobile-view-)
+  * [Search Bar](#search-bar)
+  * [Posts](#posts)
+  * [Following a User](#following-a-user)
+  * [Following And unfollowing a User](#following-and-unfollowing-a-user)
+- [Edit Profile](#edit-profile)
+  * [Edit Username](#edit-username)
+  * [Change Password](#change-password)
+  * [Change Username](#change-username)
+  * [Add Post](#add-post)
+- [post liked - with notification](#post-liked---with-notification)
+- [Post Unliked with Notification](#post-unliked-with-notification)
+- [Add Comment](#add-comment)
+  * [Editing Comments by User logged in](#editing-comments-by-user-logged-in)
+  * [Edit Delete/ Commment](#edit-delete--commment)
+  * [Edit Comment](#edit-comment)
+  * [Delete comment](#delete-comment)
+- [Save Post](#save-post)
+- [Validation Testing](#validation-testing)
+  * [Light House Performance](#light-house-performance)
+  * [Fixing Bugs](#fixing-bugs)
+- [Deployment -](#deployment--)
+  * [Fork this Project Repository](#fork-this-project-repository)
+  * [Running the project locally](#running-the-project-locally)
+  * [Deployment to Heroku](#deployment-to-heroku)
+- [Frame works and libraries used](#frame-works-and-libraries-used)
+- [Credits & Acknowledgements -](#credits---acknowledgements--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 
 
