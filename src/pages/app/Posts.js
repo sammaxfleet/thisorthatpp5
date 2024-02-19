@@ -57,7 +57,7 @@ const Posts = ({ data }) => {
     >
       {data && data.results.map((post) => {
         return (
-          <PostCard key={post.id} post={post} showComments={false} handleLike={handleLike} handleComment={handleComment} handleUnLike={handleUnLike} />
+          <PostCard key={post.id} postComment={postComment} post={post} showComments={false} handleLike={handleLike} handleComment={handleComment} handleUnLike={handleUnLike} />
         );
       })}
     </div>

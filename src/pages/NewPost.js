@@ -23,24 +23,69 @@ const NewPost = () => {
 
     reader.readAsDataURL(file);
   };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   console.log("handle uploading-", imagePreviewUrl);
+  //   console.log(e, "e")
+  //   const formData = new FormData();
+  //   formData.append("image", file);
+  //   formData.append("title", e.target[0].value);
+  //   formData.append("content", e.target[1].value);
+  //   formData.append("fashion_inspiration", e.target[2].value);
+  //   const data = await axiosInstanceFormData.post(`posts/`, formData)
+  //   console.log(data, "data from axios")
+  //   if (data.status === 201) {
+  //     toast.success("Post created successfully")
+  //     dispatch(thisOrThatApi.util.invalidateTags(["Posts"]))
+  //     navigate(`/`)
+
+  //   } else {
+  //     for (const key in data.response.data) {
+  //       if (Object.hasOwnProperty.call(data.response.data, key)) {
+  //         // Iterate over each element in the array associated with the key
+  //         data.response.data[key].forEach(text => {
+  //           toast.error(text);
+  //         });
+  //       }
+  //     }
+  //   }
+  // }
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("handle uploading-", imagePreviewUrl);
     console.log(e, "e")
+
     const formData = new FormData();
     formData.append("image", file);
     formData.append("title", e.target[0].value);
     formData.append("content", e.target[1].value);
     formData.append("fashion_inspiration", e.target[2].value);
-    const data = await axiosInstanceFormData.post(`posts/`, formData)
-    console.log(data, "data from axios")
-    if (data.status === 201) {
-      toast.success("Post created successfully")
-      dispatch(thisOrThatApi.util.invalidateTags(["Posts"]))
-      navigate(`/`)
 
+    try {
+      const { data, status } = await axiosInstanceFormData.post(`posts/`, formData);
+      console.log(data, "data from axios");
+
+      if (status === 201) {
+        toast.success("Post created successfully");
+        dispatch(thisOrThatApi.util.invalidateTags(["Posts"]));
+        navigate(`/`);
+      }
+    } catch (error) {
+      if (error.response && error.response.data) {
+        const responseData = error.response.data;
+        for (const key in responseData) {
+          if (Object.hasOwnProperty.call(responseData, key)) {
+            responseData[key].forEach(text => {
+              toast.error(`${key}:- ${text}`);
+            });
+          }
+        }
+      } else {
+        console.error("An error occurred:", error);
+      }
     }
   }
+
   return (
     <Container fluid={true}>
       <Row>

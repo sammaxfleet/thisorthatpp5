@@ -1,16 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
+import Modal from "react-bootstrap/Modal";
 import styles from "../styles/HomePage.module.css";
 import { useNavigate as useNavigation } from "react-router-dom";
 import PostCardComments from "./PostCardComments";
 import { toast } from "react-toastify";
-import { useSavePostMutation } from "../store/apiSlice";
+import { useSavePostMutation, useCreatePostCommentMutation } from "../store/apiSlice";
 import { useSelector } from "react-redux";
 const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike, comments = [], handleDelete, handleInputChange, handleSaveEdit }) => {
     const navigate = useNavigation();
     const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
+    const [showCommentModal, setShowCommentModal] = useState(false);
+    const [commentText, setCommentText] = useState("");
+    const [postComment] = useCreatePostCommentMutation();
     const [saved_post, { isSuccess }] = useSavePostMutation();
     useEffect(() => {
         if (isSuccess) {
@@ -27,6 +30,18 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
             toast.error("You need to login to save a post ")
         }
     }
+
+    const handleCommentSubmit = () => {
+        if (!commentText.trim()) {
+            toast.error("Please enter a comment");
+            return;
+        }
+
+        postComment(JSON.stringify({ post: post.id, content: commentText }))
+        setCommentText("");
+        setShowCommentModal(false);
+    };
+
     return (
         <Card className="custom-card" style={{ marginBottom: "20px" }}>
             {/* User Circle */}
@@ -111,7 +126,7 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                             </Button>
                         )}
 
-                        <Button variant="secondary" onClick={() => handleComment(post)} className="action-button">
+                        <Button variant="secondary" onClick={() => setShowCommentModal(true)} className="action-button">
                             Comment
                         </Button>
                         <i className="fa-regular fa-heart" onClick={savePost}></i>
@@ -122,6 +137,29 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
                         <PostCardComments key={comment.id} comment={comment} />
                     ))}
                 </div>
+                {/* Comment Modal */}
+                <Modal show={showCommentModal} onHide={() => setShowCommentModal(false)}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Write a Comment</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <textarea
+                            className="form-control"
+                            rows="3"
+                            placeholder="Write your comment here..."
+                            value={commentText}
+                            onChange={(e) => setCommentText(e.target.value)}
+                        ></textarea>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={() => setShowCommentModal(false)}>
+                            Close
+                        </Button>
+                        <Button variant="primary" onClick={handleCommentSubmit}>
+                            Post Comment
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
             </Card.Body>
         </Card>
 
