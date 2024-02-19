@@ -47,7 +47,7 @@ export const signup = async (username, password1, password2) => {
     return response;
   } catch (error) {
     console.log(error);
-    return null;
+    return error;
   }
 };
 
