@@ -32,13 +32,18 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
     }
 
     const handleCommentSubmit = () => {
-        if (!commentText.trim()) {
-            toast.error("Please enter a comment");
-            return;
+        if (isLoggedIn) {
+            if (!commentText.trim()) {
+                toast.error("Please enter a comment");
+                return;
+            }
+
+            postComment(JSON.stringify({ post: post.id, content: commentText }))
+            setCommentText("");
+        } else {
+            toast.info("You need to sign-in to comment")
         }
 
-        postComment(JSON.stringify({ post: post.id, content: commentText }))
-        setCommentText("");
         setShowCommentModal(false);
     };
 
