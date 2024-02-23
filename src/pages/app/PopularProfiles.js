@@ -30,7 +30,7 @@ const PopularProfiles = () => {
           flexWrap: "wrap"
         }}
       >
-        {profilesData && profilesData.results.map((item) => (
+        {profilesData && profilesData.results.slice(0,5).map((item) => (
           <div
             onClick={() => navigate("/profiles/" + item.id)}
             key={item.owner}
