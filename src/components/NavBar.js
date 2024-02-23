@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./assets/thisorthat.jpg";
 import styles from "../styles/NavBar.module.css";
@@ -6,15 +6,31 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../store/usersSlice";
 import { toast } from "react-toastify";
+
 const NavBar = () => {
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const user = useSelector((state) => state.users.user);
   const dispatch = useDispatch();
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleNavItemClick = () => {
+    setExpanded(false);
+  };
 
   return (
-    <Navbar className={styles.NavBar} expand="md" fixed="top">
+    <Navbar
+      className={styles.NavBar}
+      expand="md"
+      expanded={expanded}
+      fixed="top"
+      onToggle={handleToggle}
+    >
       <Container className="button">
-        <NavLink to="/">
+        <NavLink to="/" onClick={handleNavItemClick}>
           <Navbar.Brand className="d-flex justify-content-center align-items-center ">
             <img src={logo} alt="logo" height="45" />
             <h4 className="m-2">This Or That</h4>
@@ -28,6 +44,7 @@ const NavBar = () => {
               className={styles.NavLink}
               activeClassName={styles.Active}
               to="/"
+              onClick={handleNavItemClick}
             >
               <i className="fas fa-home"></i>Home
             </NavLink>
@@ -38,11 +55,10 @@ const NavBar = () => {
                   className={styles.NavLink}
                   activeClassName={styles.Active}
                   onClick={() => {
-                    localStorage.removeItem("user")
-                    // setIsLoggedIn(false)
-                    dispatch(logOut())
-                    toast.success("Logged Out")
-
+                    localStorage.removeItem("user");
+                    dispatch(logOut());
+                    toast.success("Logged Out");
+                    handleNavItemClick();
                   }}
                 >
                   <i className="fas fa-sign-out"></i>Logout
@@ -51,6 +67,7 @@ const NavBar = () => {
                   className={styles.NavLink}
                   activeClassName={styles.Active}
                   to={"/profiles/" + user.profile_id}
+                  onClick={handleNavItemClick}
                 >
                   <i className="fas fa-user"></i>Profile
                 </NavLink>
@@ -58,12 +75,11 @@ const NavBar = () => {
                   className={styles.NavLink}
                   activeClassName={styles.Active}
                   to={"/post/new"}
+                  onClick={handleNavItemClick}
                 >
                   <i className="fas fa-upload"></i>Add Post
                 </NavLink>
               </>
-
-
             )}
 
             {!isLoggedIn && (
@@ -72,6 +88,7 @@ const NavBar = () => {
                   className={styles.NavLink}
                   activeClassName={styles.Active}
                   to="/signin"
+                  onClick={handleNavItemClick}
                 >
                   <i className="fas fa-sign-in-alt"></i>Sign in
                 </NavLink>
@@ -79,6 +96,7 @@ const NavBar = () => {
                   to="/signup"
                   className={styles.NavLink}
                   activeClassName={styles.Active}
+                  onClick={handleNavItemClick}
                 >
                   <i className="fas fa-user-plus"></i>Sign up
                 </NavLink>

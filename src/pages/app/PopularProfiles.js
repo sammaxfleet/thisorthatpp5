@@ -25,12 +25,12 @@ const PopularProfiles = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "space-evenly",
           alignItems: "center",
           flexWrap: "wrap"
         }}
       >
-        {profilesData && profilesData.results.slice(0,5).map((item) => (
+        {profilesData && profilesData.results.slice(0, 5).map((item) => (
           <div
             onClick={() => navigate("/profiles/" + item.id)}
             key={item.owner}
