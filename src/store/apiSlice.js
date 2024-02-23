@@ -51,7 +51,6 @@ export const thisOrThatApi = createApi({
         }),
         likePost: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/likes/`,
                     method: 'POST',
@@ -62,7 +61,6 @@ export const thisOrThatApi = createApi({
         }),
         deleteLikePost: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/likes/${data}`,
                     method: 'DELETE',
@@ -84,7 +82,6 @@ export const thisOrThatApi = createApi({
         }),
         createPostComment: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/comments/`,
                     method: 'POST',
@@ -95,7 +92,6 @@ export const thisOrThatApi = createApi({
         }),
         editPostComment: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/comments/${data.id}/`,
                     method: 'PUT',
@@ -106,7 +102,6 @@ export const thisOrThatApi = createApi({
         }),
         deletePostComment: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/comments/${data}/`,
                     method: 'DELETE',
@@ -117,7 +112,6 @@ export const thisOrThatApi = createApi({
         }),
         getPostComments: builder.query({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/comments/?post=${data}`,
                     method: 'GET',
@@ -128,7 +122,6 @@ export const thisOrThatApi = createApi({
         }),
         followUser: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/followers/`,
                     method: 'POST',
@@ -140,7 +133,6 @@ export const thisOrThatApi = createApi({
         }),
         unFollowerUser: builder.mutation({
             query(data) {
-                console.log(data, "from like post")
                 return {
                     url: `/followers/${data.id}`,
                     method: 'DELETE',

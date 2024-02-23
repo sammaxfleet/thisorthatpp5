@@ -52,8 +52,6 @@ const NewPost = () => {
   // }
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("handle uploading-", imagePreviewUrl);
-    console.log(e, "e")
 
     const formData = new FormData();
     formData.append("image", file);
@@ -63,7 +61,6 @@ const NewPost = () => {
 
     try {
       const { data, status } = await axiosInstanceFormData.post(`posts/`, formData);
-      console.log(data, "data from axios");
 
       if (status === 201) {
         toast.success("Post created successfully");
@@ -81,7 +78,6 @@ const NewPost = () => {
           }
         }
       } else {
-        console.error("An error occurred:", error);
       }
     }
   }

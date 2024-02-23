@@ -61,10 +61,8 @@ const Profiles = () => {
 
   const handleSaveUsername = (newUsername) => {
     // Perform the action to save the new username (e.g., send a request to update it)
-    console.log('New username:', newUsername);
     // Replace the console.log with your code to update the username
   };
-  console.log(data, "data from api ");
   return (
     <Container fluid className="py-4">
       <ChangeUsernameModal

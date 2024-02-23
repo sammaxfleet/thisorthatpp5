@@ -16,7 +16,6 @@ const HomePage = () => {
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value)
-    console.log(searchQuery)
   }
   return (
     <div

@@ -33,7 +33,6 @@ const SignUpForm = () => {
       data.get("password1"),
       data.get("password2")
     );
-    console.log(response, 'response above ')
     // 200-299
     if (response) {
       if (response.status === 201) {
@@ -44,11 +43,8 @@ const SignUpForm = () => {
           navigate("/signin");
         }, 2000);
       } else {
-        console.log(response.response.data, "response");
         for (const key in response.response.data) {
           if (Object.hasOwnProperty.call(response.response.data, key)) {
-            console.log(`Key: ${key}`);
-            console.log("Texts:");
             // Iterate over each element in the array associated with the key
             response.response.data[key].forEach(text => {
               toast.error(text);

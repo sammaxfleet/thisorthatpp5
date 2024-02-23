@@ -8,7 +8,6 @@ const PopularProfiles = () => {
   const [profilesData, setProfilesData] = useState(null);
   const getProfiles = async () => {
     const res = await axios.get('https://thisorthatapi-56bb400a2b0e.herokuapp.com/profiles/')
-    console.log(res, 'res')
     setProfilesData(res.data)
   }
 

@@ -21,12 +21,10 @@ export const login = async (username, password) => {
 
     return response;
   } catch (error) {
-    console.log(error);
     return null;
   }
 };
 export const signup = async (username, password1, password2) => {
-  console.log("here");
   try {
     const response = await axios.post(
       "/dj-rest-auth/registration/",
@@ -42,11 +40,9 @@ export const signup = async (username, password1, password2) => {
       }
     );
 
-    console.log(response);
 
     return response;
   } catch (error) {
-    console.log(error);
     return error;
   }
 };

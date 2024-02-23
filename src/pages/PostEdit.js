@@ -51,8 +51,6 @@ const PostEdit = () => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("handle uploading-", imagePreviewUrl);
-        console.log(e, "e")
         const formData = new FormData();
         if (file) {
             formData.append("image", file);
@@ -61,7 +59,6 @@ const PostEdit = () => {
         formData.append("content", e.target[1].value);
         formData.append("fashion_inspiration", e.target[2].value);
         const data = await axiosInstanceFormData.put(`posts/${slug}/`, formData)
-        console.log(data, "data from axios")
         if (data.status === 200) {
             dispatch(thisOrThatApi.util.invalidateTags(["Post"]))
             toast.success("Post Updated Successfully")

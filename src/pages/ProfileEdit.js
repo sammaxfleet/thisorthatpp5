@@ -27,17 +27,13 @@ function ProfileEdit() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData();
-        console.log(e)
-        console.log(e.target[1].value)
         formData.append("content", e.target[1].value);
         if (e.target[0].files[0]) {
             formData.append("image", e.target[0].files[0]);
         }
         for (let [key, value] of formData.entries()) {
-            console.log(`${key}: ${value}`);
             // For file objects, you might want to log specific properties
             if (value instanceof File) {
-                console.log(`Fildetailse  - Name: ${value.name}, Type: ${value.type}, Size: ${value.size} bytes`);
             }
         }
 
@@ -47,10 +43,8 @@ function ProfileEdit() {
             dispatch(thisOrThatApi.util.invalidateTags(["Profiles"]))
             navigate(`/profiles/${slug}`)
         }
-        console.log(data, "data from axios")
 
         // Handle the form submission logic here
-        console.log(image, bio);
     }
     useEffect(() => {
         if (data && !data.is_owner) {
