@@ -467,6 +467,14 @@ Comments -
    
  <img width="396" alt="Screenshot 2024-02-26 at 10 35 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4563ba16-90c8-4f60-b721-9969486871bd">
 
+4. Comment Edited
+   
+<img width="307" alt="Screenshot 2024-02-26 at 11 57 31" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/fb6141ea-b92b-4414-9da7-c73a84a5c8d5">
+
+6. Comment Deleted
+   
+<img width="325" alt="Screenshot 2024-02-26 at 11 57 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aa2ac72c-a602-434f-9b9c-610a6a5e1446">
+
 
 Likes - 
 
@@ -483,6 +491,7 @@ Likes -
 7. If a post is already liked and you log out(  it doesn't update )
 
 Save - 
+
 1. Notification to the user that they can't save 
 <img width="329" alt="Screenshot 2024-02-26 at 10 43 17" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/67a7d0c3-fa57-4e9b-b963-a35de94243a4">
 
@@ -544,6 +553,11 @@ If image size is too big you will know
 
 
 <img width="459" alt="Screenshot 2024-02-26 at 11 07 31" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c5116e1c-3fbe-4a09-a82f-42eb335b236b">
+
+Updating post - <img width="296" alt="Screenshot 2024-02-26 at 12 00 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0436549a-775d-4204-8299-3a876b400ac5">
+
+Deleting Post - <img width="329" alt="Screenshot 2024-02-26 at 12 00 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ef6a56e7-77fb-450c-9776-668df232e6ee">
+
 
 
 
