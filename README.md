@@ -282,6 +282,7 @@ Milestone -  Design
 9. Favicon - SHOULD HAVE
 
 
+
 * EPIC 5 
 
 Milestone - Home page DESIGN
@@ -391,6 +392,120 @@ User Stories - Posts
   5. Edit Profile/ Delete
   6. SIGN OUT -[BUTTON] Not a page.
   
+
+
+
+
+
+User Experience
+
+Error handling - Manual Testing
+
+
+Sign Up - 
+
+1. The Password has to be a balance between numbers and letters for it to be a recognised safe password for the site. 
+
+<img width="405" alt="Screenshot 2024-02-26 at 09 57 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/8f286a1b-f605-4182-8b32-ef334c88e059">
+
+2. If You just select a letter it'll give you this notification, 
+   
+<img width="400" alt="Screenshot 2024-02-26 at 10 01 09" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/83374606-d8ab-48c6-babc-f2b235daff8f">
+
+3. Needs a Max amount of characters, and notification saying upto 12 characters'
+
+5. Succesful Log in
+   
+<img width="323" alt="Screenshot 2024-02-26 at 10 03 55" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/be98b355-3468-4a5d-b23c-ea63f4cb896a">
+
+6. Log Out
+
+<img width="390" alt="Screenshot 2024-02-26 at 10 04 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aea033be-9492-40dc-9a14-f82cab1b4232">
+
+
+
+Sign in - 
+
+
+1. <img width="305" alt="Screenshot 2024-02-26 at 10 09 42" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/b28045a1-e3d3-4109-acd6-b1dedc6372eb">
+
+   Sign in smoothly functions
+
+2. <img width="312" alt="Screenshot 2024-02-26 at 10 10 15" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/1f342f6e-00b3-45a1-951f-5f99ee764d6e">
+
+   The display of the Nav Bar then changes
+   
+3. <img width="401" alt="Screenshot 2024-02-26 at 10 11 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/980e5ffb-3a68-4a41-a97e-7f947d10b1b9">
+
+   If the log in isn't correct this pop up will show.
+
+   
+
+Home Page - 
+
+1. Searching for the User or for the celebrity featured works
+
+<img width="1033" alt="Screenshot 2024-02-26 at 10 16 02" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/1eee88c3-ea41-46de-b3a9-3c828255fdc4">
+
+2. Searching for something invalid will be left blank.
+    
+<img width="1034" alt="Screenshot 2024-02-26 at 10 17 07" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/49e28b74-3c9f-4493-aed9-c6cdfc3c863e">
+
+
+Comments -
+
+
+1. If a comment is posted it goes down on the comment list (should be a notification that comment is posted)
+
+ 
+2. Once the comment is clicked on it the opens up in a new tab with the post 
+
+<img width="720" alt="Screenshot 2024-02-26 at 10 34 59" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/db83b47a-6d83-4993-b345-8a0beeff72ba">
+
+
+3. If not logged a user cannot comment and is notified. 
+   
+ <img width="396" alt="Screenshot 2024-02-26 at 10 35 34" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4563ba16-90c8-4f60-b721-9969486871bd">
+
+
+Likes - 
+
+4. The like button works, and alerts when used logged in. 
+  <img width="303" alt="Screenshot 2024-02-26 at 10 40 18" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/91b4de5c-fbff-4b57-8431-96928e5fa54c">
+  
+
+5. Same with the post unliked 
+   <img width="312" alt="Screenshot 2024-02-26 at 10 41 06" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/6e608438-df40-4e94-87f6-9cb229ded833">
+
+6. When not logged in
+   <img width="320" alt="Screenshot 2024-02-26 at 10 42 14" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0ed101b2-ceed-4758-b3ec-aa7c088ad393">
+   
+7. If a post is already liked and you log out(  it doesn't update )
+
+Save - 
+1. Notification to the user that they can't save 
+<img width="329" alt="Screenshot 2024-02-26 at 10 43 17" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/67a7d0c3-fa57-4e9b-b963-a35de94243a4">
+
+2. A notification that the post is saved 
+   <img width="324" alt="Screenshot 2024-02-26 at 10 43 41" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/e9f045c7-cb15-4c46-af70-b65bce93a34d">
+
+
+
+
+Edit profile:
+
+1. Edit Bio & Profile image
+   
+
+1. Change Image ( N0 notificaiton) Should have notification 
+2. <img width="463" alt="Screenshot 2024-02-26 at 10 46 49" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/b4eca122-1cf8-4d84-93f5-62020cc2eb85"> One button clicked to update.
+3. Change Password ( should say confirm password) & the notification isn't atrong enough.
+4. <img width="340" alt="Screenshot 2024-02-26 at 10 49 08" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/08656533-0b13-45c4-8fe1-18b61bc511c0"> If the passwords don't match it'll let you know.
+5. 
+
+
+
+
 
 ## Key Features:
 
