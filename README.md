@@ -499,10 +499,51 @@ Edit profile:
 
 1. Change Image ( N0 notificaiton) Should have notification 
 2. <img width="463" alt="Screenshot 2024-02-26 at 10 46 49" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/b4eca122-1cf8-4d84-93f5-62020cc2eb85"> One button clicked to update.
-3. Change Password ( should say confirm password) & the notification isn't atrong enough.
-4. <img width="340" alt="Screenshot 2024-02-26 at 10 49 08" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/08656533-0b13-45c4-8fe1-18b61bc511c0"> If the passwords don't match it'll let you know.
-5. 
 
+   Password - (needs work)
+4. Change Password ( should say confirm password) & the notification isn't atrong enough.
+5. <img width="340" alt="Screenshot 2024-02-26 at 10 49 08" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/08656533-0b13-45c4-8fe1-18b61bc511c0"> If the passwords don't match it'll let you know.
+
+
+<img width="462" alt="Screenshot 2024-02-26 at 10 52 31" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/50b678fd-a41f-4171-a041-e6bb23621047">
+Username changed (5 pop ups came up) should only be 1. 
+
+
+Editing Posts after edit : 
+
+<img width="493" alt="Screenshot 2024-02-26 at 10 53 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/db70ddbd-ee80-4291-99a5-282990f3deb6">
+
+Remove from saved
+
+<img width="390" alt="Screenshot 2024-02-26 at 10 04 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f2515094-1b00-447e-95f6-7abfbf49a5cd">
+
+
+
+Following a User
+
+<img width="399" alt="Screenshot 2024-02-26 at 11 00 38" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ab05131e-c577-4740-be15-9911f972bdfe">
+
+
+Button colour changes for the user experience
+
+<img width="127" alt="Screenshot 2024-02-26 at 11 01 02" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7977023a-f3e3-4152-a0dc-95eb837937e6">
+
+
+<img width="122" alt="Screenshot 2024-02-26 at 11 04 41" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/a46abd7a-ac53-4619-ad4e-8a179b08d9c7">
+
+
+
+Adding a Post
+
+
+Create a Post (not working) took a while for the update to come. 
+
+<img width="314" alt="Screenshot 2024-02-26 at 11 06 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f9c506b7-12fd-40ee-b1d1-de8a22c1cddd">
+
+If image size is too big you will know
+
+
+<img width="459" alt="Screenshot 2024-02-26 at 11 07 31" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c5116e1c-3fbe-4a09-a82f-42eb335b236b">
 
 
 
