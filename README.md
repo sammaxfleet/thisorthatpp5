@@ -422,6 +422,8 @@ Sign Up -
 
 <img width="390" alt="Screenshot 2024-02-26 at 10 04 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aea033be-9492-40dc-9a14-f82cab1b4232">
 
+If password field is left blank or ursername is repeated this then notifies the User 
+<img width="334" alt="Screenshot 2024-02-26 at 12 06 56" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ad2e6554-3f21-4a89-96ee-71acce684194">
 
 
 Sign in - 
