@@ -13,13 +13,18 @@ const PostCard = ({ post, showComments, handleLike, handleComment, handleUnLike,
     const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
     const [showCommentModal, setShowCommentModal] = useState(false);
     const [commentText, setCommentText] = useState("");
-    const [postComment] = useCreatePostCommentMutation();
+    const [postComment, { isSuccess: postCommentSuccess }] = useCreatePostCommentMutation();
     const [saved_post, { isSuccess }] = useSavePostMutation();
     useEffect(() => {
         if (isSuccess) {
             toast.success("Post Saved")
         }
-    }, [isSuccess])
+    }, [isSuccess,])
+    useEffect(() => {
+        if (postCommentSuccess) {
+            toast.success("Comment Published")
+        }
+    }, [postCommentSuccess,])
     const savePost = () => {
         if (isLoggedIn) {
             toast.info("Saving Post")
