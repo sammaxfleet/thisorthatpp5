@@ -941,17 +941,27 @@ Click the green button that says "Gitpod" to open the project in Gitpod.
 
 
 
-# Frame works and libraries used 
 
-- Redux toolkit / RTK Query  - Redux Toolkit simplifies Redux development with utilities like configureStore, while RTK Query streamlines data fetching and caching in Redux applications.
-- Heroku - For Project Deployment 
-- Font Awesome - For Site Icons
-- React Bootstrap - For site styling
-- Cloudinary - For Sotring User Images
-- Google Fonts - For Site Design, getting fonts. 
-- React.js is a JavaScript library for building user interfaces, focusing on component-based development and efficient rendering.
-- Google Images for any images on the site
-- lOGO - DRIBBLE.COM
+# Frameworks and Libraries Used
+
+- **Redux Toolkit / RTK Query**: Redux Toolkit simplifies Redux development by providing utilities like `configureStore`, while RTK Query optimizes data fetching and caching in Redux applications, enhancing state management efficiency.
+
+- **Heroku**: Chosen for project deployment due to its ease of use, scalability, and support for various programming languages and frameworks.
+
+- **Font Awesome**: Utilized for site icons as it offers a vast library of scalable vector icons that can be easily customized and integrated into web projects.
+
+- **React Bootstrap**: Selected for site styling because it combines the flexibility of React with the responsive design and pre-built components of Bootstrap, facilitating rapid development and ensuring consistent UI across devices.
+
+- **Cloudinary**: Opted for storing user images as it provides a reliable cloud-based solution for image and video management, offering features like automatic optimization, transformation, and CDN delivery.
+
+- **Google Fonts**: Used for site design to access a wide range of high-quality fonts for free, enhancing typography choices and overall visual appeal.
+
+- **React.js**: Employed as the core JavaScript library for building user interfaces due to its component-based architecture, efficient rendering, and strong community support.
+
+- **Google Images**: Utilized for sourcing any required images on the site, leveraging the vast database of high-quality images available through Google's search engine.
+
+- **Logo from DRIBBLE.COM**: Selected for the project's logo from DRIBBLE.COM, a popular platform for designers to showcase their work, ensuring a professionally designed and visually appealing logo for the site.
+
 
 # Reading Material
 
