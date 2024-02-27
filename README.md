@@ -943,28 +943,24 @@ Click the green button that says "Gitpod" to open the project in Gitpod.
 
 # Frame works and libraries used 
 
-- Redux toolkit : state management libraary
-- Balsamiq
-- Heroku
-- Font Awesome
-- React Bootstrap
-- W3Schools
-- Cloudinary
-- Lucidchart
-- Google Fonts
-- React Documentation
-- Pexels
-- Sooraj MV on Dribbble
-- Favicon generator
+- Redux toolkit / RTK Query  - Redux Toolkit simplifies Redux development with utilities like configureStore, while RTK Query streamlines data fetching and caching in Redux applications.
+- Heroku - For Project Deployment 
+- Font Awesome - For Site Icons
+- React Bootstrap - For site styling
+- Cloudinary - For Sotring User Images
+- Google Fonts - For Site Design, getting fonts. 
+- React.js is a JavaScript library for building user interfaces, focusing on component-based development and efficient rendering.
 - Google Images for any images on the site
 - lOGO - DRIBBLE.COM
+
+# Reading Material
+
 - Info about data fields https://www.geeksforgeeks.org/django-model-data-types-and-fields-list/
 - More info on react components I read this https://itnext.io/controlled-vs-uncontrolled-components-in-react-5cd13b2075f9
-- For variables I read this https://reactgo.com/react-get-current-date/ for variables
 - JSX further understanding I read this https://legacy.reactjs.org/docs/jsx-in-depth.html
-- Components for react i read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
+- Components for react I read this https://articles.wesionary.team/react-functional-components-vs-class-components-86a2d2821a22?gi=d5f536d998bc 
 - https://realfavicongenerator.net/ for my favicon
-
+- Zara.com and various fashion blogs. 
 
 
 # Credits & Acknowledgements - 
@@ -973,6 +969,7 @@ This fictional site was created for Portfolio Project #5 (Advanced Front End Spe
 Thank you to all the tutors at code institute & everyone on slack for the constant support. 
 
 Especially thanks to my Mentor Antonio Rodriguez for the continual guidance & support at Code Institute.
+
 
   
 
