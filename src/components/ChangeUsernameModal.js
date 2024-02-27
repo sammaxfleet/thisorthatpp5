@@ -4,7 +4,7 @@ import { useChangeUserNameMutation } from '../store/apiSlice';
 import { toast } from 'react-toastify';
 
 const ChangeUsernameModal = ({ show, onHide, onSave }) => {
-    const [changeUsername, { isSuccess }] = useChangeUserNameMutation()
+    const [changeUsername, { isSuccess, isError, error }] = useChangeUserNameMutation()
     const [newUsername, setNewUsername] = useState('');
 
     const handleUsernameChange = (e) => {
@@ -18,7 +18,21 @@ const ChangeUsernameModal = ({ show, onHide, onSave }) => {
         }
 
 
-    }, [isSuccess, onHide])
+    }, [isSuccess])
+
+    useEffect(() => {
+        if (isError) {
+            console.log(error)
+            for (const key in error.data) {
+                if (Object.hasOwnProperty.call(error.data, key)) {
+                    // Iterate over each element in the array associated with the key
+                    error.data[key].forEach(text => {
+                        toast.error(text);
+                    });
+                }
+            }
+        }
+    }, [isError])
 
 
     const handleSave = () => {
