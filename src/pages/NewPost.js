@@ -8,6 +8,7 @@ import { thisOrThatApi } from '../store/apiSlice';
 const NewPost = () => {
   const [imagePreviewUrl, setImagePreviewUrl] = React.useState(null);
   const [file, setFile] = React.useState(null);
+  const [uploading, setUploading] = React.useState(false)
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleImageChange = (e) => {
@@ -60,14 +61,19 @@ const NewPost = () => {
     formData.append("fashion_inspiration", e.target[2].value);
 
     try {
-      const { data, status } = await axiosInstanceFormData.post(`posts/`, formData);
-
+      setUploading(true)
+      const { data, status } = await axiosInstanceFormData.post(`posts/`, formData, {
+        timeout: 6000,
+        timeoutErrorMessage: "Image is too big"
+      });
+      setUploading(false)
       if (status === 201) {
         toast.success("Post created successfully");
         dispatch(thisOrThatApi.util.invalidateTags(["Posts"]));
         navigate(`/`);
       }
     } catch (error) {
+      setUploading(false)
       if (error.response && error.response.data) {
         const responseData = error.response.data;
         for (const key in responseData) {
@@ -119,8 +125,8 @@ const NewPost = () => {
             <Row>
 
               <Col>
-                <Button variant="primary" type="submit">
-                  Create
+                <Button variant="primary" type="submit" disabled={uploading}>
+                  {!uploading ? "Create" : "Uploading...."}
                 </Button>
               </Col>
             </Row>
