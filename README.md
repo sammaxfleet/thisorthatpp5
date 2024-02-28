@@ -399,7 +399,7 @@ User Stories - Posts
 
 User Experience
 
-Error Handling - Manual Testing
+# Error Handling - Manual Testing
 
 
 Signing Up: 
@@ -534,24 +534,21 @@ Edit Profile:
 
 
 
-
-
-Editing Posts after edit : 
+7. Editing Posts after edit : 
 
 <img width="493" alt="Screenshot 2024-02-26 at 10 53 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/db70ddbd-ee80-4291-99a5-282990f3deb6">
 
-Remove from saved
+8. Remove Post from saved
 
 <img width="390" alt="Screenshot 2024-02-26 at 10 04 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f2515094-1b00-447e-95f6-7abfbf49a5cd">
 
 
-
-Following a User
+9. Following a User
 
 <img width="399" alt="Screenshot 2024-02-26 at 11 00 38" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ab05131e-c577-4740-be15-9911f972bdfe">
 
 
-Button colour changes for the user experience
+10. Button colour changes for the user experience
 
 <img width="127" alt="Screenshot 2024-02-26 at 11 01 02" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7977023a-f3e3-4152-a0dc-95eb837937e6">
 
@@ -563,18 +560,20 @@ Button colour changes for the user experience
 Adding a Post:
 
 
-Create a Post (not working) took a while for the update to come. 
+1. If the image size is too big a notification will tell you. 
 
 <img width="314" alt="Screenshot 2024-02-26 at 11 06 50" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f9c506b7-12fd-40ee-b1d1-de8a22c1cddd">
 
-If image size is too big you will know
+2. Adding and image with the write size and filling in all the info, Post Created Successfully.
 
 
 <img width="459" alt="Screenshot 2024-02-26 at 11 07 31" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c5116e1c-3fbe-4a09-a82f-42eb335b236b">
 
-Updating post - <img width="296" alt="Screenshot 2024-02-26 at 12 00 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0436549a-775d-4204-8299-3a876b400ac5">
 
-Deleting Post - <img width="329" alt="Screenshot 2024-02-26 at 12 00 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ef6a56e7-77fb-450c-9776-668df232e6ee">
+3. Updating post - <img width="296" alt="Screenshot 2024-02-26 at 12 00 37" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/0436549a-775d-4204-8299-3a876b400ac5">
+
+4. Deleting Post - <img width="329" alt="Screenshot 2024-02-26 at 12 00 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ef6a56e7-77fb-450c-9776-668df232e6ee">
+
 
 
 
