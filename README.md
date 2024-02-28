@@ -560,7 +560,7 @@ Button colour changes for the user experience
 
 
 
-Adding a Post
+Adding a Post:
 
 
 Create a Post (not working) took a while for the update to come. 
