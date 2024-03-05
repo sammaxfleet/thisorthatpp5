@@ -102,6 +102,14 @@ const NavBar = () => {
                 </NavLink>
               </>
             )}
+            <NavLink
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/contact"
+              onClick={handleNavItemClick}
+            >
+              <i className="fa fa-address-book"></i>Contact
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

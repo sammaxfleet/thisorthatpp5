@@ -6,11 +6,13 @@ import { useGetSingleProfileQuery, useGetProfilesQuery, useGetProfilePostsQuery,
 import Dropdown from "react-bootstrap/Dropdown";
 import Spinner from 'react-bootstrap/Spinner'
 import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
 import ChangeUsernameModal from "../components/ChangeUsernameModal";
 const Profiles = () => {
   let { slug, } = useParams();
   const navigate = useNavigation();
   const [followUser, { isSuccess: followUserSuccess }] = useFollowUserMutation();
+  const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const [unfollowUser, { isSuccess: unFollowUserSucces }] = useUnFollowerUserMutation();
   useEffect(() => {
     if (followUserSuccess) {
@@ -102,7 +104,14 @@ const Profiles = () => {
                         Unfollow
                       </Button>
                     ) : (
-                      <Button variant="primary" onClick={() => followUser({ followed: data.id })}>
+                      <Button variant="primary" onClick={() => {
+                        if (isLoggedIn) {
+                          followUser({ followed: data.id })
+
+                        } else {
+                          toast.info("you need to login to follow")
+                        }
+                      }}>
                         Follow
                       </Button>
                     )}

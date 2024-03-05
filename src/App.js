@@ -20,6 +20,7 @@ import PostEdit from "./pages/PostEdit";
 import ChangePassword from "./pages/ChangePassword";
 import PostDetailPage from "./pages/PostDetailPage";
 import ChangeUsername from "./pages/ChangeUsername";
+import ContactForm from "./pages/ContactForm";
 function App() {
   const dispatch = useDispatch()
   useEffect(() => {
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/post/:slug/edit" element={<PostEdit />} />
           <Route exact path="/changepassword" element={<ChangePassword />} />
           <Route exact path="/changeusername" element={<ChangeUsername />} />
+          <Route exact path="/contact" element={<ContactForm />} />
           <Route element={() => <p>Page not found!</p>} />
         </Routes>
       </Container>
