@@ -395,8 +395,6 @@ User Stories - Posts
 
 
 
-
-
 User Experience
 
 # Error Handling - Manual Testing
@@ -533,7 +531,6 @@ Edit Profile:
 
 
 
-
 7. Editing Posts after edit : 
 
 <img width="493" alt="Screenshot 2024-02-26 at 10 53 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/db70ddbd-ee80-4291-99a5-282990f3deb6">
@@ -574,10 +571,23 @@ Adding a Post:
 
 4. Deleting Post - <img width="329" alt="Screenshot 2024-02-26 at 12 00 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ef6a56e7-77fb-450c-9776-668df232e6ee">
 
+Contact Form:
+
+If logged in this is the layout
+
+<img width="1112" alt="Screenshot 2024-03-06 at 12 06 39" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/a373c047-0e61-4a1d-bcda-26f5c5da0c93">
 
 
+If Logged out the email address comes up. 
+<img width="1061" alt="Screenshot 2024-03-06 at 12 07 09" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aacc7a23-d2f4-4be8-b487-e78a8429455c">
 
+Erro handling when entering ivalid email
 
+<img width="1041" alt="Screenshot 2024-03-06 at 12 08 01" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4d6ac3db-3cf1-4f4e-88c3-57c6f2a0f26b">
+
+If not filled in, this error message pops up. 
+
+<img width="1148" alt="Screenshot 2024-03-06 at 12 08 38" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c46245b4-2760-4cd4-abc5-a07c8d073c62">
 
 ## Key Features:
 
