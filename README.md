@@ -191,28 +191,27 @@ Milestones which are listed below are big user stories which are then but into s
 - Search keywords
 - View a Single Post 
 - Can View Popular Profiles
-- Can Navigate through Pages smoothly 
-- Can filter by Celebrity
+- Can Navigate through Pages smoothely 
+- Can filter by Celebrity or username
 - Can View comments to see what people think
-
-
+- Contact Page
 
 ### Logged In Site User features
 
-All of the above and additionally..
+All of the above and additionally:
 
 - Ability to log in
-- Log out 
+- Ability to Log out 
 - Can Like/ unlike Posts
 - Can Save/unsave Posts
 - Can follow/ unfollow other Users
 - Can Edit Profile & posts 
-- Can Make my own posts
-- Can delete/ edit own posts.
-
-# MANUAL TESTING
+- Can Create Own Post
+- Can Delete/Edit own posts.
 
 
+
+# TESTING 
 
 
 ## User Stories 
@@ -229,8 +228,8 @@ I used the following Milestones as Epics when creating the project.
 2. Installation Front End
 3. Design
 4. CRUD User Account
-5. Sign Up/ Log In Functionality
-6. Testing/ Site functionality.
+5. Sign Up / Log In Functionality
+6. Testing / Site Functionality.
 
    
 ## User Stories Breakdown:
@@ -241,8 +240,8 @@ Milestone - Installation Back End
 
 User stories -
 
-1. Get Api working linking with front end - MUST HAVE
-2. Deploy to heroku - MUST HAVE
+1. Get API working linking with front end - MUST HAVE
+2. Deploy project to heroku - MUST HAVE
 3. Turn debug to FALSE - MUST HAVE
 4. Secret Key  - MUST HAVE
 
@@ -253,7 +252,7 @@ MileStone - Installation | User Stories - Install Django & Bootstrap
 
 User Stories -
 
-1. Install Django smoothly, & any plug ins needed.- MUST HAVE
+1. Install Django smoothly, & any plug ins needed. - MUST HAVE
 2. Connect to Heroku - MUST HAVE
 3. Connect ESLindt & Prettier - SHOULD HAVE
 4. Connect Bootstrap - MUST HAVE
@@ -280,7 +279,6 @@ Milestone -  Design
 7. Back ground colour - SHOULD HAVE
 8. Several different pages - WON'T HAVE
 9. Favicon - SHOULD HAVE
-
 
 
 * EPIC 5 
@@ -369,6 +367,17 @@ User Stories - Posts
 3. be able to delete Post. - MUST HAVE
 
      
+* Epic 9
+
+ Contact Page
+
+Milestone - Home page DESIGN
+
+1. Must be able to Contact without being signed in
+2. Must be able to Contact when signed in
+
+ 
+
 
 # Site Structure 
 
@@ -376,11 +385,12 @@ User Stories - Posts
  When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. 
  When the user is logged in Comments, Signout and Profile Page also become available.
 
- The Site has 3 main pages when User 'LOGGED OUT' pages: 
+ The Site has 4 main pages when User 'LOGGED OUT' pages: 
 
  1. HOME
  2. SIGN IN
  3. SIGN UP
+ 4. Contact
 
 
  When User 'LOGGED IN' : 
@@ -391,8 +401,8 @@ User Stories - Posts
   4. EDIT/ DELETE post
   5. Edit Profile/ Delete
   6. SIGN OUT -[BUTTON] Not a page.
+  7. Contact
   
-
 
 
 User Experience
@@ -502,7 +512,6 @@ Saved :
 
 
 
-
 Edit Profile:
 
 1. Edit Bio, Notifiction.
@@ -528,7 +537,6 @@ Edit Profile:
 
 6. If you try and enter with a space in the 'Username' this django error alert comes up. 
 <img width="306" alt="Screenshot 2024-02-27 at 14 56 33" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9b98e515-ca8c-41b2-a5fb-ee938d1ec9ba">
-
 
 
 7. Editing Posts after edit : 
@@ -571,6 +579,7 @@ Adding a Post:
 
 4. Deleting Post - <img width="329" alt="Screenshot 2024-02-26 at 12 00 57" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ef6a56e7-77fb-450c-9776-668df232e6ee">
 
+
 Contact Form:
 
 If logged in this is the layout
@@ -589,19 +598,22 @@ If not filled in, this error message pops up.
 
 <img width="1148" alt="Screenshot 2024-03-06 at 12 08 38" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c46245b4-2760-4cd4-abc5-a07c8d073c62">
 
+
 ## Key Features:
 
 The "Key Features" section highlights the main features or functionalities that make the Autotrader marketplace unique and appealing to users.
 
 1. Search by celebrity name to filter down your search.
   
-2.  User Profiles: Explain how users can create profiles and manage their information, including personal details, saved searches, and editing posts. 
+2. User Profiles: Explain how users can create profiles and manage their information, including personal details, saved searches, and editing posts. 
 
-3. Viewing All Posts, a timelane of all posts is there so you can view everything.
+3. Viewing All Posts, a timeline of all posts is there so you can view everything.
 
 4. Saved Favorites: Emphasize the feature that enables users to save their favorite outfit and easily access them later for quick reference.
 
 5. Interaction: Follow users, comment, like or even follow their page to stay updated.
+
+6. Contact page for logged in and logged out Users
    
 
 ## CRUD Functionality 
@@ -614,6 +626,8 @@ Read - Users can view the tasks, comments, posts of other users and also the pro
 Update - Users can update their profile, password & username. & update taks, comments, posts, following accounts. 
 Delete - Users can delete tasks, comments, likes, follows. 
 
+
+# Design Layout
    
 ##  Colour Scheme 
 
