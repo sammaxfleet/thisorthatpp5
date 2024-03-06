@@ -1,5 +1,20 @@
 # THIS OR THAT | Portfolio Project 5 | Advanced Front End | Code Institute. 
 
+
+Things Worked on Since Last Submission:
+
+1. Making error handling more specifc
+2. Folding in the navbar for mobile view
+3. customising another model back end ( already hade the saved model, dded a contact page for any user to use).
+4. create Post- the were errors before with no error handling
+5. sign in/ sign up functionality
+6. Manaual Testing
+7. Username entry ( before hand was no error handling)
+8. Comment pop up gone now a Box appears which gives continuity for the user experience.
+9. API backend, the secret key in the settings file. Hide from Users
+10. API endpoints documentation
+
+
 ## Site Description :
 
 
