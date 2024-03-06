@@ -5,8 +5,8 @@ Things Worked on Since Last Submission:
 
 1. Making error handling more specifc
 2. Folding in the navbar for mobile view
-3. customising another model back end ( already hade the saved model, dded a contact page for any user to use).
-4. create Post- the were errors before with no error handling
+3. Customising another model back end ( already hade the saved model, dded a contact page for any user to use).
+4. Create Post- the were errors before with no error handling
 5. sign in/ sign up functionality
 6. Manaual Testing
 7. Username entry ( before hand was no error handling)
@@ -50,7 +50,8 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
 
 # AM I RSPONSIVE IMAGE.
 
-<img width="1047" alt="Screenshot 2024-01-02 at 15 16 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4939a604-e1b1-498d-9377-e48cc37cbf9c">
+
+<img width="1057" alt="Screenshot 2024-03-06 at 14 24 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/81bbd9b0-3f01-4cdf-8190-1edb4eeb0bdb">
 
 
 
@@ -60,6 +61,7 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
   * [Site Description :](#site-description--)
 - [Full Links to Project:](#full-links-to-project-)
 - [AM I RSPONSIVE IMAGE.](#am-i-rsponsive-image)
+- [TABLE OF CONTENTS -](#table-of-contents--)
   * [Wireframes](#wireframes)
   * [PROJECT  OBJECTIVE -](#project--objective--)
   * [SITE USER GOAL-](#site-user-goal-)
@@ -67,15 +69,14 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
   * [TARGET AUDIENCE -](#target-audience--)
 - [PROJECT MANAGEMENT -](#project-management--)
   * [AGILE METHODOLOGY](#agile-methodology)
+  * [Logged Out Site User features](#logged-out-site-user-features)
+    + [Logged In Site User features](#logged-in-site-user-features)
+- [TESTING](#testing)
   * [User Stories](#user-stories)
-  * [Logged Out Site User](#logged-out-site-user)
-    + [Logged In Site User](#logged-in-site-user)
-- [MANUAL TESTING](#manual-testing)
-- [EPICS/ MILESTONES & USER STORIES](#epics--milestones---user-stories)
+  * [EPICS/ MILESTONES & USER STORIES](#epics--milestones---user-stories)
   * [User Stories Breakdown:](#user-stories-breakdown-)
 - [Site Structure](#site-structure)
-  * [Key Features:](#key-features-)
-  * [CRUD Functionality](#crud-functionality)
+- [Design Layout](#design-layout)
   * [Colour Scheme](#colour-scheme)
   * [Typography -](#typography--)
   * [Navigation](#navigation)
@@ -98,6 +99,10 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
   * [Edit Comment](#edit-comment)
   * [Delete comment](#delete-comment)
 - [Save Post](#save-post)
+- [User Experience](#user-experience)
+- [Error Handling - Manual Testing](#error-handling---manual-testing)
+  * [Key Features:](#key-features-)
+  * [CRUD Functionality](#crud-functionality)
 - [Validation Testing](#validation-testing)
   * [Light House Performance](#light-house-performance)
   * [Fixing Bugs](#fixing-bugs)
@@ -105,10 +110,12 @@ Link to the back end repository - https://github.com/sammaxfleet/THISORTHATAPI
   * [Fork this Project Repository](#fork-this-project-repository)
   * [Running the project locally](#running-the-project-locally)
   * [Deployment to Heroku](#deployment-to-heroku)
-- [Frame works and libraries used](#frame-works-and-libraries-used)
+- [Frameworks and Libraries Used](#frameworks-and-libraries-used)
+- [Reading Material](#reading-material)
 - [Credits & Acknowledgements -](#credits---acknowledgements--)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 
 
