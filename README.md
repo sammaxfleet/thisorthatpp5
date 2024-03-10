@@ -801,31 +801,35 @@ Edit Profile:
 
    
 4. Change Password  <img width="340" alt="Screenshot 2024-02-26 at 10 49 08" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/08656533-0b13-45c4-8fe1-18b61bc511c0"> If the passwords don't match it'll let you know.
+   
+5. <img width="309" alt="Screenshot 2024-03-10 at 13 24 23" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/2fc3c453-d73d-4f33-8d87-23f7b9246225"> If it's too short this will come up.
 
-5. Username Change
+
+
+6. Username Change
    
 <img width="318" alt="Screenshot 2024-02-27 at 14 57 53" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/83d54b1e-4c47-46a5-808b-7af9b0fdf9f9">
 
 
-6. If you try and enter with a space in the 'Username' this django error alert comes up. 
+7. If you try and enter with a space in the 'Username' this django error alert comes up. 
 <img width="306" alt="Screenshot 2024-02-27 at 14 56 33" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/9b98e515-ca8c-41b2-a5fb-ee938d1ec9ba">
 
 
-7. Editing Posts after edit : 
+8. Editing Posts after edit : 
 
 <img width="493" alt="Screenshot 2024-02-26 at 10 53 27" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/db70ddbd-ee80-4291-99a5-282990f3deb6">
 
-8. Remove Post from saved
+9. Remove Post from saved
 
 <img width="390" alt="Screenshot 2024-02-26 at 10 04 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/f2515094-1b00-447e-95f6-7abfbf49a5cd">
 
 
-9. Following a User
+10. Following a User
 
 <img width="399" alt="Screenshot 2024-02-26 at 11 00 38" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/ab05131e-c577-4740-be15-9911f972bdfe">
 
 
-10. Button colour changes for the user experience
+11. Button colour changes for the user experience
 
 <img width="127" alt="Screenshot 2024-02-26 at 11 01 02" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/7977023a-f3e3-4152-a0dc-95eb837937e6">
 
@@ -862,13 +866,19 @@ If logged in this is the layout
 If Logged out the email address comes up. 
 <img width="1061" alt="Screenshot 2024-03-06 at 12 07 09" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/aacc7a23-d2f4-4be8-b487-e78a8429455c">
 
-Erro handling when entering ivalid email
+Error handling when entering ivalid email
 
 <img width="1041" alt="Screenshot 2024-03-06 at 12 08 01" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/4d6ac3db-3cf1-4f4e-88c3-57c6f2a0f26b">
 
 If not filled in, this error message pops up. 
 
 <img width="1148" alt="Screenshot 2024-03-06 at 12 08 38" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/c46245b4-2760-4cd4-abc5-a07c8d073c62">
+
+Once the query is submitted it refreshes the page for the user. 
+
+<img width="1237" alt="Screenshot 2024-03-10 at 13 23 09" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/fd2b88d9-3ca2-476a-938c-b9a6601eaa53">
+
+
 
 
 ## Key Features:
