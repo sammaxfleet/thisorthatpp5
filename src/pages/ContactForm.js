@@ -22,6 +22,9 @@ const ContactForm = () => {
         const res = await axiosInstanceFormData.post('contact/', formData)
         if (res.status === 201) {
             toast.success("Your Query has been submitted")
+            setEmail("")
+            setReason("")
+            setDescription("")
         } else {
             toast.error("something went wrong")
         }
