@@ -3,16 +3,17 @@
 
 Things Worked on Since Last Submission:
 
-1. Making error handling more specifc
+1. Making error handling more specifc and thorough throughout the site overall. 
 2. Folding in the navbar for mobile view
-3. Customising another model back end ( already hade the saved model, dded a contact page for any user to use).
-4. Create Post- the were errors before with no error handling
-5. sign in/ sign up functionality
-6. Manaual Testing
+3. Customising another model back end ( already had the saved model, added a contact page for any user to use).
+4. Create Post Feature: There were errors before with no error handling
+5. Sign in/ Sign up Functionality
+6. Manaual Testing both repositories 
 7. Username entry ( before hand was no error handling)
-8. Comment pop up gone now a Box appears which gives continuity for the user experience.
+8. Comment pop up has now gone, a Box appears which gives continuity for the user experience.
 9. API backend, the secret key in the settings file. Hide from Users
 10. API endpoints documentation
+11. Hiding any secure information that may of shown up.
 
 
 ## Site Description :
