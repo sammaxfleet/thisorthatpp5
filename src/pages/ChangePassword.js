@@ -38,7 +38,7 @@ const ChangePassword = () => {
             }
         } catch (error) {
             console.log('error', error)
-
+            toast.error("something went wrong")
         }
 
 
