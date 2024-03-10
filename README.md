@@ -464,8 +464,6 @@ Mobile View experience: Once clicked on it opens out.
 <img width="328" alt="Screenshot 2024-03-06 at 12 54 46" src="https://github.com/sammaxfleet/thisorthatpp5/assets/114914739/711041c0-4598-4f2f-bd3b-0ba16cb1ec69">
 
 
-
-
 The Navigation Bar is slick and simple. 
 Depending on wether you're signed in or not a different option on the menu appears, and it collapses as the screen goes into mobile view. 
 On accessing the site for the first time, the user is logged out and the following menu items are visible:
@@ -676,11 +674,10 @@ It also shows on other User profiles the post they've saved.
 
 
 
-# User Experience
 
+# Manual Testing
 
-# Error Handling - Manual Testing
-
+Error handling: 
 
 Signing Up: 
 
@@ -907,7 +904,6 @@ Create - Users can create, an account, profile, tasks, comments, likes, posts.
 Read - Users can view the tasks, comments, posts of other users and also the profiles of these users.
 Update - Users can update their profile, password & username. & update taks, comments, posts, following accounts. 
 Delete - Users can delete tasks, comments, likes, follows. 
-
 
 
 
