@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.d9632ba3.css",
-    "main.js": "/static/js/main.6f74cde1.js",
+    "main.js": "/static/js/main.cbd95d4b.js",
     "static/media/kanye.jpeg": "/static/media/kanye.e50ed96a2d12d2182a23.jpeg",
     "static/media/fashionbakayo.jpg": "/static/media/fashionbakayo.642632644426f49a1e37.jpg",
     "static/media/thisorthat.jpg": "/static/media/thisorthat.57841a79f987d4717526.jpg",
     "index.html": "/index.html",
     "main.d9632ba3.css.map": "/static/css/main.d9632ba3.css.map",
-    "main.6f74cde1.js.map": "/static/js/main.6f74cde1.js.map"
+    "main.cbd95d4b.js.map": "/static/js/main.cbd95d4b.js.map"
   },
   "entrypoints": [
     "static/css/main.d9632ba3.css",
-    "static/js/main.6f74cde1.js"
+    "static/js/main.cbd95d4b.js"
   ]
 }

@@ -7,7 +7,6 @@ import { useNavigate as useNavigation } from "react-router-dom";
 const ChangePassword = () => {
     const [password1, setPassword1] = useState('');
     const [password2, setPassword2] = useState('');
-    const [message, setMessage] = useState('');
     const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
     const navigate = useNavigation();
     useEffect(() => {
@@ -18,7 +17,11 @@ const ChangePassword = () => {
     }, [isLoggedIn, navigate])
     const handlePasswordChange = async () => {
         if (password1 !== password2) {
-            setMessage("Passwords don't match");
+            toast.error("password doesn't match ")
+            return;
+        }
+        if (password1.length < 6) {
+            toast.error("Password needs to be 6 Characters long")
             return;
         }
         const dataForm = {
@@ -34,20 +37,29 @@ const ChangePassword = () => {
                 navigate("/")
             }
         } catch (error) {
-            toast.error("Something went wrong maybe password is too common")
+            console.log('error', error)
+            if (error.response && error.response.data) {
+                const responseData = error.response.data;
+                for (const key in responseData) {
+                    if (Object.hasOwnProperty.call(responseData, key)) {
+                        responseData[key].forEach(text => {
+                            toast.error(`${key}:- ${text}`);
+                        });
+                    }
+                }
+            } else {
+            }
         }
 
 
         // After changing the password, you can reset the fields and display a success message
         setPassword1('');
         setPassword2('');
-        setMessage('Password changed successfully!');
     };
 
     return (
         <div className="container mt-4">
             <h2>Change Password</h2>
-            {message && <p className="text-danger">{message}</p>}
             <Form>
                 <Form.Group controlId="password1">
                     <Form.Label>Password 1</Form.Label>
