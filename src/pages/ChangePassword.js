@@ -38,17 +38,7 @@ const ChangePassword = () => {
             }
         } catch (error) {
             console.log('error', error)
-            if (error.response && error.response.data) {
-                const responseData = error.response.data;
-                for (const key in responseData) {
-                    if (Object.hasOwnProperty.call(responseData, key)) {
-                        responseData[key].forEach(text => {
-                            toast.error(`${key}:- ${text}`);
-                        });
-                    }
-                }
-            } else {
-            }
+
         }
 
 
